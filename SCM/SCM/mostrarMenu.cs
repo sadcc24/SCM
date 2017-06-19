@@ -173,5 +173,37 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void congelarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            congelarExistencias temp = new congelarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void descongelarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            descongelarExistencias temp = new descongelarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void capturarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            capturarExistencias temp = new capturarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void ajusteAutomáticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajustarExistencias temp = new ajustarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

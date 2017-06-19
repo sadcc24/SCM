@@ -90,6 +90,30 @@
     <Compile Include="buscarVehiculos.Designer.cs">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
     </Compile>
+    <Compile Include="capturarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capturarExistencias.Designer.cs">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajustarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajustarExistencias.Designer.cs">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="descongelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descongelarExistencias.Designer.cs">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="congelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="congelarExistencias.Designer.cs">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +208,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="buscarVehiculos.resx">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capturarExistencias.resx">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajustarExistencias.resx">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descongelarExistencias.resx">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="congelarExistencias.resx">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>

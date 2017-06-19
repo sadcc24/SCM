@@ -24,3 +24,7 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.descongelarExistencias.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.congelarExistencias.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.capturarExistencias.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ajustarExistencias.resources
