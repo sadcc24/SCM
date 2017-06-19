@@ -149,5 +149,29 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void vehículosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoVehiculo temp = new ingresoVehiculo();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void transportesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            buscarSolicitudTransporte temp = new buscarSolicitudTransporte();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoOrdenServicio temp = new ingresoOrdenServicio();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

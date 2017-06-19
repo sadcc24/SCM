@@ -87,6 +87,9 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autorizaciónDeÓrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vehículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -267,6 +270,10 @@
             // 
             // transportesToolStripMenuItem
             // 
+            this.transportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vehículosToolStripMenuItem,
+            this.transportesToolStripMenuItem1,
+            this.serviciosToolStripMenuItem});
             this.transportesToolStripMenuItem.Name = "transportesToolStripMenuItem";
             this.transportesToolStripMenuItem.Size = new System.Drawing.Size(248, 22);
             this.transportesToolStripMenuItem.Text = "&Transportes";
@@ -549,6 +556,27 @@
             this.autorizaciónDeÓrdenDeCompraToolStripMenuItem.Text = "Autorización de Órden de Compra";
             this.autorizaciónDeÓrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.autorizaciónDeÓrdenDeCompraToolStripMenuItem_Click);
             // 
+            // vehículosToolStripMenuItem
+            // 
+            this.vehículosToolStripMenuItem.Name = "vehículosToolStripMenuItem";
+            this.vehículosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vehículosToolStripMenuItem.Text = "Vehículos";
+            this.vehículosToolStripMenuItem.Click += new System.EventHandler(this.vehículosToolStripMenuItem_Click);
+            // 
+            // transportesToolStripMenuItem1
+            // 
+            this.transportesToolStripMenuItem1.Name = "transportesToolStripMenuItem1";
+            this.transportesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.transportesToolStripMenuItem1.Text = "Transportes";
+            this.transportesToolStripMenuItem1.Click += new System.EventHandler(this.transportesToolStripMenuItem1_Click);
+            // 
+            // serviciosToolStripMenuItem
+            // 
+            this.serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
+            this.serviciosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.serviciosToolStripMenuItem.Text = "Servicios";
+            this.serviciosToolStripMenuItem.Click += new System.EventHandler(this.serviciosToolStripMenuItem_Click);
+            // 
             // mostrarMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -633,6 +661,9 @@
         private System.Windows.Forms.ToolStripMenuItem facturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autorizaciónDeÓrdenDeCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vehículosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
     }
 }
 

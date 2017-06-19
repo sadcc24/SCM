@@ -78,6 +78,18 @@
     <Compile Include="buscarOCInventario.Designer.cs">
       <DependentUpon>buscarOCInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="buscarSolicitudTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarSolicitudTransporte.Designer.cs">
+      <DependentUpon>buscarSolicitudTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarVehiculos.Designer.cs">
+      <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </Compile>
     <Compile Include="generaDevolucionProveedor.Designer.cs">
       <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoDetalleST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoDetalleST.Designer.cs">
+      <DependentUpon>ingresoDetalleST.cs</DependentUpon>
     </Compile>
     <Compile Include="ingresoFacturaProveedor.cs">
       <SubType>Form</SubType>
@@ -107,6 +125,24 @@
     </Compile>
     <Compile Include="IngresoOC.Designer.cs">
       <DependentUpon>IngresoOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoOrdenServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoOrdenServicio.Designer.cs">
+      <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoSolicitudTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoSolicitudTransporte.Designer.cs">
+      <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoVehiculo.Designer.cs">
+      <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarLogin.cs">
       <SubType>Form</SubType>
@@ -143,11 +179,20 @@
     <EmbeddedResource Include="buscarOCInventario.resx">
       <DependentUpon>buscarOCInventario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="buscarSolicitudTransporte.resx">
+      <DependentUpon>buscarSolicitudTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarVehiculos.resx">
+      <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generaDevolucionProveedor.resx">
       <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoDetalleST.resx">
+      <DependentUpon>ingresoDetalleST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoFacturaProveedor.resx">
       <DependentUpon>ingresoFacturaProveedor.cs</DependentUpon>
@@ -157,6 +202,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoOC.resx">
       <DependentUpon>IngresoOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoOrdenServicio.resx">
+      <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoSolicitudTransporte.resx">
+      <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoVehiculo.resx">
+      <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarLogin.resx">
       <DependentUpon>mostrarLogin.cs</DependentUpon>

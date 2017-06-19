@@ -18,3 +18,9 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.verVehiculos.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
