@@ -65,7 +65,7 @@ namespace SCM
         private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
-        
+
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LayoutMdi(MdiLayout.Cascade);
@@ -92,6 +92,46 @@ namespace SCM
             {
                 childForm.Close();
             }
+        }
+
+        private void movimientosAlInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoInventario temp = new ingresoInventario();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;            
+            temp.Show();
+        }
+
+        private void facturasDeProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoFacturaProveedor temp = new ingresoFacturaProveedor();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void devoluciónAProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            generaDevolucionProveedor temp = new generaDevolucionProveedor();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void contraseñaDePagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            generaContrasena temp = new generaContrasena();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void pagoAProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            autorizaPagoProveedores temp = new autorizaPagoProveedores();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
         }
     }
 }

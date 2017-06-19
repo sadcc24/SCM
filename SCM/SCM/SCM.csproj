@@ -48,6 +48,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="autorizaPagoProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autorizaPagoProveedores.Designer.cs">
+      <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarFacturasIngresadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarFacturasIngresadas.Designer.cs">
+      <DependentUpon>buscarFacturasIngresadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarOC.Designer.cs">
+      <DependentUpon>buscarOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarOCInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarOCInventario.Designer.cs">
+      <DependentUpon>buscarOCInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generaContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generaContrasena.Designer.cs">
+      <DependentUpon>generaContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generaDevolucionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generaDevolucionProveedor.Designer.cs">
+      <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoFacturaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoFacturaProveedor.Designer.cs">
+      <DependentUpon>ingresoFacturaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoInventario.Designer.cs">
+      <DependentUpon>ingresoInventario.cs</DependentUpon>
+    </Compile>
     <Compile Include="mostrarLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +116,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="autorizaPagoProveedores.resx">
+      <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarFacturasIngresadas.resx">
+      <DependentUpon>buscarFacturasIngresadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarOC.resx">
+      <DependentUpon>buscarOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarOCInventario.resx">
+      <DependentUpon>buscarOCInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generaContrasena.resx">
+      <DependentUpon>generaContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generaDevolucionProveedor.resx">
+      <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoFacturaProveedor.resx">
+      <DependentUpon>ingresoFacturaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoInventario.resx">
+      <DependentUpon>ingresoInventario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mostrarLogin.resx">
       <DependentUpon>mostrarLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +157,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -98,6 +171,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuentas por cobrar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
