@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutorizacionOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutorizacionOC.Designer.cs">
+      <DependentUpon>AutorizacionOC.cs</DependentUpon>
+    </Compile>
     <Compile Include="autorizaPagoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     <Compile Include="ingresoInventario.Designer.cs">
       <DependentUpon>ingresoInventario.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoOC.Designer.cs">
+      <DependentUpon>IngresoOC.cs</DependentUpon>
+    </Compile>
     <Compile Include="mostrarLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AutorizacionOC.resx">
+      <DependentUpon>AutorizacionOC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="autorizaPagoProveedores.resx">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoInventario.resx">
       <DependentUpon>ingresoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoOC.resx">
+      <DependentUpon>IngresoOC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarLogin.resx">
       <DependentUpon>mostrarLogin.cs</DependentUpon>

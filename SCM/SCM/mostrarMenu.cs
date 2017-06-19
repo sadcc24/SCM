@@ -133,5 +133,21 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void ingresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoOrdenCompra temp = new ingresoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void autorizaciónDeÓrdenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AutorizacionOC temp = new AutorizacionOC();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }
