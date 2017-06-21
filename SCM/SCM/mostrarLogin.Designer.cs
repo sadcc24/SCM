@@ -123,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(534, 261);
             this.Controls.Add(this.picLogin);
             this.Controls.Add(this.btnLogin);
@@ -132,6 +133,7 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblIniciarSesión);
             this.Controls.Add(this.lblBienvenido);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mostrarLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCM | Iniciar Sesión";
