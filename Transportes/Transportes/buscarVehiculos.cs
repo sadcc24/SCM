@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Transportes
 {
-    public partial class verVehiculos : Form
+    public partial class buscarVehiculos : Form
     {
-        public verVehiculos()
+        public buscarVehiculos()
         {
             InitializeComponent();
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

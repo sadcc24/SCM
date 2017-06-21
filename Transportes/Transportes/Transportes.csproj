@@ -46,14 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="verVehiculos.cs">
+    <Compile Include="ingresoDetalleST.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="verVehiculos.Designer.cs">
-      <DependentUpon>verVehiculos.cs</DependentUpon>
+    <Compile Include="ingresoDetalleST.Designer.cs">
+      <DependentUpon>ingresoDetalleST.cs</DependentUpon>
     </Compile>
+    <Compile Include="ingresoOrdenServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoOrdenServicio.Designer.cs">
+      <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buscarSolcitudTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarSolcitudTransporte.Designer.cs">
+      <DependentUpon>buscarSolcitudTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoSolicitudTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoSolicitudTransporte.Designer.cs">
+      <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoVehiculo.Designer.cs">
+      <DependentUpon>ingresoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="buscarVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarVehiculos.Designer.cs">
+      <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ingresoDetalleST.resx">
+      <DependentUpon>ingresoDetalleST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoOrdenServicio.resx">
+      <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buscarSolcitudTransporte.resx">
+      <DependentUpon>buscarSolcitudTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoSolicitudTransporte.resx">
+      <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoVehiculo.resx">
+      <DependentUpon>ingresoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,8 +108,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="verVehiculos.resx">
-      <DependentUpon>verVehiculos.cs</DependentUpon>
+    <EmbeddedResource Include="buscarVehiculos.resx">
+      <DependentUpon>buscarVehiculos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,7 +124,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="icons\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

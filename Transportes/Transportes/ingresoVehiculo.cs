@@ -16,5 +16,11 @@ namespace Transportes
         {
             InitializeComponent();
         }
+
+        private void btnOrdenServicio_Click(object sender, EventArgs e)
+        {
+            ingresoOrdenServicio ios = new ingresoOrdenServicio();
+            ios.Show();
+        }
     }
 }
