@@ -1,0 +1,80 @@
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarOC.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.exe.config
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.verVehiculos.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\bin\Debug\SCM.exe.config
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.exe
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.pdb
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\bin\Debug\SCM.exe
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\bin\Debug\SCM.pdb
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.buscarOC.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.verVehiculos.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
+C:\Users\navi9\Desktop\SCM-master\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.exe.config
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.exe
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.pdb
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.exe
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\bin\Debug\SCM.pdb
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarOC.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.verVehiculos.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
