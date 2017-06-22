@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ingresoInventario));
-            this.txtOC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEmpresa = new System.Windows.Forms.TextBox();
-            this.txtSede = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabProductos = new System.Windows.Forms.TabPage();
             this.grdInventario = new System.Windows.Forms.DataGridView();
@@ -48,61 +42,15 @@
             this.btnIngTotal = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscarOC = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtOC = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdInventario)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtOC
-            // 
-            this.txtOC.Location = new System.Drawing.Point(173, 132);
-            this.txtOC.Name = "txtOC";
-            this.txtOC.Size = new System.Drawing.Size(163, 20);
-            this.txtOC.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 132);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CODIGO OC:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "EMPRESA:";
-            // 
-            // txtEmpresa
-            // 
-            this.txtEmpresa.Location = new System.Drawing.Point(173, 158);
-            this.txtEmpresa.Name = "txtEmpresa";
-            this.txtEmpresa.Size = new System.Drawing.Size(163, 20);
-            this.txtEmpresa.TabIndex = 4;
-            // 
-            // txtSede
-            // 
-            this.txtSede.Location = new System.Drawing.Point(450, 133);
-            this.txtSede.Name = "txtSede";
-            this.txtSede.Size = new System.Drawing.Size(163, 20);
-            this.txtSede.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(398, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 19);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "SEDE:";
             // 
             // tabControl1
             // 
@@ -206,31 +154,65 @@
             // 
             this.btnBuscarOC.Image = global::SCM.Properties.Resources.buscar;
             this.btnBuscarOC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarOC.Location = new System.Drawing.Point(79, 46);
+            this.btnBuscarOC.Location = new System.Drawing.Point(312, 26);
             this.btnBuscarOC.Name = "btnBuscarOC";
-            this.btnBuscarOC.Size = new System.Drawing.Size(108, 48);
+            this.btnBuscarOC.Size = new System.Drawing.Size(42, 48);
             this.btnBuscarOC.TabIndex = 0;
-            this.btnBuscarOC.Text = "BUSCAR";
             this.btnBuscarOC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarOC.UseVisualStyleBackColor = true;
             this.btnBuscarOC.Click += new System.EventHandler(this.btnBuscarOC_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(293, 28);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(305, 23);
+            this.lblTitulo.TabIndex = 11;
+            this.lblTitulo.Text = "Ingreso Inventario a Partir de Compra";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtOC);
+            this.groupBox1.Controls.Add(this.btnBuscarOC);
+            this.groupBox1.Location = new System.Drawing.Point(262, 71);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(390, 100);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ingreso de Inventario";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 19);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "CODIGO OC:";
+            // 
+            // txtOC
+            // 
+            this.txtOC.Location = new System.Drawing.Point(133, 40);
+            this.txtOC.Name = "txtOC";
+            this.txtOC.Size = new System.Drawing.Size(163, 20);
+            this.txtOC.TabIndex = 3;
             // 
             // ingresoInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 514);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngTotal);
             this.Controls.Add(this.btnIngParcial);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSede);
-            this.Controls.Add(this.txtEmpresa);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtOC);
-            this.Controls.Add(this.btnBuscarOC);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(936, 553);
             this.MinimumSize = new System.Drawing.Size(936, 553);
@@ -240,6 +222,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabProductos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdInventario)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,12 +232,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnBuscarOC;
-        private System.Windows.Forms.TextBox txtOC;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtEmpresa;
-        private System.Windows.Forms.TextBox txtSede;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabProductos;
         private System.Windows.Forms.TabPage tabPagos;
@@ -266,6 +244,10 @@
         private System.Windows.Forms.Button btnIngParcial;
         private System.Windows.Forms.Button btnIngTotal;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtOC;
     }
 }
 

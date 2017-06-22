@@ -16,5 +16,10 @@ namespace SCM
         {
             InitializeComponent();
         }
+
+        private void btnBuscarOC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

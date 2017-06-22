@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajustarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajustarExistencias.Designer.cs">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutorizacionOC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,12 @@
     </Compile>
     <Compile Include="autorizaPagoProveedores.Designer.cs">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodegas.Designer.cs">
+      <DependentUpon>Bodegas.cs</DependentUpon>
     </Compile>
     <Compile Include="buscarFacturasIngresadas.cs">
       <SubType>Form</SubType>
@@ -89,6 +101,24 @@
     </Compile>
     <Compile Include="buscarVehiculos.Designer.cs">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capturarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capturarExistencias.Designer.cs">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="congelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="congelarExistencias.Designer.cs">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="descongelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descongelarExistencias.Designer.cs">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
@@ -138,11 +168,29 @@
     <Compile Include="ingresoSolicitudTransporte.Designer.cs">
       <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="ingresoTrasladoEntreBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoTrasladoEntreBodegas.Designer.cs">
+      <DependentUpon>ingresoTrasladoEntreBodegas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingresoVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ingresoVehiculo.Designer.cs">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoBodegas.Designer.cs">
+      <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoProductos.Designer.cs">
+      <DependentUpon>mantenimientoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarLogin.cs">
       <SubType>Form</SubType>
@@ -162,13 +210,25 @@
     <Compile Include="mostrarSplash.Designer.cs">
       <DependentUpon>mostrarSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ajustarExistencias.resx">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutorizacionOC.resx">
       <DependentUpon>AutorizacionOC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="autorizaPagoProveedores.resx">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bodegas.resx">
+      <DependentUpon>Bodegas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="buscarFacturasIngresadas.resx">
       <DependentUpon>buscarFacturasIngresadas.cs</DependentUpon>
@@ -184,6 +244,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="buscarVehiculos.resx">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capturarExistencias.resx">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="congelarExistencias.resx">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descongelarExistencias.resx">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>
@@ -209,8 +278,17 @@
     <EmbeddedResource Include="ingresoSolicitudTransporte.resx">
       <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingresoTrasladoEntreBodegas.resx">
+      <DependentUpon>ingresoTrasladoEntreBodegas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ingresoVehiculo.resx">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoBodegas.resx">
+      <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoProductos.resx">
+      <DependentUpon>mantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarLogin.resx">
       <DependentUpon>mostrarLogin.cs</DependentUpon>
@@ -220,6 +298,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarSplash.resx">
       <DependentUpon>mostrarSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +348,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="iconos\manual usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\help.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

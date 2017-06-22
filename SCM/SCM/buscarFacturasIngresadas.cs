@@ -16,5 +16,10 @@ namespace SCM
         {
             InitializeComponent();
         }
+
+        private void txtOC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
