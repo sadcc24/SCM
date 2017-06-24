@@ -34,3 +34,6 @@ C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.aju
 C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.capturarExistencias.resources
 C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.congelarExistencias.resources
 C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.descongelarExistencias.resources
+C:\Users\JACC\Desktop\SCM\SCM\bin\Debug\SCM.exe.config
+C:\Users\JACC\Desktop\SCM\SCM\obj\Debug\SCM.exe
+C:\Users\JACC\Desktop\SCM\SCM\obj\Debug\SCM.pdb
