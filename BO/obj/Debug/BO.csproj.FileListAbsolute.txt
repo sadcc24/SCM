@@ -1,0 +1,10 @@
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\BO.dll
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\BO.pdb
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\DAL.dll
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\Entity.dll
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\MRP_BD.dll
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\DAL.pdb
+C:\Users\navi9\Desktop\SCM\BO\bin\Debug\Entity.pdb
+C:\Users\navi9\Desktop\SCM\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\navi9\Desktop\SCM\BO\obj\Debug\BO.dll
+C:\Users\navi9\Desktop\SCM\BO\obj\Debug\BO.pdb
