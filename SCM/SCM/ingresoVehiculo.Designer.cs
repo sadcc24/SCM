@@ -259,12 +259,13 @@
             this.btnOrdenServicio.Text = "Orden de Servicio";
             this.btnOrdenServicio.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOrdenServicio.UseVisualStyleBackColor = true;
+            this.btnOrdenServicio.Click += new System.EventHandler(this.btnOrdenServicio_Click);
             // 
             // ingresoVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 456);
+            this.ClientSize = new System.Drawing.Size(683, 456);
             this.Controls.Add(this.btnOrdenServicio);
             this.Controls.Add(this.lblModelo);
             this.Controls.Add(this.lblChasis);
@@ -289,8 +290,9 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.textBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ingresoVehiculo";
-            this.Text = "ingresoVehiculo";
+            this.Text = "Vehículos";
             this.ResumeLayout(false);
             this.PerformLayout();
 

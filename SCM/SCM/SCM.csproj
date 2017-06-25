@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SCM</RootNamespace>
     <AssemblyName>SCM</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -35,6 +36,9 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MRP_BD">
+      <HintPath>..\..\MRP_BD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajustarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajustarExistencias.Designer.cs">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutorizacionOC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +105,24 @@
     </Compile>
     <Compile Include="buscarVehiculos.Designer.cs">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="capturarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="capturarExistencias.Designer.cs">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="congelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="congelarExistencias.Designer.cs">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="descongelarExistencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="descongelarExistencias.Designer.cs">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
@@ -194,6 +222,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ajustarExistencias.resx">
+      <DependentUpon>ajustarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutorizacionOC.resx">
       <DependentUpon>AutorizacionOC.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +248,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="buscarVehiculos.resx">
       <DependentUpon>buscarVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="capturarExistencias.resx">
+      <DependentUpon>capturarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="congelarExistencias.resx">
+      <DependentUpon>congelarExistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="descongelarExistencias.resx">
+      <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>
@@ -312,6 +352,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="iconos\manual usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{fa3e32ed-ce9f-456e-9dd1-470d8e765b0f}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{6e6177a3-2f11-4bdb-914e-7f77206b3eb3}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\anterior.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -150,14 +150,6 @@ namespace SCM
             temp.Show();
         }
 
-        private void vehículosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ingresoVehiculo temp = new ingresoVehiculo();
-            //temp.WindowState = FormWindowState.Maximized;
-            temp.MdiParent = this;
-            temp.Show();
-        }
-
         private void transportesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             buscarSolicitudTransporte temp = new buscarSolicitudTransporte();
@@ -166,9 +158,150 @@ namespace SCM
             temp.Show();
         }
 
-        private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ingresoDeOrdenDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ingresoOrdenCompra temp = new ingresoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void autorizaciónDeOrdenDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AutorizacionOC temp = new AutorizacionOC();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movimientosAlInventarioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ingresoInventario temp = new ingresoInventario();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void ordenesDeCompraRealizadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoTrasladoEntreBodegas temp = new ingresoTrasladoEntreBodegas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void órdenesDeCompraPendientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoFacturaProveedor temp = new ingresoFacturaProveedor();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void facturasIngresadasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            generaDevolucionProveedor temp = new generaDevolucionProveedor();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void proveedoresYToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            generaContrasena temp = new generaContrasena();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void autorizaPagoAProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            autorizaPagoProveedores temp = new autorizaPagoProveedores();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void manteniminetoProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoProductos temp = new mantenimientoProductos();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoBodegasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoBodegas temp = new mantenimientoBodegas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void vehículosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            buscarVehiculos temp = new buscarVehiculos();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void solicitudDeTransportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            buscarSolicitudTransporte temp = new buscarSolicitudTransporte();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void serviciosAVehículosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ingresoOrdenServicio temp = new ingresoOrdenServicio();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void congelarExitenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            congelarExistencias temp = new congelarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void capturarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            capturarExistencias temp = new capturarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void ajustarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ajustarExistencias temp = new ajustarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void descongelarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            descongelarExistencias temp = new descongelarExistencias();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void aBCBodegasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bodegas temp = new Bodegas();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

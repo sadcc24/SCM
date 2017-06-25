@@ -1,0 +1,8 @@
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\bin\Debug\DAL.dll
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\bin\Debug\DAL.pdb
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\bin\Debug\Entity.dll
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\bin\Debug\MRP_BD.dll
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\bin\Debug\Entity.pdb
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\obj\Debug\DAL.dll
+C:\Users\Pamela\Documents\Visual Studio 2015\Projects\SCM\SCM\DAL\obj\Debug\DAL.pdb

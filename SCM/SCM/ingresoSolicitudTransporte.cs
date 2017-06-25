@@ -16,5 +16,11 @@ namespace SCM
         {
             InitializeComponent();
         }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            ingresoDetalleST idst = new ingresoDetalleST();
+            idst.Show();
+        }
     }
 }
