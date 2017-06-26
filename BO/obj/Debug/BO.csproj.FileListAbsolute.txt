@@ -1,0 +1,10 @@
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\BO.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\BO.pdb
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\Entity.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\MRP_BD.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\DAL.pdb
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\Entity.pdb
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.dll
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.pdb

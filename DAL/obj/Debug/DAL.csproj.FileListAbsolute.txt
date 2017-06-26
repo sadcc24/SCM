@@ -1,0 +1,8 @@
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\DAL.pdb
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\Entity.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\MRP_BD.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\Entity.pdb
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.pdb
