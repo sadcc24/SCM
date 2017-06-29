@@ -125,3 +125,4 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SC
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\obj\Debug\SCM.pdb
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\bin\Debug\dllSeguridadSAD.dll
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\bin\Debug\dllSeguridadSAD.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\obj\Debug\SCM.mostrarEmpresa.resources

@@ -306,5 +306,17 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void mostrarMenu_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+            //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

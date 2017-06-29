@@ -24,7 +24,7 @@ namespace SCM
         }
         public void incrementarBarra()
         {
-            pbrBarra.Increment(1);
+            pbrBarra.Increment(3);
             pbrBarra.ForeColor = Color.Crimson;            
             lblPorcentaje.Text = pbrBarra.Value.ToString() + "%";
             if (pbrBarra.Value == pbrBarra.Maximum)

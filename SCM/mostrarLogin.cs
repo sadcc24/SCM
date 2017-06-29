@@ -14,6 +14,7 @@ namespace SCM
     public partial class mostrarLogin : Form
     {
         Login Inicio = new Login();
+
         public mostrarLogin()
         {
             InitializeComponent();
@@ -22,19 +23,37 @@ namespace SCM
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            bool autenticado = false;
-            autenticado = Inicio.RegistrarSesión(txtUsuario.Text,txtPassword.Text);
-            if (autenticado == true)
+            bool autenticado = false;            
+            try
             {
-                frmEmpresa Empresa = new frmEmpresa();
-                Empresa.Show();
-                mostrarMenu Menu = new mostrarMenu();
-                Menu.Show();
+                if ((txtUsuario.Text != "") || (txtPassword.Text != ""))
+                    autenticado = Inicio.RegistrarSesión(txtUsuario.Text, txtPassword.Text);
+                else
+                {
+                    MessageBox.Show("Ingrese su usuario y/o contraseña", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.Show();
+                }
+                if (autenticado == true)
+                {
+                    MessageBox.Show("¡Bienvenido "+ txtUsuario.Text + "!", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    mostrarEmpresa temp = new mostrarEmpresa();
+                    this.Hide();
+                    temp.Show();
+                }
+                else
+                    this.Show();
             }
-            else
+            catch
             {
-                this.Refresh();
-            }
+                //en caso que la contraseña sea erronea mostrara un mensaje
+                //dentro de los parentesis va: "Mensaje a mostrar","Titulo de la ventana",botones a mostrar en ste caso OK, icono a mostrar en este caso uno de error
+                MessageBox.Show("Error! Su contraseña y/o usuario son invalidos", "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Show();
+            }            
         }
     }
 }

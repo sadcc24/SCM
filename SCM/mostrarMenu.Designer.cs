@@ -353,6 +353,7 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -435,10 +436,9 @@
             this.MainMenuStrip = this.mnsMenuPrincipal;
             this.MaximizeBox = false;
             this.Name = "mostrarMenu";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "SCM | Menú";
             this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.mostrarMenu_Load);
             this.mnsMenuPrincipal.ResumeLayout(false);
             this.mnsMenuPrincipal.PerformLayout();
             this.statusStrip.ResumeLayout(false);
