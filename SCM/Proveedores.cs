@@ -131,11 +131,19 @@ namespace SCM
         {
             proveedores_BO proveedor = new proveedores_BO();
             proveedores_Entity prov = new proveedores_Entity();
+            prov.id_proveedor = int.Parse(txtCodigo.Text);
             try
             {
                 
                 proveedor.deleteProveedores(prov);
-                
+                MessageBox.Show("Producto ha sido Borrado.");
+
+                mantenimientoProveedores prdu = new mantenimientoProveedores();
+                prdu.MdiParent = this.MdiParent;
+                //prdu.vConsultarProductosActivos();
+                this.Hide();
+                prdu.Show();
+
             }
             catch (Exception ex)
             {

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dllSeguridadSAD;
 
 namespace SCM
 {
     public partial class mostrarLogin : Form
     {
+        Login Inicio = new Login();
         public mostrarLogin()
         {
             InitializeComponent();
@@ -20,8 +22,19 @@ namespace SCM
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            mostrarMenu Menu = new mostrarMenu();
-            Menu.Show();
+            bool autenticado = false;
+            autenticado = Inicio.RegistrarSesión(txtUsuario.Text,txtPassword.Text);
+            if (autenticado == true)
+            {
+                frmEmpresa Empresa = new frmEmpresa();
+                Empresa.Show();
+                mostrarMenu Menu = new mostrarMenu();
+                Menu.Show();
+            }
+            else
+            {
+                this.Refresh();
+            }
         }
     }
 }

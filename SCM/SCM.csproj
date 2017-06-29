@@ -36,6 +36,10 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dllSeguridadSAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
+    </Reference>
     <Reference Include="MRP_BD">
       <HintPath>..\..\MRP_BD.dll</HintPath>
     </Reference>

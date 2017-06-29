@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dllSeguridadSAD;
 
 namespace SCM
 {
@@ -29,9 +30,10 @@ namespace SCM
             if (pbrBarra.Value == pbrBarra.Maximum)
             {
                 tmrReloj.Stop();
-                this.Hide();
+                this.Hide();                
+                
                 mostrarLogin temp = new mostrarLogin();
-                temp.Show();
+                temp.Show();              
             }
         }
 

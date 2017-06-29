@@ -10,8 +10,9 @@ namespace DAL
 {
    public  class clsBodegas_DAL
     {
-      //  MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PAMELAJSD/SAD2017");
-        MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        //  MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PAMELAJSD/SAD2017");
+        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        
         public void vInsertBodega(clsBodegas_Entity bodega) {                       
             cnn.insertSQL("INSERT INTO [dbo].[Bodega] (nombre_bodega,encargado,stock_minimo,stock_maximo,activo,idempresa) VALUES ('" 
                 + bodega.strNombreBodega+"','"+bodega.strNombreEncargado+ "',"+bodega.iStockMinimo + "," +bodega.iStockMaximo + ",1"  + ",1" +  ")");

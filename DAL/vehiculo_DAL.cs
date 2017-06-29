@@ -11,7 +11,7 @@ namespace DAL
 {
     public class Vehiculo_DAL
     {
-        MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
 
         public void insertaVehiculo(vehiculo_Entity vehc)
         {
@@ -20,6 +20,13 @@ namespace DAL
                 "(idempresa, idtipotrans, placa, modelo, chasis, linea, motor, color, marca)" +
                 "VALUES(1,1, '"+vehc._placa+"', '"+vehc._modelo+"', '"+vehc._chasis+"' " +
                 ", '"+vehc._linea+"', '"+vehc._motor+"', '"+vehc._color+"', '"+vehc._marca+"')");
+        }
+
+        public void actualizaVehiculo(vehiculo_Entity vehc)
+        {
+            cnn.updateSQL("UPDATE VEHICULO SET placa = '"+vehc._placa+"', modelo='"+vehc._modelo+"', " +
+                   "chasis = '"+vehc._chasis+"', linea = '"+vehc._linea+"' , motor = '"+vehc._motor+"', color  = '"+vehc._color+"', " +
+                   "marca = '"+vehc._marca+"' WHERE idtransporte = " +vehc._cod_vehiculo);
         }
 
         public DataTable verVehiculos()

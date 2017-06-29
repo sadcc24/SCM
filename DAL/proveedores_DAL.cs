@@ -10,7 +10,7 @@ namespace DAL
 {
    public class proveedores_DAL
     {
-        MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
 
         public void insertproveedor(proveedores_Entity prov)
         {
@@ -27,7 +27,7 @@ namespace DAL
         public DataTable verProveedores()
         {
             DataTable dt = new DataTable();
-            dt = cnn.getSQL("SELECT idproveedor as Codigo, nombre_proveedor as Nombre, direccion as Direccion, telefono as Telefono, nit as NIT FROM Proveedor");
+            dt = cnn.getSQL("SELECT idproveedor as Codigo, nombre_proveedor as Nombre, direccion as Direccion, telefono as Telefono, nit as NIT FROM Proveedor where activo=1");
             return dt;
         }
 
@@ -48,7 +48,7 @@ namespace DAL
         {
             try
             {
-                cnn.updateSQL("UPDATE Proveedor SET activo=false WHERE idproveedor='" + prov.id_proveedor + "'");
+                cnn.updateSQL("UPDATE Proveedor SET activo=0 WHERE idproveedor='" + prov.id_proveedor + "'");
             }
             catch (Exception ex)
             {

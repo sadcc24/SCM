@@ -34,6 +34,7 @@
             this.módulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoDeOrdenDeCompraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.autorizaciónDeOrdenDeCompraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.movimientosAlInventarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenesDeCompraRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,7 +74,6 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenimientoProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,13 @@
             this.autorizaciónDeOrdenDeCompraToolStripMenuItem1.Size = new System.Drawing.Size(255, 22);
             this.autorizaciónDeOrdenDeCompraToolStripMenuItem1.Text = "Autorización de Orden de Compra";
             this.autorizaciónDeOrdenDeCompraToolStripMenuItem1.Click += new System.EventHandler(this.autorizaciónDeOrdenDeCompraToolStripMenuItem1_Click);
+            // 
+            // mantenimientoProveedoresToolStripMenuItem
+            // 
+            this.mantenimientoProveedoresToolStripMenuItem.Name = "mantenimientoProveedoresToolStripMenuItem";
+            this.mantenimientoProveedoresToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
+            this.mantenimientoProveedoresToolStripMenuItem.Text = "Mantenimiento Proveedores";
+            this.mantenimientoProveedoresToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoProveedoresToolStripMenuItem_Click);
             // 
             // inventariosToolStripMenuItem1
             // 
@@ -183,7 +190,7 @@
             // 
             this.manteniminetoProdutosToolStripMenuItem.Name = "manteniminetoProdutosToolStripMenuItem";
             this.manteniminetoProdutosToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
-            this.manteniminetoProdutosToolStripMenuItem.Text = "Mantenimineto Produtos";
+            this.manteniminetoProdutosToolStripMenuItem.Text = "Mantenimineto Productos";
             this.manteniminetoProdutosToolStripMenuItem.Click += new System.EventHandler(this.manteniminetoProdutosToolStripMenuItem_Click);
             // 
             // mantenimientoBodegasToolStripMenuItem
@@ -411,13 +418,6 @@
             this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
             this.toolStripStatusLabel7.Size = new System.Drawing.Size(36, 17);
             this.toolStripStatusLabel7.Text = "fecha";
-            // 
-            // mantenimientoProveedoresToolStripMenuItem
-            // 
-            this.mantenimientoProveedoresToolStripMenuItem.Name = "mantenimientoProveedoresToolStripMenuItem";
-            this.mantenimientoProveedoresToolStripMenuItem.Size = new System.Drawing.Size(255, 22);
-            this.mantenimientoProveedoresToolStripMenuItem.Text = "Mantenimiento Proveedores";
-            this.mantenimientoProveedoresToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoProveedoresToolStripMenuItem_Click);
             // 
             // mostrarMenu
             // 

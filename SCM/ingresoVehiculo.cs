@@ -21,6 +21,7 @@ namespace SCM
             if (codigov != 0)
             {
                 buscarUno(codigov);
+                txtDisabled();
             }
         }
 
@@ -40,27 +41,80 @@ namespace SCM
             vhc._color = txtColor.Text.Trim();
             vhc._chasis = txtChasis.Text.Trim();
             vhc._placa = txtPlaca.Text.Trim();
-            new BO.Vehiculo_BO().insertarVhcBO(vhc);
-         
+
+            if (txtCodVehiculo.Text != "0")
+            {
+                vhc._cod_vehiculo = Convert.ToInt32(txtCodVehiculo.Text);
+                new BO.Vehiculo_BO().actualizaVehiculoBO(vhc);
+            }
+            else
+            {
+                new BO.Vehiculo_BO().insertarVhcBO(vhc);
+            }
         }
 
         #region Funciones y Metodos
         private void buscarUno(int codigo)
         {
             vehiculo_Entity eVehiculo = new Vehiculo_BO().verUno(codigo);
-            //txtCodVehiculo = Convert.ToString(eVehiculo._cod_vehiculo);
             txtMotor.Text = eVehiculo._motor;
             txtModelo.Text = eVehiculo._modelo;
             txtMarca.Text = eVehiculo._marca;
             txtLinea.Text = eVehiculo._linea;
             txtColor.Text = eVehiculo._color;
             txtChasis.Text = eVehiculo._chasis;
-            txtPlaca.Text = eVehiculo._placa;
-            
-            //txtID.Text = Convert.ToString(pCliente.Id);
-            
+            txtPlaca.Text = eVehiculo._placa;       
         }
-           
+
+        private void limpiar()
+        {
+            txtChasis.Clear();
+            txtCodVehiculo.Clear();
+            txtColor.Clear();
+            txtLinea.Clear();
+            txtMarca.Clear();
+            txtModelo.Clear();
+            txtMotor.Clear();
+            txtPlaca.Clear();
+            txtTipoVehiculo.Clear();
+        }
+
+        private void txtDisabled()
+        {
+            txtChasis.Enabled = false;
+            txtColor.Enabled = false;
+            txtLinea.Enabled = false;
+            txtMarca.Enabled = false;
+            txtModelo.Enabled = false;
+            txtMotor.Enabled = false;
+            txtPlaca.Enabled = false;
+            txtTipoVehiculo.Enabled = false;
+        }
+
+        private void txtEnabled()
+        {
+            txtChasis.Enabled = true;
+            txtColor.Enabled = true;
+            txtLinea.Enabled = true;
+            txtMarca.Enabled = true;
+            txtModelo.Enabled = true;
+            txtMotor.Enabled = true;
+            txtPlaca.Enabled = true;
+            txtTipoVehiculo.Enabled = true;
+
+        }
+        
+
         #endregion
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            txtEnabled();
+        }
     }
 }

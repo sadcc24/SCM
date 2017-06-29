@@ -10,7 +10,7 @@ namespace DAL
 {
     public class SolicitudTransporte_DAL
     {
-        MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
 
         #region Encabezado Solicitud de Transporte
         public void insertaEncabezadoST(SolicitudTransporte_Entity encabezado)
