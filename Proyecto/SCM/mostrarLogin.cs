@@ -25,7 +25,7 @@ namespace SCM
             try
             {
                 if ((txtUsuario.Text != "") || (txtPassword.Text != ""))
-                    autenticado = Globales.Usuario.RegistrarSesión(txtUsuario.Text, txtPassword.Text);
+                    autenticado = Globales.Usuario.RegistrarSesión(Globales.Conexion,txtUsuario.Text, txtPassword.Text);
                 else
                 {
                     MessageBox.Show("Ingrese su usuario y/o contraseña", "Seguridad SAD",

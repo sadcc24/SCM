@@ -12,6 +12,8 @@ namespace SCM
 
         public static Enterprise Empresa = new Enterprise();
         public static Login Usuario = new Login();
+        //Parámetros de Conexion {"SERVIDOR","BASEDEDATOS","USUARIO","PASSWORD"}
+        public static string[] Conexion = { "ZGHP", "SAD2017", "admin", "@umg2017" };
 
         public static void Inicializar()
         {
