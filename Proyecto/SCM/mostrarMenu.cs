@@ -312,11 +312,48 @@ namespace SCM
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            string[] empresa = Globales.Empresa.CapturarEmpresa();
+            this.tsStatusEmpresa.Text = empresa[1];
+            string[] usuario = Globales.Usuario.CapturarUsuario();
+            this.tsStatusUsuario.Text = usuario[1];
+            this.tsStatusFecha.Text = DateTime.Now.ToString("D");
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void cambiarEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult cambio;
+            this.Hide();
+            cambio = MessageBox.Show("¿Está seguro de cambiar de Empresa?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (cambio == DialogResult.Yes)
+            {
+                mostrarEmpresa temp = new mostrarEmpresa();   
+                temp.Show();
+            }
+            else
+            {                
+                this.Show();
+            }
+        }
+
+        private void cambioDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult cambio;
+            this.Hide();
+            cambio = MessageBox.Show("¿Está seguro de cambiar de Usuario?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (cambio == DialogResult.Yes)
+            {
+                mostrarLogin temp = new mostrarLogin();
+                temp.Show();
+            }
+            else
+            {
+                this.Show();
+            }
         }
     }
 }

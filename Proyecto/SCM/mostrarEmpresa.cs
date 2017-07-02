@@ -16,8 +16,6 @@ namespace SCM
     public partial class mostrarEmpresa : Form
     {        
         MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
-        Enterprise Empresa = new Enterprise();
-
         public mostrarEmpresa()
         {
             InitializeComponent();
@@ -25,7 +23,9 @@ namespace SCM
 
         public void ActualizarGridView()
         {
-            dgvEmpresa.DataSource = cnn.getSQL("Select  idempresa, nombre_empresa From empresa");
+            string[] usuario = Globales.Usuario.CapturarUsuario();
+            string regusuario = usuario[0];
+            dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + regusuario);
             int i;
             for (i= 0; i < dgvEmpresa.RowCount-1; i++)
             {
@@ -46,7 +46,7 @@ namespace SCM
             {
                 seleccionado = cmbEmpresa.SelectedIndex;
                 if ((cmbEmpresa.Text != "") && (cmbEmpresa.Text != "Seleccione"))
-                    autenticado = Empresa.RegistrarEmpresa(dgvEmpresa[0,seleccionado].Value.ToString(), dgvEmpresa[1, seleccionado].Value.ToString());
+                    autenticado = Globales.Empresa.RegistrarEmpresa(dgvEmpresa[0,seleccionado].Value.ToString(), dgvEmpresa[1, seleccionado].Value.ToString());
                 else
                 {
                     MessageBox.Show("Seleccione una empresa", "Seguridad SAD",

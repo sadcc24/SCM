@@ -38,7 +38,7 @@
   <ItemGroup>
     <Reference Include="dllSeguridadSAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
+      <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
     </Reference>
     <Reference Include="MRP_BD">
       <HintPath>..\..\MRP_BD.dll</HintPath>
@@ -140,6 +140,7 @@
     <Compile Include="generaDevolucionProveedor.Designer.cs">
       <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globales.cs" />
     <Compile Include="ingresoDetalleST.cs">
       <SubType>Form</SubType>
     </Compile>

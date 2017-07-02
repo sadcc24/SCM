@@ -18,3 +18,13 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SC
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.dll
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\MRP_BD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.pdb

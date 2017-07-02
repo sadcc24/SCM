@@ -66,13 +66,13 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsStatusEmpresa = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsStatusUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel7 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -294,12 +294,14 @@
             this.cambiarEmpresaToolStripMenuItem.Name = "cambiarEmpresaToolStripMenuItem";
             this.cambiarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.cambiarEmpresaToolStripMenuItem.Text = "Cambiar Empresa";
+            this.cambiarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.cambiarEmpresaToolStripMenuItem_Click);
             // 
             // cambioDeUsuarioToolStripMenuItem
             // 
             this.cambioDeUsuarioToolStripMenuItem.Name = "cambioDeUsuarioToolStripMenuItem";
             this.cambioDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.cambioDeUsuarioToolStripMenuItem.Text = "Cambio de Usuario";
+            this.cambioDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cambioDeUsuarioToolStripMenuItem_Click);
             // 
             // helpMenu
             // 
@@ -359,13 +361,13 @@
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
-            this.toolStripStatusLabel1,
+            this.tsStatusEmpresa,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3,
             this.toolStripStatusLabel4,
-            this.toolStripStatusLabel5,
+            this.tsStatusUsuario,
             this.toolStripStatusLabel6,
-            this.toolStripStatusLabel7});
+            this.tsStatusFecha});
             this.statusStrip.Location = new System.Drawing.Point(0, 704);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1354, 22);
@@ -378,11 +380,11 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(55, 17);
             this.toolStripStatusLabel.Text = "Empresa:";
             // 
-            // toolStripStatusLabel1
+            // tsStatusEmpresa
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(52, 17);
-            this.toolStripStatusLabel1.Text = "empresa";
+            this.tsStatusEmpresa.Name = "tsStatusEmpresa";
+            this.tsStatusEmpresa.Size = new System.Drawing.Size(52, 17);
+            this.tsStatusEmpresa.Text = "Empresa";
             // 
             // toolStripStatusLabel2
             // 
@@ -393,8 +395,8 @@
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(49, 17);
-            this.toolStripStatusLabel3.Text = "modulo";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(32, 17);
+            this.toolStripStatusLabel3.Text = "SCM";
             // 
             // toolStripStatusLabel4
             // 
@@ -402,11 +404,11 @@
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(50, 17);
             this.toolStripStatusLabel4.Text = "Usuario:";
             // 
-            // toolStripStatusLabel5
+            // tsStatusUsuario
             // 
-            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(46, 17);
-            this.toolStripStatusLabel5.Text = "usuario";
+            this.tsStatusUsuario.Name = "tsStatusUsuario";
+            this.tsStatusUsuario.Size = new System.Drawing.Size(47, 17);
+            this.tsStatusUsuario.Text = "Usuario";
             // 
             // toolStripStatusLabel6
             // 
@@ -414,11 +416,11 @@
             this.toolStripStatusLabel6.Size = new System.Drawing.Size(41, 17);
             this.toolStripStatusLabel6.Text = "Fecha:";
             // 
-            // toolStripStatusLabel7
+            // tsStatusFecha
             // 
-            this.toolStripStatusLabel7.Name = "toolStripStatusLabel7";
-            this.toolStripStatusLabel7.Size = new System.Drawing.Size(36, 17);
-            this.toolStripStatusLabel7.Text = "fecha";
+            this.tsStatusFecha.Name = "tsStatusFecha";
+            this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
+            this.tsStatusFecha.Text = "Fecha";
             // 
             // mostrarMenu
             // 
@@ -462,13 +464,13 @@
         private System.Windows.Forms.ToolTip toolTip;
         private System.Windows.Forms.ToolStripMenuItem módulosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsStatusEmpresa;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel tsStatusUsuario;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel6;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel7;
+        private System.Windows.Forms.ToolStripStatusLabel tsStatusFecha;
         private System.Windows.Forms.ToolStripMenuItem inventariosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem transportesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem auditoríaToolStripMenuItem1;

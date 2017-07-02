@@ -13,8 +13,6 @@ namespace SCM
 {
     public partial class mostrarLogin : Form
     {
-        Login Inicio = new Login();
-
         public mostrarLogin()
         {
             InitializeComponent();
@@ -27,7 +25,7 @@ namespace SCM
             try
             {
                 if ((txtUsuario.Text != "") || (txtPassword.Text != ""))
-                    autenticado = Inicio.RegistrarSesión(txtUsuario.Text, txtPassword.Text);
+                    autenticado = Globales.Usuario.RegistrarSesión(txtUsuario.Text, txtPassword.Text);
                 else
                 {
                     MessageBox.Show("Ingrese su usuario y/o contraseña", "Seguridad SAD",
