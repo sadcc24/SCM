@@ -1,2 +1,0 @@
-c:\users\navi9\documents\visual studio 2015\Projects\Transportes\Transportes\bin\Debug\Transportes.exe.config
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\Transportes\Transportes\bin\Debug\Transportes.exe.config

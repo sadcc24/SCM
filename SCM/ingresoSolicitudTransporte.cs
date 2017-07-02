@@ -43,5 +43,10 @@ namespace SCM
             st.Notas = txtNotas.Text.Trim();
             new BO.SolicitudTransporte_BOL().binsertaEncabezadoST(st);
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

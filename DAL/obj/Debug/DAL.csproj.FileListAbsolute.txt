@@ -6,3 +6,11 @@ C:\Users\navi9\Desktop\SCM\DAL\bin\Debug\Entity.pdb
 C:\Users\navi9\Desktop\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\navi9\Desktop\SCM\DAL\obj\Debug\DAL.dll
 C:\Users\navi9\Desktop\SCM\DAL\obj\Debug\DAL.pdb
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\bin\Debug\DAL.dll
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\bin\Debug\DAL.pdb
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\bin\Debug\Entity.dll
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\bin\Debug\MRP_BD.dll
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\bin\Debug\Entity.pdb
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\obj\Debug\DAL.dll
+C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\DAL\obj\Debug\DAL.pdb

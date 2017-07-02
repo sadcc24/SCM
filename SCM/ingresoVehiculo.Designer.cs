@@ -80,6 +80,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(50, 50);
             this.btnNuevo.TabIndex = 2;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEditar
             // 
@@ -91,6 +92,7 @@
             this.btnEditar.TabIndex = 3;
             this.btnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnActualizar
             // 
@@ -335,6 +337,7 @@
             // 
             // txtCodVehiculo
             // 
+            this.txtCodVehiculo.Enabled = false;
             this.txtCodVehiculo.Location = new System.Drawing.Point(373, 27);
             this.txtCodVehiculo.Name = "txtCodVehiculo";
             this.txtCodVehiculo.Size = new System.Drawing.Size(94, 20);

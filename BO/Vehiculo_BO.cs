@@ -17,6 +17,12 @@ namespace BO
             vhcInsert.insertaVehiculo(vhc);
         }
 
+        public void actualizaVehiculoBO(vehiculo_Entity vhc)
+        {
+            Vehiculo_DAL actualiza = new Vehiculo_DAL();
+            actualiza.actualizaVehiculo(vhc);
+        }
+
         public DataTable verTodosVehiculos()
         {
             DataTable dt = new DataTable();

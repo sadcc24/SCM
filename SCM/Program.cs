@@ -16,8 +16,8 @@ namespace SCM
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-              Application.Run(new mostarSplash());
-           // Application.Run(new buscarSolicitudTransporte());
+            Application.Run(new mostarSplash());
+          // Application.Run(new buscarVehiculos());
         }
     }
 }

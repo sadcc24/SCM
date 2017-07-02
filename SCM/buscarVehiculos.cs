@@ -68,12 +68,14 @@ namespace SCM
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-
+            ingresoVehiculo vehiculo = new ingresoVehiculo(0);
+            vehiculo.MdiParent = this.MdiParent;
+            vehiculo.Show();
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-
+            ActualizarForm();
         }
     }
 }

@@ -22,6 +22,13 @@ namespace DAL
                 ", '"+vehc._linea+"', '"+vehc._motor+"', '"+vehc._color+"', '"+vehc._marca+"')");
         }
 
+        public void actualizaVehiculo(vehiculo_Entity vehc)
+        {
+            cnn.updateSQL("UPDATE VEHICULO SET placa = '"+vehc._placa+"', modelo='"+vehc._modelo+"', " +
+                   "chasis = '"+vehc._chasis+"', linea = '"+vehc._linea+"' , motor = '"+vehc._motor+"', color  = '"+vehc._color+"', " +
+                   "marca = '"+vehc._marca+"' WHERE idtransporte = " +vehc._cod_vehiculo);
+        }
+
         public DataTable verVehiculos()
         {
             DataTable dtRegistros = new DataTable();

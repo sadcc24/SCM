@@ -21,6 +21,9 @@ namespace SCM
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            ingresoSolicitudTransporte vehiculo = new ingresoSolicitudTransporte(0);
+            vehiculo.MdiParent = this.MdiParent;
+            vehiculo.Show();
 
         }
 
