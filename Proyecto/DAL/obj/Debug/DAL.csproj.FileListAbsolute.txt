@@ -1,0 +1,22 @@
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\DAL.pdb
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\Entity.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\MRP_BD.dll
+C:\Users\JACC\Desktop\SCM\DAL\bin\Debug\Entity.pdb
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\DAL\obj\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.pdb
