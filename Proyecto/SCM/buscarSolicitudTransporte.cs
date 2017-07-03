@@ -27,7 +27,7 @@ namespace SCM
 
         }
 
-        #region Funnciones y metodos
+        #region Funciones y metodos
         private void ActualizarForm()
         {
             try
@@ -40,6 +40,8 @@ namespace SCM
                 MessageBox.Show(Ex.Message);
             }
         }
+
+
         #endregion
 
         private void buscarSolicitudTransporte_Load(object sender, EventArgs e)
@@ -62,11 +64,39 @@ namespace SCM
             }
 
             DataGridViewRow row = dgvSolicitud.Rows[e.RowIndex];
-            decimal valor = (decimal)row.Cells[0].Value;
-            int codigo = Convert.ToInt32(valor);
-            ingresoSolicitudTransporte ST = new ingresoSolicitudTransporte(codigo);
+            int valor = (int)row.Cells[0].Value;
+            //int codigo = Convert.ToInt32(valor);
+            ingresoSolicitudTransporte ST = new ingresoSolicitudTransporte(valor);
             ST.MdiParent = this.MdiParent;
             ST.Show();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SolicitudTransporte_Entity st = new SolicitudTransporte_Entity();
+                st.idSolicitud = Convert.ToInt32(txtSolicit.Text.Trim());
+                dgvSolicitud.DataSource = new SolicitudTransporte_BOL().verST_Single(st);
+                dgvSolicitud.Refresh();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ActualizarForm();
+        }
+
+        private void txtSolicit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }   
         }
     }
 }

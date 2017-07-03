@@ -75,6 +75,7 @@ namespace SCM
                                     bod.strNombreEncargado = txtEncargado.Text;
                                     bod.iStockMinimo = txtSMin.Text;
                                     bod.iStockMaximo = txtSMax.Text;
+                                    bod.iIdEmpresa = "1";
                                     bodega.vInsertarBodega(bod);
                                     MessageBox.Show("Bodega ha sido guardada.");
                                     mantenimientoBodegas prdu = new mantenimientoBodegas();
@@ -215,16 +216,23 @@ namespace SCM
             }
             else
             {
-                clsBodegas_Entity bod = new clsBodegas_Entity();
-                clsBodegas_BO bodega = new clsBodegas_BO();
-                bod.iIdBodega = txtID.Text;
-               
-                bodega.vEliminarBodega(bod);
-                MessageBox.Show("Bodega ha sido Eliminada.");
-                mantenimientoBodegas prdu = new mantenimientoBodegas();
-                prdu.MdiParent = this.MdiParent;
-                this.Hide();
-                prdu.Show();
+                if (MessageBox.Show("Estas seguro que desas eliminar", "AVISO", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    clsBodegas_Entity bod = new clsBodegas_Entity();
+                    clsBodegas_BO bodega = new clsBodegas_BO();
+                    bod.iIdBodega = txtID.Text;
+
+                    bodega.vEliminarBodega(bod);
+                    MessageBox.Show("Bodega ha sido Eliminada.");
+                    mantenimientoBodegas prdu = new mantenimientoBodegas();
+                    prdu.MdiParent = this.MdiParent;
+                    this.Hide();
+                    prdu.Show();  
+                }
+                
+                
+                
+                
             }
             }
     }

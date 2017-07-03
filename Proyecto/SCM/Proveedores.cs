@@ -58,6 +58,7 @@ namespace SCM
                 {
                     prov.nit = txtNit.Text;
                 }
+                prov.id_sede = int.Parse(cboSede.SelectedValue.ToString());
                 prov.activo = true;
                 proveedor.insertProveedor(prov);
                 txtNombre.Text = "";
@@ -157,6 +158,15 @@ namespace SCM
             txtDireccion.Text = "";
             txtTelefono.Text = "";
             txtNit.Text = "";
+        }
+
+        private void Proveedores_Load(object sender, EventArgs e)
+        {
+            proveedores_BO oc = new proveedores_BO();
+            DataTable dtSede = oc.verSedes();
+            cboSede.DataSource = dtSede;
+            cboSede.DisplayMember = "nombre_sede";
+            cboSede.ValueMember = "idsede";
         }
     }
 }

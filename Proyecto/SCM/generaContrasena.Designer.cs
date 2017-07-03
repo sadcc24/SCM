@@ -31,16 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(generaContrasena));
             this.grdFactura = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.chkSeleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Correlativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sede = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Empresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbProveedor = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnBuscarOC = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -48,9 +41,10 @@
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.cmbProveedor = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnBuscarOC = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbBodega = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdFactura)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,15 +54,7 @@
             this.grdFactura.AllowUserToAddRows = false;
             this.grdFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdFactura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.chkSeleccionar,
-            this.Correlativo,
-            this.Serie,
-            this.Fecha,
-            this.OC,
-            this.Sede,
-            this.Empresa,
-            this.Proveedor,
-            this.Estado});
+            this.Seleccionar});
             this.grdFactura.Location = new System.Drawing.Point(5, 159);
             this.grdFactura.Name = "grdFactura";
             this.grdFactura.Size = new System.Drawing.Size(921, 248);
@@ -76,6 +62,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbBodega);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cmbProveedor);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btnBuscarOC);
@@ -93,62 +81,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Genera Contraseña";
             // 
-            // lblTitulo
+            // cmbProveedor
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(330, 9);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(280, 23);
-            this.lblTitulo.TabIndex = 15;
-            this.lblTitulo.Text = "Genera Contraseña a Proveedores";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cmbProveedor.FormattingEnabled = true;
+            this.cmbProveedor.Location = new System.Drawing.Point(618, 44);
+            this.cmbProveedor.Name = "cmbProveedor";
+            this.cmbProveedor.Size = new System.Drawing.Size(161, 21);
+            this.cmbProveedor.TabIndex = 30;
             // 
-            // chkSeleccionar
+            // label3
             // 
-            this.chkSeleccionar.HeaderText = "Seleccionar";
-            this.chkSeleccionar.Name = "chkSeleccionar";
-            this.chkSeleccionar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(516, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 19);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "PROVEEDOR:";
             // 
-            // Correlativo
+            // btnBuscarOC
             // 
-            this.Correlativo.HeaderText = "Correlativo";
-            this.Correlativo.Name = "Correlativo";
-            // 
-            // Serie
-            // 
-            this.Serie.HeaderText = "Serie";
-            this.Serie.Name = "Serie";
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // OC
-            // 
-            this.OC.HeaderText = "OC";
-            this.OC.Name = "OC";
-            // 
-            // Sede
-            // 
-            this.Sede.HeaderText = "Sede";
-            this.Sede.Name = "Sede";
-            // 
-            // Empresa
-            // 
-            this.Empresa.HeaderText = "Empresa";
-            this.Empresa.Name = "Empresa";
-            // 
-            // Proveedor
-            // 
-            this.Proveedor.HeaderText = "Proveedor";
-            this.Proveedor.Name = "Proveedor";
-            // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
+            this.btnBuscarOC.Image = global::SCM.Properties.Resources.buscar;
+            this.btnBuscarOC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarOC.Location = new System.Drawing.Point(785, 47);
+            this.btnBuscarOC.Name = "btnBuscarOC";
+            this.btnBuscarOC.Size = new System.Drawing.Size(43, 48);
+            this.btnBuscarOC.TabIndex = 28;
+            this.btnBuscarOC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscarOC.UseVisualStyleBackColor = true;
+            this.btnBuscarOC.Click += new System.EventHandler(this.btnBuscarOC_Click);
             // 
             // btnAyuda
             // 
@@ -212,35 +173,41 @@
             this.btnNuevo.Size = new System.Drawing.Size(50, 50);
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // cmbProveedor
+            // lblTitulo
             // 
-            this.cmbProveedor.FormattingEnabled = true;
-            this.cmbProveedor.Location = new System.Drawing.Point(618, 44);
-            this.cmbProveedor.Name = "cmbProveedor";
-            this.cmbProveedor.Size = new System.Drawing.Size(161, 21);
-            this.cmbProveedor.TabIndex = 30;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(330, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(280, 23);
+            this.lblTitulo.TabIndex = 15;
+            this.lblTitulo.Text = "Genera Contraseña a Proveedores";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // Seleccionar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(516, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 19);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "PROVEEDOR:";
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
             // 
-            // btnBuscarOC
+            // label1
             // 
-            this.btnBuscarOC.Image = global::SCM.Properties.Resources.buscar;
-            this.btnBuscarOC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarOC.Location = new System.Drawing.Point(785, 32);
-            this.btnBuscarOC.Name = "btnBuscarOC";
-            this.btnBuscarOC.Size = new System.Drawing.Size(43, 48);
-            this.btnBuscarOC.TabIndex = 28;
-            this.btnBuscarOC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscarOC.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(516, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 19);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "BODEGA:";
+            // 
+            // cmbBodega
+            // 
+            this.cmbBodega.FormattingEnabled = true;
+            this.cmbBodega.Location = new System.Drawing.Point(618, 82);
+            this.cmbBodega.Name = "cmbBodega";
+            this.cmbBodega.Size = new System.Drawing.Size(161, 21);
+            this.cmbBodega.TabIndex = 32;
             // 
             // generaContrasena
             // 
@@ -256,6 +223,7 @@
             this.Name = "generaContrasena";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Genera Contraseña";
+            this.Load += new System.EventHandler(this.generaContrasena_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdFactura)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -267,15 +235,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView grdFactura;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn chkSeleccionar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Correlativo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Serie;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sede;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Empresa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.ComboBox cmbProveedor;
@@ -288,5 +247,8 @@
         private System.Windows.Forms.Button btnPrimero;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
+        private System.Windows.Forms.ComboBox cmbBodega;
+        private System.Windows.Forms.Label label1;
     }
 }

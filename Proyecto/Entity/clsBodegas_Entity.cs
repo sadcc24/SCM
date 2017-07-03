@@ -8,12 +8,19 @@ namespace Entity
 {
   public  class clsBodegas_Entity
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
+
+
         private string _strNombreBodega;
         private string _strNombreEncargado;
         private string _iStockMinimo;
         private string _iStockMaximo;
         private string _iIdBodega;
         private string _bEstadoBodega;
+        private string _iIdEmpresa;
 
         public string strNombreBodega {
             get { return _strNombreBodega; }
@@ -42,6 +49,12 @@ namespace Entity
         {
             get { return _iIdBodega; }
             set { _iIdBodega = value; }
+        }
+
+        public string iIdEmpresa
+        {
+            get { return _iIdEmpresa; }
+            set { _iIdEmpresa = value; }
         }
 
         public string bEstadoBodega

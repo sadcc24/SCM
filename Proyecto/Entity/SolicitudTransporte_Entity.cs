@@ -21,6 +21,7 @@ namespace Entity
         public int idEmpresa { get; set; }
         public int idEmpleado { get; set; }
         public int idUsuario { get; set; }
+        public string NombreEstado { get; set; }
         #endregion
 
         public SolicitudTransporte_Entity()
@@ -31,7 +32,7 @@ namespace Entity
         public SolicitudTransporte_Entity(int pidSoliciutd, string pNotas, 
             string pFechaSolicitud, string pFechaSalida, string pFechaRegreso, 
             decimal pCostoEstimado, int pidTipoSolicitud, int pidEstado, int pidTipoCarga, 
-            int pidEmpresa, int pidEmpleado, int pidUsuario)
+            int pidEmpresa, int pidEmpleado, int pidUsuario, string pNombreEstado)
         {
             this.idSolicitud = pidSoliciutd;
             this.Notas = pNotas;
@@ -45,6 +46,7 @@ namespace Entity
             this.idEmpresa = pidEmpresa;
             this.idEmpleado = pidEmpleado;
             this.idUsuario = pidUsuario;
+            this.NombreEstado = pNombreEstado;
         }
     }
 }

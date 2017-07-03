@@ -10,12 +10,23 @@ namespace BO
 {
  public class clsProductos_BO
     {
+        // Programador : Pamela Jacqueline Selman David
+     // Analista : Pamela Jacqueline Selman David
+     // Comentarios :
         public DataTable vdtComboBodega()
         {
             DataTable dtbodegas;
             clsProductos_DAL bodegaconsult = new clsProductos_DAL();
             dtbodegas = bodegaconsult.dtComboBodega();
             return dtbodegas;
+        }
+
+        public DataTable vdtComboUnidad(clsProductos_Entity producto)
+        {
+            DataTable dtunidades;
+            clsProductos_DAL bodegaconsult = new clsProductos_DAL();
+            dtunidades = bodegaconsult.dtComboUnidadMedida(producto);
+            return dtunidades;
         }
 
 

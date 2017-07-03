@@ -23,11 +23,11 @@ namespace BO
             actualiza.actualizaVehiculo(vhc);
         }
 
-        public DataTable verTodosVehiculos()
+        public DataTable verTodosVehiculos(vehiculo_Entity vh)
         {
             DataTable dt = new DataTable();
             Vehiculo_DAL vhc = new Vehiculo_DAL();
-            dt = vhc.verVehiculos();
+            dt = vhc.verVehiculos(vh);
             return dt;
         }
 
@@ -38,5 +38,16 @@ namespace BO
             vehiculo._cod_vehiculo = codigo;
             return vhc.verVehiculo(vehiculo);
         }
+
+        #region Funciones y Metodos
+        public DataTable verTipoVH()
+        {
+            DataTable dt = new DataTable();
+            Vehiculo_DAL vh = new Vehiculo_DAL();
+            dt = vh.verTipoVehiculo();
+            //SolicitudTransporte_DAL tipo = new SolicitudTransporte_DAL();
+            return dt;
+        }
+        #endregion
     }
 }

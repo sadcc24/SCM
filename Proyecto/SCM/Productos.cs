@@ -33,9 +33,9 @@ namespace SCM
         {
 
             clsProductos_BO bodega = new clsProductos_BO();
-            cmbBodega.DataSource = bodega.vdtComboBodega();
-            cmbBodega.ValueMember = "ID";
-            cmbBodega.DisplayMember = "Descripcion";
+            //cmbBodega.DataSource = bodega.vdtComboBodega();
+            //cmbBodega.ValueMember = "ID";
+            //cmbBodega.DisplayMember = "Descripcion";
 
             cmbProveedor.DataSource = bodega.vdtComboProveedor();
             cmbProveedor.ValueMember = "ID";
@@ -59,11 +59,21 @@ namespace SCM
             cmbLinea.ValueMember = "ID";
             cmbLinea.DisplayMember = "Descripcion";
 
-            cmbEstado.DataSource = bodega.vdtComboEstado();
-            cmbEstado.ValueMember = "ID";
-            cmbEstado.DisplayMember = "Descripcion";
+
+            clsProductos_Entity prod = new clsProductos_Entity();
+            prod.strtipou = "1";
+            cmbUnidadTamano.DataSource = bodega.vdtComboUnidad(prod);
+            cmbUnidadTamano.ValueMember = "ID";
+            cmbUnidadTamano.DisplayMember = "Descripcion";
+
+            prod.strtipou = "2";
+            cmbUnidadPeso.DataSource = bodega.vdtComboUnidad(prod);
+            cmbUnidadPeso.ValueMember = "ID";
+            cmbUnidadPeso.DisplayMember = "Descripcion";
+
+
         }
-        string strproducto, strcantidad, strbodega, strproveedor, strtipoprod, strmarca, strmetodocosteo, strlinea, strestado, strtamano, strpeso;
+        
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -74,7 +84,7 @@ namespace SCM
             }
             else
             {
-          
+
                 try
                 {
                     clsProductos_Entity pro = new clsProductos_Entity();
@@ -97,7 +107,7 @@ namespace SCM
 
             }
         }
-
+        string strproducto, strproveedor, strtipoprod, strmarca, strmetodocosteo, strlinea, strstockmin, strstockmax, strtamano, strpeso, strutamano, strupeso;
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtProducto.Text))
@@ -105,75 +115,84 @@ namespace SCM
                 MessageBox.Show("Debe agregar el nombre del PRODUCTO.");
                 return;
             }
-            else {
-                if (string.IsNullOrEmpty(txtCantidad.Text))
+            else
+            {
+                if (string.IsNullOrEmpty(txtsmin.Text))
                 {
-                    MessageBox.Show("Debe agregar el la cantidad del PRODUCTO.");
+                    MessageBox.Show("Debe agregar el stock mínimo del PRODUCTO.");
                     return;
                 }
-                else{
-                    if (string.IsNullOrEmpty(txttamano.Text))
+                else
+                {
+                    if (string.IsNullOrEmpty(txtsmax.Text))
                     {
-                        MessageBox.Show("Debe agregar el el tamaño del PRODUCTO.");
+                        MessageBox.Show("Debe agregar el stock máximo del PRODUCTO.");
                         return;
                     }
                     else{
-                        if (string.IsNullOrEmpty(txtPeso.Text))
+                        if (string.IsNullOrEmpty(txttam.Text))
                         {
-                            MessageBox.Show("Debe agregar el el peso del PRODUCTO.");
+                            MessageBox.Show("Debe agregar el el tamaño del PRODUCTO.");
                             return;
                         }
-                        else{
-                        //    string strproducto, strcantidad, strbodega, strproveedor, strtipoprod, strmarca, strmetodocosteo, strlinea, strestado, strtamano, strpeso;
-                            strproducto = txtProducto.Text;
-                            strcantidad = txtCantidad.Text;
-                            strbodega = cmbBodega.SelectedValue.ToString();
-                            strproveedor = cmbProveedor.SelectedValue.ToString();
-                            strtipoprod = cmbTipProd.SelectedValue.ToString();
-                            strmarca = cmbMarca.SelectedValue.ToString();
-                            strmetodocosteo = cmbmetodo.SelectedValue.ToString();
-                            strlinea = cmbLinea.SelectedValue.ToString();
-                            strestado = cmbEstado.SelectedValue.ToString();
-                            strtamano = txttamano.Text;
-                            strpeso = txtPeso.Text;
-
-                            // MessageBox.Show(" P) "+strproducto + " CAN) " + strcantidad + " BOD) " + strbodega + " PR) " + strproveedor + " TP) " + strtipoprod + " M) " + strmarca + " MC) " + strmetodocosteo + " L) " + strlinea + " ES) " + strestado + " TP) " + strtamano + " PP) " + strpeso);
-
-                          
-
-
-                            try
+                        else
+                        {
+                            if (string.IsNullOrEmpty(txtpeso.Text))
                             {
-                                clsProductos_Entity pro = new clsProductos_Entity();
-                                clsProductos_BO producto = new clsProductos_BO();
-                                pro.strProducto = strproducto;
-                                pro.strCantidad = strcantidad;
-                                pro.strBodega = strbodega;
-                                pro.strProveedor = strproveedor;
-                                pro.strTipoProducto = strtipoprod;
-                                pro.strMarca = strmarca;
-                                pro.strMetodoCosteo = strmetodocosteo;
-                                pro.strLinea = strlinea;
-                                pro.strEstado = strestado;
-                                pro.strTamano = strtamano;
-                                pro.strPeso = strpeso;
-
-
-                                producto.vInsertarProducto(pro);
-                                MessageBox.Show("Producto ha sido Guardado.");
-
-                                mantenimientoProductos prdu = new mantenimientoProductos();
-                                prdu.MdiParent = this.MdiParent;
-                                //prdu.vConsultarProductosActivos();
-                                this.Hide();
-                                prdu.Show();
+                                MessageBox.Show("Debe agregar el el peso del PRODUCTO.");
+                                return;
                             }
-
-                            catch (Exception ex)
+                            else
                             {
-                                MessageBox.Show(ex.Message);
-                            }
+                                
+                                strproducto = txtProducto.Text;
+                                strproveedor = cmbProveedor.SelectedValue.ToString();
+                                strtipoprod = cmbTipProd.SelectedValue.ToString();
+                                strmarca = cmbMarca.SelectedValue.ToString();
+                                strmetodocosteo = cmbmetodo.SelectedValue.ToString();
+                                strlinea = cmbLinea.SelectedValue.ToString();
+                                strstockmin = txtsmin.Text;
+                                strstockmax = txtsmax.Text;
+                                strtamano = txttam.Text;
+                                strpeso = txtpeso.Text;
+                                strutamano = cmbUnidadTamano.SelectedValue.ToString();
+                                strupeso = cmbUnidadPeso.SelectedValue.ToString();
 
+                           try
+                                {
+                                    clsProductos_Entity pro = new clsProductos_Entity();
+                                    clsProductos_BO producto = new clsProductos_BO();
+                                    pro.strProducto = strproducto;                                                                  
+                                    pro.strProveedor = strproveedor;
+                                    pro.strTipoProducto = strtipoprod;
+                                    pro.strMarca = strmarca;
+                                    pro.strMetodoCosteo = strmetodocosteo;
+                                    pro.strLinea = strlinea;
+                                    pro.strsmin  = strstockmin;
+                                    pro.strsmax = strstockmax;
+                                    pro.strTamano = strtamano;
+                                    pro.strPeso = strpeso;
+                                    pro.struTamano = strutamano;
+                                    pro.struPeso = strupeso;
+                                    pro.strIdEmpresa = "1";
+
+
+                                    producto.vInsertarProducto(pro);
+                                    MessageBox.Show("Producto ha sido Guardado.");
+
+                                    mantenimientoProductos prdu = new mantenimientoProductos();
+                                    prdu.MdiParent = this.MdiParent;
+                                    //prdu.vConsultarProductosActivos();
+                                    this.Hide();
+                                    prdu.Show();
+                                }
+
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show(ex.Message);
+                                }
+
+                            }
                         }
                     }
 
@@ -189,40 +208,43 @@ namespace SCM
                 MessageBox.Show("Debe agregar el ID del PRODUCTO.");
                 return;
             }
-            else {
+            else
+            {
 
                 strproducto = txtProducto.Text;
-                strcantidad = txtCantidad.Text;
-                strbodega = cmbBodega.SelectedValue.ToString();
                 strproveedor = cmbProveedor.SelectedValue.ToString();
                 strtipoprod = cmbTipProd.SelectedValue.ToString();
                 strmarca = cmbMarca.SelectedValue.ToString();
                 strmetodocosteo = cmbmetodo.SelectedValue.ToString();
                 strlinea = cmbLinea.SelectedValue.ToString();
-                strestado = cmbEstado.SelectedValue.ToString();
-                strtamano = txttamano.Text;
-                strpeso = txtPeso.Text;
+                strstockmin = txtsmin.Text;
+                strstockmax = txtsmax.Text;
+                strtamano = txttam.Text;
+                strpeso = txtpeso.Text;
+                strutamano = cmbUnidadTamano.SelectedValue.ToString();
+                strupeso = cmbUnidadPeso.SelectedValue.ToString();
+
                 try
                 {
                     clsProductos_Entity pro = new clsProductos_Entity();
                     clsProductos_BO producto = new clsProductos_BO();
                     pro.strProducto = strproducto;
-                    pro.strCantidad = strcantidad;
-                    pro.strBodega = strbodega;
                     pro.strProveedor = strproveedor;
                     pro.strTipoProducto = strtipoprod;
                     pro.strMarca = strmarca;
                     pro.strMetodoCosteo = strmetodocosteo;
                     pro.strLinea = strlinea;
-                    pro.strEstado = strestado;
+                    pro.strsmin = strstockmin;
+                    pro.strsmax = strstockmax;
                     pro.strTamano = strtamano;
                     pro.strPeso = strpeso;
+                    pro.struTamano = strutamano;
+                    pro.struPeso = strupeso;
                     pro.strIdProd = txtID.Text;
-                  //   MessageBox.Show("ID)"+txtID.Text.ToString()+" P) "+strproducto + " CAN) " + strcantidad + " BOD) " + strbodega + " PR) " + strproveedor + " TP) " + strtipoprod + " M) " + strmarca + " MC) " + strmetodocosteo + " L) " + strlinea + " ES) " + strestado + " TP) " + strtamano + " PP) " + strpeso);
 
 
                     producto.vModificarProducto(pro);
-                    MessageBox.Show("Producto ha sido Modificado.");
+                    MessageBox.Show("Producto ha sido Actualizado.");
 
                     mantenimientoProductos prdu = new mantenimientoProductos();
                     prdu.MdiParent = this.MdiParent;

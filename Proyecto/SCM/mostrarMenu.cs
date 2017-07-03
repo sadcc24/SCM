@@ -355,5 +355,37 @@ namespace SCM
                 this.Show();
             }
         }
+
+        private void mantenimientoUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoUsuarios temp = new mantenimientoUsuarios();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientosLíneasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoLineas temp = new mantenimientoLineas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoTipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoMovimientoInventario temp = new mantenimientoTipoMovimientoInventario();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoMarca temp = new mantenimientoMarca();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

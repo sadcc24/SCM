@@ -48,12 +48,16 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.cboSede = new System.Windows.Forms.ComboBox();
+            this.lblBodega = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.grupoFiltrar.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cboSede);
+            this.groupBox1.Controls.Add(this.lblBodega);
             this.groupBox1.Controls.Add(this.txtNit);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtTelefono);
@@ -239,6 +243,23 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // cboSede
+            // 
+            this.cboSede.FormattingEnabled = true;
+            this.cboSede.Location = new System.Drawing.Point(153, 212);
+            this.cboSede.Name = "cboSede";
+            this.cboSede.Size = new System.Drawing.Size(201, 21);
+            this.cboSede.TabIndex = 26;
+            // 
+            // lblBodega
+            // 
+            this.lblBodega.AutoSize = true;
+            this.lblBodega.Location = new System.Drawing.Point(21, 215);
+            this.lblBodega.Name = "lblBodega";
+            this.lblBodega.Size = new System.Drawing.Size(35, 13);
+            this.lblBodega.TabIndex = 25;
+            this.lblBodega.Text = "Sede:";
+            // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,6 +269,7 @@
             this.Controls.Add(this.grupoFiltrar);
             this.Name = "Proveedores";
             this.Text = "Proveedores";
+            this.Load += new System.EventHandler(this.Proveedores_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.grupoFiltrar.ResumeLayout(false);
@@ -277,5 +299,7 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.ComboBox cboSede;
+        private System.Windows.Forms.Label lblBodega;
     }
 }

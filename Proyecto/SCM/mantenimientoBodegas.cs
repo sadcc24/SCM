@@ -181,7 +181,7 @@ namespace SCM
             encargado = gvBodegas.Rows[e.RowIndex].Cells[2].Value.ToString();
             stock_minimo = gvBodegas.Rows[e.RowIndex].Cells[3].Value.ToString();
             stock_maximo = gvBodegas.Rows[e.RowIndex].Cells[4].Value.ToString();
-            //MessageBox.Show(id + "_" + descripcion);
+       //     MessageBox.Show(id + "_" + descripcion);
       
 
             Bodegas frm = new Bodegas();

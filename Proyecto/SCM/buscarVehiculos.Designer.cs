@@ -59,10 +59,13 @@
             // 
             // grdVehiculos
             // 
+            this.grdVehiculos.AllowUserToAddRows = false;
+            this.grdVehiculos.AllowUserToDeleteRows = false;
             this.grdVehiculos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdVehiculos.Location = new System.Drawing.Point(12, 297);
             this.grdVehiculos.Name = "grdVehiculos";
+            this.grdVehiculos.ReadOnly = true;
             this.grdVehiculos.Size = new System.Drawing.Size(947, 227);
             this.grdVehiculos.TabIndex = 0;
             this.grdVehiculos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdVehiculos_CellClick);
@@ -141,6 +144,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(50, 50);
             this.btnBuscar.TabIndex = 8;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cmbTipo
             // 
@@ -215,7 +219,7 @@
             this.groupBox2.Size = new System.Drawing.Size(766, 127);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Datos de Vehiculos";
             // 
             // txtMotor
             // 

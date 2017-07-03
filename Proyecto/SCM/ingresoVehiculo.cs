@@ -18,6 +18,8 @@ namespace SCM
         {
             InitializeComponent();
             txtCodVehiculo.Text = codigov.ToString();
+            label3.Text = codigov.ToString();
+            CargaCBTipo();
             if (codigov != 0)
             {
                 buscarUno(codigov);
@@ -41,16 +43,35 @@ namespace SCM
             vhc._color = txtColor.Text.Trim();
             vhc._chasis = txtChasis.Text.Trim();
             vhc._placa = txtPlaca.Text.Trim();
+            vhc._tipovehiculo = Convert.ToInt32(cmbTipo.SelectedValue);
 
             if (txtCodVehiculo.Text != "0")
             {
-                vhc._cod_vehiculo = Convert.ToInt32(txtCodVehiculo.Text);
-                new BO.Vehiculo_BO().actualizaVehiculoBO(vhc);
+                try
+                {
+                    vhc._cod_vehiculo = Convert.ToInt32(txtCodVehiculo.Text);
+                    new BO.Vehiculo_BO().actualizaVehiculoBO(vhc);
+                    MessageBox.Show("Vehiculo Actualizado Exitosamente");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
             else
             {
-                new BO.Vehiculo_BO().insertarVhcBO(vhc);
+                try
+                {
+                    new BO.Vehiculo_BO().insertarVhcBO(vhc);
+                    MessageBox.Show("Vehiculo Ingresado Exitosamente");
+                }catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
             }
+            txtDisabled();
         }
 
         #region Funciones y Metodos
@@ -69,14 +90,15 @@ namespace SCM
         private void limpiar()
         {
             txtChasis.Clear();
-            txtCodVehiculo.Clear();
+            txtCodVehiculo.Text = "0";
             txtColor.Clear();
             txtLinea.Clear();
             txtMarca.Clear();
             txtModelo.Clear();
             txtMotor.Clear();
             txtPlaca.Clear();
-            txtTipoVehiculo.Clear();
+            
+            
         }
 
         private void txtDisabled()
@@ -88,7 +110,7 @@ namespace SCM
             txtModelo.Enabled = false;
             txtMotor.Enabled = false;
             txtPlaca.Enabled = false;
-            txtTipoVehiculo.Enabled = false;
+            cmbTipo.Enabled = false;
         }
 
         private void txtEnabled()
@@ -100,21 +122,41 @@ namespace SCM
             txtModelo.Enabled = true;
             txtMotor.Enabled = true;
             txtPlaca.Enabled = true;
-            txtTipoVehiculo.Enabled = true;
+            cmbTipo.Enabled = true;
 
         }
-        
+
+        private void CargaCBTipo()
+        {
+            try
+            {
+                cmbTipo.DisplayMember = "nombretipotrans";
+                cmbTipo.ValueMember = "idtipotrans";
+                cmbTipo.DataSource = new Vehiculo_BO().verTipoVH();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
 
         #endregion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             limpiar();
+            txtDisabled();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             txtEnabled();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

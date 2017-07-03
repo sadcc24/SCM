@@ -65,6 +65,7 @@
             this.btnBuscar.Size = new System.Drawing.Size(50, 50);
             this.btnBuscar.TabIndex = 21;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnAyuda
             // 
@@ -119,6 +120,7 @@
             this.btnActualizar.Size = new System.Drawing.Size(50, 50);
             this.btnActualizar.TabIndex = 15;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
@@ -132,10 +134,16 @@
             // 
             // dgvSolicitud
             // 
+            this.dgvSolicitud.AllowUserToAddRows = false;
+            this.dgvSolicitud.AllowUserToDeleteRows = false;
+            this.dgvSolicitud.AllowUserToOrderColumns = true;
+            this.dgvSolicitud.AllowUserToResizeColumns = false;
+            this.dgvSolicitud.AllowUserToResizeRows = false;
             this.dgvSolicitud.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSolicitud.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSolicitud.Location = new System.Drawing.Point(26, 246);
             this.dgvSolicitud.Name = "dgvSolicitud";
+            this.dgvSolicitud.ReadOnly = true;
             this.dgvSolicitud.Size = new System.Drawing.Size(947, 288);
             this.dgvSolicitud.TabIndex = 13;
             this.dgvSolicitud.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSolicitud_CellClick);
@@ -147,6 +155,7 @@
             this.txtSolicit.Name = "txtSolicit";
             this.txtSolicit.Size = new System.Drawing.Size(183, 20);
             this.txtSolicit.TabIndex = 24;
+            this.txtSolicit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSolicit_KeyPress);
             // 
             // groupBox1
             // 

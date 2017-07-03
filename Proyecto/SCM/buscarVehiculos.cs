@@ -17,6 +17,7 @@ namespace SCM
         public buscarVehiculos()
         {
             InitializeComponent();
+            
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
@@ -27,7 +28,8 @@ namespace SCM
 
         private void buscarVehiculos_Load(object sender, EventArgs e)
         {
-            ActualizarForm();   
+            ActualizarForm(1);
+            CargaCBTipo();
         }
 
         private void grdVehiculos_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -39,19 +41,30 @@ namespace SCM
             }
 
             DataGridViewRow row = grdVehiculos.Rows[e.RowIndex];
-            decimal valor = (decimal)row.Cells[0].Value;
-            int codigo = Convert.ToInt32(valor);
-            ingresoVehiculo vehiculo = new ingresoVehiculo(codigo);
+            int valor = (int)row.Cells[0].Value;
+            //int codigo = Convert.ToInt32(valor);
+            ingresoVehiculo vehiculo = new ingresoVehiculo(valor);
             vehiculo.MdiParent = this.MdiParent;
             vehiculo.Show();
         }
 
         #region Funciones y Metodos
-        private void ActualizarForm()
+        private void ActualizarForm(int tipo)
         {
+            vehiculo_Entity vc = new vehiculo_Entity();
+            vc._chasis = txtChasis.Text.Trim();
+            vc._marca = txtMarca.Text.Trim();
+            vc._modelo = txtModelo.Text.Trim();
+            vc._motor = txtMotor.Text.Trim();
+            vc._placa = txtPlaca.Text.Trim();
+            if(tipo == 2)
+            {
+                vc._tipovehiculo = Convert.ToInt32(cmbTipo.SelectedValue);
+            }
+            
             try
             {
-                grdVehiculos.DataSource = new Vehiculo_BO().verTodosVehiculos(); //N_Cliente().GetAll();
+                grdVehiculos.DataSource = new Vehiculo_BO().verTodosVehiculos(vc);
                 grdVehiculos.Refresh();
             }
             catch (Exception Ex)
@@ -64,6 +77,20 @@ namespace SCM
         {
 
         }
+
+        private void CargaCBTipo()
+        {
+            try
+            {
+                cmbTipo.DisplayMember = "nombretipotrans";
+                cmbTipo.ValueMember = "idtipotrans";
+                cmbTipo.DataSource = new Vehiculo_BO().verTipoVH();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
         #endregion
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -75,7 +102,12 @@ namespace SCM
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            ActualizarForm();
+            ActualizarForm(1);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ActualizarForm(2);
         }
     }
 }

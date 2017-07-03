@@ -39,7 +39,6 @@
             this.btnAyuda = new System.Windows.Forms.Button();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.txtChasis = new System.Windows.Forms.TextBox();
-            this.txtTipoVehiculo = new System.Windows.Forms.TextBox();
             this.txtPlaca = new System.Windows.Forms.TextBox();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.txtLinea = new System.Windows.Forms.TextBox();
@@ -60,6 +59,7 @@
             this.txtCodVehiculo = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -130,6 +130,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(50, 50);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAyuda
             // 
@@ -153,13 +154,6 @@
             this.txtChasis.Name = "txtChasis";
             this.txtChasis.Size = new System.Drawing.Size(154, 20);
             this.txtChasis.TabIndex = 9;
-            // 
-            // txtTipoVehiculo
-            // 
-            this.txtTipoVehiculo.Location = new System.Drawing.Point(321, 205);
-            this.txtTipoVehiculo.Name = "txtTipoVehiculo";
-            this.txtTipoVehiculo.Size = new System.Drawing.Size(154, 20);
-            this.txtTipoVehiculo.TabIndex = 11;
             // 
             // txtPlaca
             // 
@@ -301,6 +295,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cmbTipo);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtCodVehiculo);
             this.groupBox2.Controls.Add(this.lblModelo);
@@ -315,7 +310,6 @@
             this.groupBox2.Controls.Add(this.txtLinea);
             this.groupBox2.Controls.Add(this.txtColor);
             this.groupBox2.Controls.Add(this.txtPlaca);
-            this.groupBox2.Controls.Add(this.txtTipoVehiculo);
             this.groupBox2.Controls.Add(this.txtChasis);
             this.groupBox2.Controls.Add(this.txtModelo);
             this.groupBox2.Controls.Add(this.txtMarca);
@@ -364,6 +358,14 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "lblVehiculo";
             // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(320, 202);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(155, 21);
+            this.cmbTipo.TabIndex = 26;
+            // 
             // ingresoVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,7 +399,6 @@
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.TextBox txtChasis;
-        private System.Windows.Forms.TextBox txtTipoVehiculo;
         private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.TextBox txtLinea;
@@ -418,5 +419,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCodVehiculo;
+        private System.Windows.Forms.ComboBox cmbTipo;
     }
 }

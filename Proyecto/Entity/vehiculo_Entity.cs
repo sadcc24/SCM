@@ -17,6 +17,7 @@ namespace Entity
         public string _chasis { get; set; }
         public string _placa { get; set; }
         public string _modelo { get; set; }
+        public int _tipovehiculo { get; set; }
         #endregion
 
         #region Constructor
@@ -24,7 +25,7 @@ namespace Entity
         {
         }
 
-        public vehiculo_Entity(int pcodVehiculo, string pMarca, string pLinea, string pMotor, string pColor, string pChasis, string pPlaca, string pModelo) 
+        public vehiculo_Entity(int pcodVehiculo, string pMarca, string pLinea, string pMotor, string pColor, string pChasis, string pPlaca, string pModelo, int ptipovhc) 
         {
             this._cod_vehiculo = pcodVehiculo;
             this._marca = pMarca;
@@ -34,6 +35,7 @@ namespace Entity
             this._chasis = pChasis;
             this._placa = pPlaca;
             this._modelo = pModelo;
+            this._tipovehiculo = ptipovhc;
         }
         #endregion
 
