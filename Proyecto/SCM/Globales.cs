@@ -12,10 +12,11 @@ namespace SCM
 
         public static Enterprise Empresa = new Enterprise();
         public static Login Usuario = new Login();
-        //Parámetros de Conexion {"SERVIDOR","BASEDEDATOS","USUARIO","PASSWORD"}
-        //  public static string[] Conexion = { "ZGHP", "SAD2017", "admin", "@umg2017" };
-        public static string[] Conexion = { "sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017" };
-
+        public static string Rol;
+        //Parámetros de Conexion {"SERVIDOR","BASEDEDATOS","USUARIO","PASSWORD"}  MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
+        //
+        public static string[] Conexion = { "PJSELMAN\\SAD2017", "SAD2017", "sa", "SAD2017" };
+       
         public static void Inicializar()
         {
 

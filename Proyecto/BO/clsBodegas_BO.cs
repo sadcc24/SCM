@@ -11,6 +11,10 @@ namespace BO
 {
   public  class clsBodegas_BO
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
         public void vInsertarBodega(clsBodegas_Entity bodega) {
             clsBodegas_DAL bodegainsert = new clsBodegas_DAL();
             bodegainsert.vInsertBodega(bodega);

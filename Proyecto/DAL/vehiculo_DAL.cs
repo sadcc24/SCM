@@ -11,9 +11,10 @@ namespace DAL
 {
     public class Vehiculo_DAL
     {
-        //MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
         MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
-        //  MRP_BD cnn = new MRP_BD("ivan", "developer1993", "SAD2017V1", @"DESKTOP-F4L56EU\SQLEXPRESS");
+        //  MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        // MRP_BD cnn = new MRP_BD("ivan", "developer1993", "SAD2017V1", @"DESKTOP-F4L56EU\SQLEXPRESS");
 
 
         public void insertaVehiculo(vehiculo_Entity vehc)

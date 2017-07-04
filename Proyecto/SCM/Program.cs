@@ -16,9 +16,7 @@ namespace SCM
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new mostarSplash());
-            //Application.Run(new mostrarMenu());
-          //  Application.Run(new ingresoSolicitudTransporte(3));
+            Application.Run(new mostarSplash());
         }
     }
 }

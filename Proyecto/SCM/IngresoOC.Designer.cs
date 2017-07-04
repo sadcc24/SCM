@@ -45,33 +45,24 @@
             this.lblObservaciones = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.txtTotalProducto = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.grdDetalleProductos = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.btnBuscarProducto = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodProducto = new System.Windows.Forms.TextBox();
             this.lblCodProducto = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnAgregarPago = new System.Windows.Forms.Button();
-            this.grdPagos = new System.Windows.Forms.DataGridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lblPago = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.lblMes = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalleProductos)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdPagos)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -90,7 +81,7 @@
             this.cboBodega.FormattingEnabled = true;
             this.cboBodega.Location = new System.Drawing.Point(284, 55);
             this.cboBodega.Name = "cboBodega";
-            this.cboBodega.Size = new System.Drawing.Size(121, 21);
+            this.cboBodega.Size = new System.Drawing.Size(120, 21);
             this.cboBodega.TabIndex = 6;
             // 
             // lblBodega
@@ -214,30 +205,20 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(153, 262);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(782, 196);
-            this.tabControl1.TabIndex = 20;
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.btnAgregarProducto);
             this.tabPage1.Controls.Add(this.txtTotalProducto);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtCodProducto);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.grdDetalleProductos);
-            this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox3);
             this.tabPage1.Controls.Add(this.lblCantidad);
             this.tabPage1.Controls.Add(this.btnBuscarProducto);
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.txtCodProducto);
             this.tabPage1.Controls.Add(this.lblCodProducto);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -263,6 +244,34 @@
             this.txtTotalProducto.Size = new System.Drawing.Size(120, 20);
             this.txtTotalProducto.TabIndex = 28;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(332, 48);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 20);
+            this.textBox2.TabIndex = 25;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(97, 48);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(120, 20);
+            this.textBox3.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(332, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // txtCodProducto
+            // 
+            this.txtCodProducto.Location = new System.Drawing.Point(97, 17);
+            this.txtCodProducto.Name = "txtCodProducto";
+            this.txtCodProducto.Size = new System.Drawing.Size(120, 20);
+            this.txtCodProducto.TabIndex = 18;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -280,13 +289,6 @@
             this.grdDetalleProductos.Size = new System.Drawing.Size(748, 62);
             this.grdDetalleProductos.TabIndex = 26;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(332, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 20);
-            this.textBox2.TabIndex = 25;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -295,13 +297,6 @@
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 24;
             this.label2.Text = "Precio Unitario:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(97, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 20);
-            this.textBox3.TabIndex = 23;
             // 
             // lblCantidad
             // 
@@ -321,13 +316,6 @@
             this.btnBuscarProducto.Text = "Buscar";
             this.btnBuscarProducto.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(332, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 20;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -336,13 +324,6 @@
             this.label1.Size = new System.Drawing.Size(112, 13);
             this.label1.TabIndex = 19;
             this.label1.Text = "Descripcion Producto:";
-            // 
-            // txtCodProducto
-            // 
-            this.txtCodProducto.Location = new System.Drawing.Point(97, 17);
-            this.txtCodProducto.Name = "txtCodProducto";
-            this.txtCodProducto.Size = new System.Drawing.Size(120, 20);
-            this.txtCodProducto.TabIndex = 18;
             // 
             // lblCodProducto
             // 
@@ -353,71 +334,14 @@
             this.lblCodProducto.TabIndex = 17;
             this.lblCodProducto.Text = "Codigo Producto:";
             // 
-            // tabPage2
+            // tabControl1
             // 
-            this.tabPage2.Controls.Add(this.btnAgregarPago);
-            this.tabPage2.Controls.Add(this.grdPagos);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.lblPago);
-            this.tabPage2.Controls.Add(this.comboBox4);
-            this.tabPage2.Controls.Add(this.lblMes);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(774, 170);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Condiciones de Pago";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarPago
-            // 
-            this.btnAgregarPago.Location = new System.Drawing.Point(392, 18);
-            this.btnAgregarPago.Name = "btnAgregarPago";
-            this.btnAgregarPago.Size = new System.Drawing.Size(99, 23);
-            this.btnAgregarPago.TabIndex = 30;
-            this.btnAgregarPago.Text = "Agregar";
-            this.btnAgregarPago.UseVisualStyleBackColor = true;
-            // 
-            // grdPagos
-            // 
-            this.grdPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdPagos.Location = new System.Drawing.Point(20, 58);
-            this.grdPagos.Name = "grdPagos";
-            this.grdPagos.Size = new System.Drawing.Size(748, 62);
-            this.grdPagos.TabIndex = 27;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(256, 18);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(120, 20);
-            this.textBox4.TabIndex = 18;
-            // 
-            // lblPago
-            // 
-            this.lblPago.AutoSize = true;
-            this.lblPago.Location = new System.Drawing.Point(215, 21);
-            this.lblPago.Name = "lblPago";
-            this.lblPago.Size = new System.Drawing.Size(35, 13);
-            this.lblPago.TabIndex = 17;
-            this.lblPago.Text = "Pago:";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(62, 18);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 14;
-            // 
-            // lblMes
-            // 
-            this.lblMes.AutoSize = true;
-            this.lblMes.Location = new System.Drawing.Point(19, 21);
-            this.lblMes.Name = "lblMes";
-            this.lblMes.Size = new System.Drawing.Size(30, 13);
-            this.lblMes.TabIndex = 13;
-            this.lblMes.Text = "Mes:";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(153, 262);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(782, 196);
+            this.tabControl1.TabIndex = 20;
             // 
             // ingresoOrdenCompra
             // 
@@ -448,13 +372,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "insertarOrdenCompra";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalleProductos)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grdPagos)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,28 +399,21 @@
         private System.Windows.Forms.Label lblObservaciones;
         private System.Windows.Forms.TextBox txtObservacion;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox txtCodProducto;
-        private System.Windows.Forms.Label lblCodProducto;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.TextBox txtTotalProducto;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView grdDetalleProductos;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Button btnBuscarProducto;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAgregarPago;
-        private System.Windows.Forms.DataGridView grdPagos;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label lblPago;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label lblMes;
+        private System.Windows.Forms.Label lblCodProducto;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
 

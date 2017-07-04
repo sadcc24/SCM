@@ -261,6 +261,7 @@
             this.btnAyuda.Size = new System.Drawing.Size(50, 50);
             this.btnAyuda.TabIndex = 32;
             this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnEliminar
             // 
@@ -335,7 +336,6 @@
             // 
             // btnSeguimiento
             // 
-            this.btnSeguimiento.Image = global::SCM.Properties.Resources.seguimientotransporte;
             this.btnSeguimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguimiento.Location = new System.Drawing.Point(824, 123);
             this.btnSeguimiento.Name = "btnSeguimiento";

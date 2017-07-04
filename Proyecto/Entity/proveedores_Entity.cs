@@ -32,6 +32,12 @@ namespace Entity
             get { return _telefono; }
             set { _telefono = value; }
         }
+        private int _id_sede;
+        public int id_sede
+        {
+            get { return _id_sede; }
+            set { _id_sede = value; }
+        }
         private string _nit;
         public string nit
         {

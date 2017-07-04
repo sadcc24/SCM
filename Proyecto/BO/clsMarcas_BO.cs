@@ -10,7 +10,9 @@ namespace BO
 {
    public class clsMarcas_BO
     {
-
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
         public void vInsertarMarca(clsMarcas_Entity marca)
         {
             clsMarcas_DAL marcainsert = new clsMarcas_DAL();

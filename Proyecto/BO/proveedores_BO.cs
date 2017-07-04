@@ -33,6 +33,14 @@ namespace BO
             return dt;
         }
 
+        public DataTable verSedes()
+        {
+            DataTable dt = new DataTable();
+            proveedores_DAL prov = new proveedores_DAL();
+            dt = prov.verSedes();
+            return dt;
+        }
+
         public void updateProveedores(proveedores_Entity prov)
         {
             try

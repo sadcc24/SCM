@@ -212,6 +212,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "seguimientoST";
             this.Text = "seguimientoST";
+            this.Load += new System.EventHandler(this.seguimientoST_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBitacoraST)).EndInit();
             this.groupBox1.ResumeLayout(false);

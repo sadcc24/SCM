@@ -8,7 +8,9 @@ namespace Entity
 {
    public class clsTipoMovimiento_Entity
     {
-
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
         private string _strDescripcion;
         private string _strOperacion;
 

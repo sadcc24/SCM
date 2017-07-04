@@ -32,21 +32,21 @@
             this.gbInsertar = new System.Windows.Forms.GroupBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gvMarcas = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtMarcaBusc = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.z = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
+            this.txtMarcaBusc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.z = new System.Windows.Forms.Label();
             this.gbInsertar.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).BeginInit();
@@ -82,6 +82,16 @@
             this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 118;
             this.label2.Text = "Descripción:";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(411, 134);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
+            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // groupBox2
             // 
@@ -123,45 +133,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Marcas";
             // 
-            // txtMarcaBusc
-            // 
-            this.txtMarcaBusc.Location = new System.Drawing.Point(623, 50);
-            this.txtMarcaBusc.Name = "txtMarcaBusc";
-            this.txtMarcaBusc.Size = new System.Drawing.Size(163, 20);
-            this.txtMarcaBusc.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(555, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "MARCA:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // z
-            // 
-            this.z.AutoSize = true;
-            this.z.Dock = System.Windows.Forms.DockStyle.Right;
-            this.z.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.z.Location = new System.Drawing.Point(775, 0);
-            this.z.Name = "z";
-            this.z.Size = new System.Drawing.Size(142, 39);
-            this.z.TabIndex = 122;
-            this.z.Text = "MARCA";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(411, 134);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
-            this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // button1
             // 
             this.button1.Image = global::SCM.Properties.Resources.buscar;
@@ -192,6 +163,24 @@
             this.btnUltimo.TabIndex = 26;
             this.btnUltimo.UseVisualStyleBackColor = true;
             this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
+            // 
+            // txtMarcaBusc
+            // 
+            this.txtMarcaBusc.Location = new System.Drawing.Point(623, 50);
+            this.txtMarcaBusc.Name = "txtMarcaBusc";
+            this.txtMarcaBusc.Size = new System.Drawing.Size(163, 20);
+            this.txtMarcaBusc.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(555, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "MARCA:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSiguiente
             // 
@@ -242,6 +231,17 @@
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // z
+            // 
+            this.z.AutoSize = true;
+            this.z.Dock = System.Windows.Forms.DockStyle.Right;
+            this.z.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.z.Location = new System.Drawing.Point(775, 0);
+            this.z.Name = "z";
+            this.z.Size = new System.Drawing.Size(142, 39);
+            this.z.TabIndex = 122;
+            this.z.Text = "MARCA";
             // 
             // mantenimientoMarca
             // 

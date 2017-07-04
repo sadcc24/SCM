@@ -8,6 +8,12 @@ namespace Entity
 {
   public  class clsBodegas_Entity
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
+
+
         private string _strNombreBodega;
         private string _strNombreEncargado;
         private string _iStockMinimo;

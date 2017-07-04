@@ -36,9 +36,8 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dllSeguridadSAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Documents\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
+    <Reference Include="dllSeguridadSAD">
+      <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
     </Reference>
     <Reference Include="MRP_BD">
       <HintPath>..\..\MRP_BD.dll</HintPath>
@@ -128,6 +127,12 @@
     <Compile Include="descongelarExistencias.Designer.cs">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstadoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoSolicitud.designer.cs">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,11 +194,29 @@
     <Compile Include="ingresoVehiculo.Designer.cs">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lineas.designer.cs">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientoBodegas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mantenimientoBodegas.Designer.cs">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoEstadoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEstadoSolicitud.designer.cs">
+      <DependentUpon>mantenimientoEstadoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoLineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoLineas.designer.cs">
+      <DependentUpon>mantenimientoLineas.cs</DependentUpon>
     </Compile>
     <Compile Include="mantenimientoMarca.cs">
       <SubType>Form</SubType>
@@ -218,6 +241,30 @@
     </Compile>
     <Compile Include="mantenimientoTipoMovimientoInventario.Designer.cs">
       <DependentUpon>mantenimientoTipoMovimientoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTipoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTipoSolicitud.designer.cs">
+      <DependentUpon>mantenimientoTipoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTipoVehiculo.designer.cs">
+      <DependentUpon>mantenimientoTipoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTrayecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTrayecto.designer.cs">
+      <DependentUpon>mantenimientoTrayecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoUsuarios.Designer.cs">
+      <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarEmpresa.cs">
       <SubType>Form</SubType>
@@ -263,6 +310,30 @@
     <Compile Include="seguimientoST.Designer.cs">
       <DependentUpon>seguimientoST.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoSolicitud.designer.cs">
+      <DependentUpon>TipoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoVehiculo.designer.cs">
+      <DependentUpon>TipoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trayecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trayecto.designer.cs">
+      <DependentUpon>Trayecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ajustarExistencias.resx">
       <DependentUpon>ajustarExistencias.cs</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +370,9 @@
     <EmbeddedResource Include="descongelarExistencias.resx">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstadoSolicitud.resx">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,8 +403,17 @@
     <EmbeddedResource Include="ingresoVehiculo.resx">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lineas.resx">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoBodegas.resx">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEstadoSolicitud.resx">
+      <DependentUpon>mantenimientoEstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoLineas.resx">
+      <DependentUpon>mantenimientoLineas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoMarca.resx">
       <DependentUpon>mantenimientoMarca.cs</DependentUpon>
@@ -343,6 +426,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoTipoMovimientoInventario.resx">
       <DependentUpon>mantenimientoTipoMovimientoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTipoSolicitud.resx">
+      <DependentUpon>mantenimientoTipoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTipoVehiculo.resx">
+      <DependentUpon>mantenimientoTipoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTrayecto.resx">
+      <DependentUpon>mantenimientoTrayecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoUsuarios.resx">
+      <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarEmpresa.resx">
       <DependentUpon>mostrarEmpresa.cs</DependentUpon>
@@ -374,6 +469,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="seguimientoST.resx">
       <DependentUpon>seguimientoST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoSolicitud.resx">
+      <DependentUpon>TipoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoVehiculo.resx">
+      <DependentUpon>TipoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trayecto.resx">
+      <DependentUpon>Trayecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -437,9 +544,6 @@
   <ItemGroup>
     <Folder Include="iconos\iconos\" />
     <Folder Include="Resources\Resources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="iconos\seguimientotransporte.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

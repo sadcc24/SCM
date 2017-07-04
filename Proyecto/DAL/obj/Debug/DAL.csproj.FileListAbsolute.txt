@@ -13,24 +13,17 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SC
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.dll
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.pdb
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\bin\Debug\DAL.dll
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\bin\Debug\DAL.pdb
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\bin\Debug\Entity.dll
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\bin\Debug\Entity.pdb
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\obj\Debug\DAL.dll
-C:\Users\navi9\Documents\GitHub\SCM-master\DAL\obj\Debug\DAL.pdb
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\bin\Debug\DAL.dll
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\bin\Debug\DAL.pdb
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\bin\Debug\Entity.dll
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\bin\Debug\Entity.pdb
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\obj\Debug\DAL.dll
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\DAL\obj\Debug\DAL.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\bin\Debug\DAL.dll
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\bin\Debug\DAL.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\bin\Debug\Entity.dll
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\bin\Debug\Entity.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\obj\Debug\DAL.dll
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\DAL\obj\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\bin\Debug\DAL.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\bin\Debug\DAL.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\obj\Debug\DAL.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\DAL\obj\Debug\DAL.pdb

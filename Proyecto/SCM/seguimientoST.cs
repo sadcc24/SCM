@@ -46,5 +46,10 @@ namespace SCM
         {
 
         }
+
+        private void seguimientoST_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

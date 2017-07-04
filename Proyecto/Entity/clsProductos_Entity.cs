@@ -8,6 +8,9 @@ namespace Entity
 {
  public class clsProductos_Entity
     {
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
 
         private string _strproducto;
         private string _strcantidad;
@@ -20,7 +23,13 @@ namespace Entity
         private string _strestado;
         private string _strtamano;
         private string _strpeso;
+        private string _strutamano;
+        private string _strupeso;
         private string _stridprod;
+        private string _strtipou;
+        private string _smax;
+        private string _smin;
+        private string _strIdEmpresa;
 
         public string strProducto { get { return _strproducto; }  set { _strproducto = value; } }
         public string strCantidad { get { return _strcantidad; } set { _strcantidad = value; } }
@@ -33,6 +42,14 @@ namespace Entity
         public string strEstado { get { return _strestado; } set { _strestado = value; } }
         public string strTamano { get { return _strtamano; } set { _strtamano = value; } }
         public string strPeso { get { return _strpeso; } set { _strpeso = value; } }
+
+        public string struTamano { get { return _strutamano; } set { _strutamano = value; } }
+        public string struPeso { get { return _strupeso; } set { _strupeso = value; } }
         public string strIdProd { get { return _stridprod; } set { _stridprod = value; } }
+        public string strtipou { get { return _strtipou; } set { _strtipou = value; } }
+
+        public string strsmax { get { return _smax; } set { _smax = value; } }
+        public string strsmin { get { return _smin; } set { _smin = value; } }
+        public string strIdEmpresa { get { return _strIdEmpresa; } set { _strIdEmpresa = value; } }
     }
 }

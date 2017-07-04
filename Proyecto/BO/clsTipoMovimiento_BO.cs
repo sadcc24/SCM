@@ -10,6 +10,10 @@ namespace BO
 {
     public class clsTipoMovimiento_BO
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
         public void vInsertarTipoMovimiento(clsTipoMovimiento_Entity tipom)
         {
             clsTipoMovimiento_DAL tipomovinsert = new clsTipoMovimiento_DAL();

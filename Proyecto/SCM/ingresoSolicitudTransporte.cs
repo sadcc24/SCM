@@ -193,5 +193,10 @@ namespace SCM
             sst.MdiParent = this.MdiParent;
             sst.Show();
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

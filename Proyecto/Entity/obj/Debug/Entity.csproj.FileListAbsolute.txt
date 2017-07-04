@@ -7,18 +7,12 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SC
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\obj\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\obj\Debug\Entity.pdb
-C:\Users\navi9\Documents\GitHub\SCM-master\Entity\bin\Debug\Entity.dll
-C:\Users\navi9\Documents\GitHub\SCM-master\Entity\bin\Debug\Entity.pdb
-C:\Users\navi9\Documents\GitHub\SCM-master\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Documents\GitHub\SCM-master\Entity\obj\Debug\Entity.dll
-C:\Users\navi9\Documents\GitHub\SCM-master\Entity\obj\Debug\Entity.pdb
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\Entity\bin\Debug\Entity.dll
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\Entity\bin\Debug\Entity.pdb
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\Entity\obj\Debug\Entity.dll
-C:\Users\pamel\Downloads\SCM-Transporte\SCM-masterBK\Entity\obj\Debug\Entity.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\Entity\bin\Debug\Entity.dll
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\Entity\bin\Debug\Entity.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\Entity\obj\Debug\Entity.dll
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\Entity\obj\Debug\Entity.pdb
-C:\Users\Josué Enrique\Downloads\Proyecto\Proyecto\SCM\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.pdb

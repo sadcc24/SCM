@@ -41,12 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsBodegas_BO.cs" />
+    <Compile Include="clsInventarios_BO.cs" />
     <Compile Include="clsMarcas_BO.cs" />
     <Compile Include="clsProductos_BO.cs" />
     <Compile Include="clsTipoMovimiento_BO.cs" />
+    <Compile Include="estado_solicitud_BO.cs" />
+    <Compile Include="Lineas_BO.cs" />
+    <Compile Include="orden_compra_BO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proveedores_BO.cs" />
     <Compile Include="SolicitudTransporte_BOL.cs" />
+    <Compile Include="tipo_cargamento_BO.cs" />
+    <Compile Include="tipo_solicitud_BO.cs" />
+    <Compile Include="tipo_trayecto_BO.cs" />
+    <Compile Include="tipo_vehiculo_BO.cs" />
+    <Compile Include="Usuarios_BO.cs" />
     <Compile Include="Vehiculo_BO.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -75,6 +75,7 @@ namespace SCM
                                     bod.strNombreEncargado = txtEncargado.Text;
                                     bod.iStockMinimo = txtSMin.Text;
                                     bod.iStockMaximo = txtSMax.Text;
+                                    bod.iIdEmpresa = "1";
                                     bodega.vInsertarBodega(bod);
                                     MessageBox.Show("Bodega ha sido guardada.");
                                     mantenimientoBodegas prdu = new mantenimientoBodegas();

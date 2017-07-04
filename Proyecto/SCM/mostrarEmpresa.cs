@@ -14,8 +14,9 @@ using dllSeguridadSAD;
 namespace SCM
 {
     public partial class mostrarEmpresa : Form
-    {        
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
+    {
+        MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
+        //  MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
         public mostrarEmpresa()
         {
             InitializeComponent();

@@ -11,13 +11,14 @@ namespace DAL
    public class proveedores_DAL
     {
         MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
-     //   MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        // MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
 
         public void insertproveedor(proveedores_Entity prov)
         {
             try
             {
-                cnn.insertSQL("INSERT INTO Proveedor (nombre_proveedor, direccion, telefono, nit, activo)values('" + prov.nombre_proveedor +"','" + prov.direccion +"'," + prov.telefono + ",'" + prov.nit + "','" + prov.activo + "')");
+                cnn.insertSQL("INSERT INTO PROVEEDOR (nombre_proveedor, direccion, telefono, nit, activo, idsede)values('" + prov.nombre_proveedor +"','" + prov.direccion +"'," + prov.telefono + ",'" + prov.nit + "','" + prov.activo + "'," + prov.id_sede + ")");
                 
             } catch (Exception ex)
             {
@@ -28,7 +29,14 @@ namespace DAL
         public DataTable verProveedores()
         {
             DataTable dt = new DataTable();
-            dt = cnn.getSQL("SELECT idproveedor as Codigo, nombre_proveedor as Nombre, direccion as Direccion, telefono as Telefono, nit as NIT FROM Proveedor where activo=1");
+            dt = cnn.getSQL("SELECT idproveedor as Codigo, nombre_proveedor as Nombre, direccion as Direccion, telefono as Telefono, nit as NIT FROM PROVEEDOR where activo=1");
+            return dt;
+        }
+
+        public DataTable verSedes()
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("SELECT * FROM Sede");
             return dt;
         }
 
@@ -36,7 +44,7 @@ namespace DAL
         {
             try
             {
-                cnn.updateSQL("UPDATE Proveedor SET nombre_proveedor='" + prov.nombre_proveedor + "', direccion='" + prov.direccion + "', telefono=" + prov.telefono + ", nit='" + prov.nit + "' WHERE idproveedor = " + prov.id_proveedor + "");
+                cnn.updateSQL("UPDATE PROVEEDOR SET nombre_proveedor='" + prov.nombre_proveedor + "', direccion='" + prov.direccion + "', telefono=" + prov.telefono + ", nit='" + prov.nit + "' WHERE idproveedor = " + prov.id_proveedor + "");
 
             }
             catch (Exception ex)
@@ -49,7 +57,7 @@ namespace DAL
         {
             try
             {
-                cnn.updateSQL("UPDATE Proveedor SET activo=0 WHERE idproveedor='" + prov.id_proveedor + "'");
+                cnn.updateSQL("UPDATE PROVEEDOR SET activo=0 WHERE idproveedor='" + prov.id_proveedor + "'");
             }
             catch (Exception ex)
             {

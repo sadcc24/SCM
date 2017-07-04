@@ -34,8 +34,8 @@ namespace SCM
                 }
                 if (autenticado == true)
                 {
-                    MessageBox.Show("¡Bienvenido "+ txtUsuario.Text + "!", "Seguridad SAD",
-                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("¡Bienvenido "+ txtUsuario.Text + "!", "Seguridad SAD",
+                    //            MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     mostrarEmpresa temp = new mostrarEmpresa();
                     this.Hide();

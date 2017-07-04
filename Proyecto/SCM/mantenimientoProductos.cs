@@ -132,8 +132,7 @@ namespace SCM
 
         private void mantenimientoProductos_Load(object sender, EventArgs e)
         {
-            vConsultarProductosActivos();
-           
+            vConsultarProductosActivos();          
         }
 
         public void vConsultarProductosActivos()
@@ -162,40 +161,41 @@ namespace SCM
                 MessageBox.Show(ex.Message);
             }
         }
-        public string idProducto, descripcion, cantidad, idBodega, idproveedor, id_tipo_producto, idmarca, codmetodo, codlinea, tamano, peso, codestado;
+        public string idProducto, descripcion,stockmaximo,stockminimo, idproveedor, id_tipo_producto, idmarca, codmetodo, codlinea, tamano, peso, unidadpeso,unidadtamano;
         private void gvProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var dataIndexNo = gvProductos.Rows[e.RowIndex].Index.ToString();
-            string cellValue = gvProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            //var dataIndexNo = gvProductos.Rows[e.RowIndex].Index.ToString();
+            //string cellValue = gvProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
 
             idProducto = gvProductos.Rows[e.RowIndex].Cells[0].Value.ToString();
             descripcion = gvProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            cantidad = gvProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            idBodega = gvProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
-            idproveedor = gvProductos.Rows[e.RowIndex].Cells[4].Value.ToString();
-            id_tipo_producto = gvProductos.Rows[e.RowIndex].Cells[5].Value.ToString();
-            idmarca = gvProductos.Rows[e.RowIndex].Cells[6].Value.ToString();
-            codmetodo = gvProductos.Rows[e.RowIndex].Cells[7].Value.ToString();
-            codlinea = gvProductos.Rows[e.RowIndex].Cells[8].Value.ToString();
-            tamano = gvProductos.Rows[e.RowIndex].Cells[9].Value.ToString();
-            peso = gvProductos.Rows[e.RowIndex].Cells[10].Value.ToString();
-            codestado = gvProductos.Rows[e.RowIndex].Cells[11].Value.ToString();
- 
-          
+            stockminimo = gvProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            stockmaximo = gvProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            idproveedor = gvProductos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            id_tipo_producto = gvProductos.Rows[e.RowIndex].Cells[6].Value.ToString();
+            idmarca = gvProductos.Rows[e.RowIndex].Cells[7].Value.ToString();
+            codmetodo = gvProductos.Rows[e.RowIndex].Cells[9].Value.ToString();
+            codlinea = gvProductos.Rows[e.RowIndex].Cells[10].Value.ToString();
+            tamano = gvProductos.Rows[e.RowIndex].Cells[11].Value.ToString();
+            peso = gvProductos.Rows[e.RowIndex].Cells[12].Value.ToString();
+            unidadpeso = gvProductos.Rows[e.RowIndex].Cells[16].Value.ToString();
+            unidadtamano = gvProductos.Rows[e.RowIndex].Cells[17].Value.ToString();
+
+
             Productos frm = new Productos();
             frm.txtID.Text = idProducto;
             frm.txtProducto.Text = descripcion;
-            frm.txtCantidad.Text = cantidad;
-            frm.cmbBodega.SelectedValue = idBodega;
+            frm.txtsmin.Text = stockminimo;
+            frm.txtsmax.Text = stockmaximo;
             frm.cmbProveedor.SelectedValue = idproveedor;
             frm.cmbTipProd.SelectedValue = id_tipo_producto;
             frm.cmbMarca.SelectedValue = idmarca;
             frm.cmbmetodo.SelectedValue = codmetodo;
             frm.cmbLinea.SelectedValue = codlinea;
-            frm.txttamano.Text = tamano;
-            frm.txtPeso.Text = peso;
-            frm.cmbEstado.SelectedValue = codestado;
-
+            frm.txttam.Text = tamano;
+            frm.txtpeso.Text = peso;
+            frm.cmbUnidadPeso.SelectedValue = unidadpeso;
+            frm.cmbUnidadTamano.SelectedValue = unidadtamano;
             frm.btnEditar.Enabled = true;
             frm.btnEliminar.Enabled = true;
             frm.btnGuardar.Enabled = false;

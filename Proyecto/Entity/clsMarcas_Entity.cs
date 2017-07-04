@@ -9,6 +9,10 @@ namespace Entity
    public  class clsMarcas_Entity
     {
 
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
+
         private string _strDescripcion;
 
         public string strDescripcion
