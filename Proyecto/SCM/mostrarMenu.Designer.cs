@@ -40,7 +40,9 @@
             this.proveedoresYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manteniminetoProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoBodegasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoTipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosLíneasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transportesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudDeTransportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vehículosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,8 +74,10 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenimientoTipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoTrayectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -171,6 +175,13 @@
             this.mantenimientoBodegasToolStripMenuItem.Text = "Mantenimiento Bodegas";
             this.mantenimientoBodegasToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoBodegasToolStripMenuItem_Click);
             // 
+            // mantenimientoTipoToolStripMenuItem
+            // 
+            this.mantenimientoTipoToolStripMenuItem.Name = "mantenimientoTipoToolStripMenuItem";
+            this.mantenimientoTipoToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.mantenimientoTipoToolStripMenuItem.Text = "Mantenimiento Tipo de Movimientos";
+            this.mantenimientoTipoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoToolStripMenuItem_Click);
+            // 
             // mantenimientosLíneasToolStripMenuItem
             // 
             this.mantenimientosLíneasToolStripMenuItem.Name = "mantenimientosLíneasToolStripMenuItem";
@@ -178,12 +189,23 @@
             this.mantenimientosLíneasToolStripMenuItem.Text = "Mantenimientos Líneas";
             this.mantenimientosLíneasToolStripMenuItem.Click += new System.EventHandler(this.mantenimientosLíneasToolStripMenuItem_Click);
             // 
+            // mantenimientoMarcaToolStripMenuItem
+            // 
+            this.mantenimientoMarcaToolStripMenuItem.Name = "mantenimientoMarcaToolStripMenuItem";
+            this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.mantenimientoMarcaToolStripMenuItem.Text = "Mantenimiento Marca";
+            this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
+            // 
             // transportesToolStripMenuItem2
             // 
             this.transportesToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.solicitudDeTransportesToolStripMenuItem,
             this.vehículosToolStripMenuItem1,
-            this.serviciosAVehículosToolStripMenuItem});
+            this.serviciosAVehículosToolStripMenuItem,
+            this.tipoVehiculoToolStripMenuItem,
+            this.tipoTrayectoToolStripMenuItem,
+            this.estadoSolicitudToolStripMenuItem,
+            this.tipoSolicitudToolStripMenuItem});
             this.transportesToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("transportesToolStripMenuItem2.Image")));
             this.transportesToolStripMenuItem2.Name = "transportesToolStripMenuItem2";
             this.transportesToolStripMenuItem2.Size = new System.Drawing.Size(60, 20);
@@ -408,19 +430,33 @@
             this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
             this.tsStatusFecha.Text = "Fecha";
             // 
-            // mantenimientoTipoToolStripMenuItem
+            // tipoVehiculoToolStripMenuItem
             // 
-            this.mantenimientoTipoToolStripMenuItem.Name = "mantenimientoTipoToolStripMenuItem";
-            this.mantenimientoTipoToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
-            this.mantenimientoTipoToolStripMenuItem.Text = "Mantenimiento Tipo de Movimientos";
-            this.mantenimientoTipoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoTipoToolStripMenuItem_Click);
+            this.tipoVehiculoToolStripMenuItem.Name = "tipoVehiculoToolStripMenuItem";
+            this.tipoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoVehiculoToolStripMenuItem.Text = "Tipo Vehiculo";
+            this.tipoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.tipoVehiculoToolStripMenuItem_Click);
             // 
-            // mantenimientoMarcaToolStripMenuItem
+            // tipoTrayectoToolStripMenuItem
             // 
-            this.mantenimientoMarcaToolStripMenuItem.Name = "mantenimientoMarcaToolStripMenuItem";
-            this.mantenimientoMarcaToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
-            this.mantenimientoMarcaToolStripMenuItem.Text = "Mantenimiento Marca";
-            this.mantenimientoMarcaToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoMarcaToolStripMenuItem_Click);
+            this.tipoTrayectoToolStripMenuItem.Name = "tipoTrayectoToolStripMenuItem";
+            this.tipoTrayectoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoTrayectoToolStripMenuItem.Text = "Tipo Trayecto";
+            this.tipoTrayectoToolStripMenuItem.Click += new System.EventHandler(this.tipoTrayectoToolStripMenuItem_Click);
+            // 
+            // estadoSolicitudToolStripMenuItem
+            // 
+            this.estadoSolicitudToolStripMenuItem.Name = "estadoSolicitudToolStripMenuItem";
+            this.estadoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.estadoSolicitudToolStripMenuItem.Text = "Estado Solicitud";
+            this.estadoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.estadoSolicitudToolStripMenuItem_Click);
+            // 
+            // tipoSolicitudToolStripMenuItem
+            // 
+            this.tipoSolicitudToolStripMenuItem.Name = "tipoSolicitudToolStripMenuItem";
+            this.tipoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoSolicitudToolStripMenuItem.Text = "Tipo Solicitud";
+            this.tipoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.tipoSolicitudToolStripMenuItem_Click);
             // 
             // mostrarMenu
             // 
@@ -495,6 +531,10 @@
         private System.Windows.Forms.ToolStripMenuItem mantenimientosLíneasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoTipoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoMarcaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoVehiculoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoTrayectoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estadoSolicitudToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
     }
 }
 

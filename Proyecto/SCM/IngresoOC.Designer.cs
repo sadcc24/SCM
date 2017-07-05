@@ -44,7 +44,6 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblObservaciones = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.btnRegistrar = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.txtTotalProducto = new System.Windows.Forms.TextBox();
@@ -60,9 +59,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCodProducto = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.grupoFiltrar = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnRefrescar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalleProductos)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.grupoFiltrar.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -79,7 +89,7 @@
             // cboBodega
             // 
             this.cboBodega.FormattingEnabled = true;
-            this.cboBodega.Location = new System.Drawing.Point(284, 55);
+            this.cboBodega.Location = new System.Drawing.Point(247, 102);
             this.cboBodega.Name = "cboBodega";
             this.cboBodega.Size = new System.Drawing.Size(120, 21);
             this.cboBodega.TabIndex = 6;
@@ -87,7 +97,7 @@
             // lblBodega
             // 
             this.lblBodega.AutoSize = true;
-            this.lblBodega.Location = new System.Drawing.Point(222, 58);
+            this.lblBodega.Location = new System.Drawing.Point(185, 105);
             this.lblBodega.Name = "lblBodega";
             this.lblBodega.Size = new System.Drawing.Size(47, 13);
             this.lblBodega.TabIndex = 5;
@@ -96,7 +106,7 @@
             // lblCuenta
             // 
             this.lblCuenta.AutoSize = true;
-            this.lblCuenta.Location = new System.Drawing.Point(457, 55);
+            this.lblCuenta.Location = new System.Drawing.Point(420, 102);
             this.lblCuenta.Name = "lblCuenta";
             this.lblCuenta.Size = new System.Drawing.Size(89, 13);
             this.lblCuenta.TabIndex = 7;
@@ -105,7 +115,7 @@
             // cboCuentaContable
             // 
             this.cboCuentaContable.FormattingEnabled = true;
-            this.cboCuentaContable.Location = new System.Drawing.Point(553, 52);
+            this.cboCuentaContable.Location = new System.Drawing.Point(516, 99);
             this.cboCuentaContable.Name = "cboCuentaContable";
             this.cboCuentaContable.Size = new System.Drawing.Size(121, 21);
             this.cboCuentaContable.TabIndex = 8;
@@ -113,7 +123,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(814, 52);
+            this.comboBox2.Location = new System.Drawing.Point(777, 99);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 10;
@@ -121,7 +131,7 @@
             // lblCentroCosto
             // 
             this.lblCentroCosto.AutoSize = true;
-            this.lblCentroCosto.Location = new System.Drawing.Point(733, 52);
+            this.lblCentroCosto.Location = new System.Drawing.Point(696, 99);
             this.lblCentroCosto.Name = "lblCentroCosto";
             this.lblCentroCosto.Size = new System.Drawing.Size(71, 13);
             this.lblCentroCosto.TabIndex = 9;
@@ -130,7 +140,7 @@
             // cboProveedor
             // 
             this.cboProveedor.FormattingEnabled = true;
-            this.cboProveedor.Location = new System.Drawing.Point(284, 98);
+            this.cboProveedor.Location = new System.Drawing.Point(247, 145);
             this.cboProveedor.Name = "cboProveedor";
             this.cboProveedor.Size = new System.Drawing.Size(121, 21);
             this.cboProveedor.TabIndex = 12;
@@ -138,7 +148,7 @@
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Location = new System.Drawing.Point(210, 101);
+            this.lblProveedor.Location = new System.Drawing.Point(173, 148);
             this.lblProveedor.Name = "lblProveedor";
             this.lblProveedor.Size = new System.Drawing.Size(59, 13);
             this.lblProveedor.TabIndex = 11;
@@ -147,7 +157,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(553, 95);
+            this.comboBox3.Location = new System.Drawing.Point(516, 142);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 14;
@@ -155,7 +165,7 @@
             // lblMoneda
             // 
             this.lblMoneda.AutoSize = true;
-            this.lblMoneda.Location = new System.Drawing.Point(457, 98);
+            this.lblMoneda.Location = new System.Drawing.Point(420, 145);
             this.lblMoneda.Name = "lblMoneda";
             this.lblMoneda.Size = new System.Drawing.Size(49, 13);
             this.lblMoneda.TabIndex = 13;
@@ -164,7 +174,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(733, 98);
+            this.lblTotal.Location = new System.Drawing.Point(696, 145);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(34, 13);
             this.lblTotal.TabIndex = 15;
@@ -172,7 +182,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(814, 95);
+            this.txtTotal.Location = new System.Drawing.Point(777, 142);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(118, 20);
             this.txtTotal.TabIndex = 16;
@@ -180,7 +190,7 @@
             // lblObservaciones
             // 
             this.lblObservaciones.AutoSize = true;
-            this.lblObservaciones.Location = new System.Drawing.Point(188, 154);
+            this.lblObservaciones.Location = new System.Drawing.Point(151, 201);
             this.lblObservaciones.Name = "lblObservaciones";
             this.lblObservaciones.Size = new System.Drawing.Size(81, 13);
             this.lblObservaciones.TabIndex = 17;
@@ -188,22 +198,11 @@
             // 
             // txtObservacion
             // 
-            this.txtObservacion.Location = new System.Drawing.Point(283, 151);
+            this.txtObservacion.Location = new System.Drawing.Point(246, 198);
             this.txtObservacion.Multiline = true;
             this.txtObservacion.Name = "txtObservacion";
             this.txtObservacion.Size = new System.Drawing.Size(651, 60);
             this.txtObservacion.TabIndex = 18;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrar.Location = new System.Drawing.Point(499, 233);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(175, 23);
-            this.btnRegistrar.TabIndex = 19;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // tabPage1
             // 
@@ -337,19 +336,122 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(153, 262);
+            this.tabControl1.Location = new System.Drawing.Point(116, 293);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(782, 196);
             this.tabControl1.TabIndex = 20;
             // 
+            // grupoFiltrar
+            // 
+            this.grupoFiltrar.Controls.Add(this.label4);
+            this.grupoFiltrar.Controls.Add(this.txtCodigo);
+            this.grupoFiltrar.Controls.Add(this.button1);
+            this.grupoFiltrar.Controls.Add(this.btnRefrescar);
+            this.grupoFiltrar.Controls.Add(this.btnCancelar);
+            this.grupoFiltrar.Controls.Add(this.btnGuardar);
+            this.grupoFiltrar.Controls.Add(this.btnEliminar);
+            this.grupoFiltrar.Controls.Add(this.btnEditar);
+            this.grupoFiltrar.Controls.Add(this.btnNuevo);
+            this.grupoFiltrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.grupoFiltrar.Location = new System.Drawing.Point(0, 0);
+            this.grupoFiltrar.Name = "grupoFiltrar";
+            this.grupoFiltrar.Size = new System.Drawing.Size(1083, 61);
+            this.grupoFiltrar.TabIndex = 116;
+            this.grupoFiltrar.TabStop = false;
+            this.grupoFiltrar.Text = "MENU";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(600, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(212, 23);
+            this.label4.TabIndex = 115;
+            this.label4.Text = "Ingreso Orden de Compra";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(384, 25);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(48, 20);
+            this.txtCodigo.TabIndex = 107;
+            this.txtCodigo.Tag = "estado";
+            this.txtCodigo.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(318, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 42);
+            this.button1.TabIndex = 11;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnRefrescar
+            // 
+            this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
+            this.btnRefrescar.Location = new System.Drawing.Point(267, 13);
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
+            this.btnRefrescar.TabIndex = 10;
+            this.btnRefrescar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.Location = new System.Drawing.Point(216, 13);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(48, 42);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(165, 13);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
+            this.btnGuardar.TabIndex = 8;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(114, 13);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(48, 42);
+            this.btnEliminar.TabIndex = 7;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Location = new System.Drawing.Point(63, 13);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(48, 42);
+            this.btnEditar.TabIndex = 6;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(12, 13);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(48, 42);
+            this.btnNuevo.TabIndex = 5;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
             // ingresoOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 500);
+            this.ClientSize = new System.Drawing.Size(1083, 595);
+            this.Controls.Add(this.grupoFiltrar);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtObservacion);
             this.Controls.Add(this.lblObservaciones);
             this.Controls.Add(this.comboBox3);
@@ -376,6 +478,8 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDetalleProductos)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.grupoFiltrar.ResumeLayout(false);
+            this.grupoFiltrar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +502,6 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblObservaciones;
         private System.Windows.Forms.TextBox txtObservacion;
-        private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.TextBox txtTotalProducto;
@@ -414,6 +517,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCodProducto;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.GroupBox grupoFiltrar;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtCodigo;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnRefrescar;
+        public System.Windows.Forms.Button btnCancelar;
+        public System.Windows.Forms.Button btnGuardar;
+        public System.Windows.Forms.Button btnEliminar;
+        public System.Windows.Forms.Button btnEditar;
+        public System.Windows.Forms.Button btnNuevo;
     }
 }
 

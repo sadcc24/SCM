@@ -387,5 +387,37 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void tipoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoVehiculo temp = new mantenimientoTipoVehiculo();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void tipoTrayectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTrayecto temp = new mantenimientoTrayecto();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void estadoSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoSolicitud temp = new mantenimientoEstadoSolicitud();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void tipoSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoSolicitud temp = new mantenimientoTipoSolicitud();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

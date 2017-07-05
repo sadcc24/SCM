@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,50 +23,55 @@ namespace SCM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            orden_compra_BO oc = new orden_compra_BO();
-            DataTable dtBodega = oc.verBodega(1);
-            DataTable dtCentro = oc.verCentroCosto();
-            DataTable dtCuenta = oc.verCuentaContable();
-            DataTable dtProveedor = oc.verProveedor(1);
-            DataTable dtMoneda = oc.verMoneda();
-            cboBodega.DataSource = dtBodega;
-            cboBodega.DisplayMember = "nombre_bodega";
-            cboBodega.ValueMember = "idbodega";
-            comboBox2.DataSource = dtCentro;
-            comboBox2.DisplayMember = "nombre_centro";
-            comboBox2.ValueMember = "idcentro";
-            cboCuentaContable.DataSource = dtCuenta;
-            cboCuentaContable.DisplayMember = "nombre";
-            cboCuentaContable.ValueMember = "idCuenta";
-            cboProveedor.DataSource = dtProveedor;
-            cboProveedor.DisplayMember = "nombre_proveedor";
-            cboProveedor.ValueMember = "idproveedor";
-            comboBox3.DataSource = dtMoneda;
-            comboBox3.DisplayMember = "nombre_moneda";
-            comboBox3.ValueMember = "idmoneda";
-            tabControl1.Enabled = false;
-            txtTotal.Enabled = true;
-            txtObservacion.Enabled = true;
-            cboBodega.Enabled = true;
-            cboCuentaContable.Enabled = true;
-            cboProveedor.Enabled = true;
-            comboBox2.Enabled = true;
-            comboBox3.Enabled = true;
-            btnRegistrar.Enabled = true;
+            try
+            {
+                string[] empresa = Globales.Empresa.CapturarEmpresa();
+                string[] usuario = Globales.Usuario.CapturarUsuario();
+                orden_compra_BO oc = new orden_compra_BO();
+                DataTable dtBodega = oc.verBodega(int.Parse(empresa[0]));
+                DataTable dtCentro = oc.verCentroCosto();
+                DataTable dtCuenta = oc.verCuentaContable();
+                DataTable dtProveedor = oc.verProveedor(1);
+                DataTable dtMoneda = oc.verMoneda();
+                cboBodega.DataSource = dtBodega;
+                cboBodega.DisplayMember = "nombre_bodega";
+                cboBodega.ValueMember = "idbodega";
+                comboBox2.DataSource = dtCentro;
+                comboBox2.DisplayMember = "nombre_centro";
+                comboBox2.ValueMember = "idcentro";
+                cboCuentaContable.DataSource = dtCuenta;
+                cboCuentaContable.DisplayMember = "nombre";
+                cboCuentaContable.ValueMember = "idCuenta";
+                cboProveedor.DataSource = dtProveedor;
+                cboProveedor.DisplayMember = "nombre_proveedor";
+                cboProveedor.ValueMember = "idproveedor";
+                comboBox3.DataSource = dtMoneda;
+                comboBox3.DisplayMember = "nombre_moneda";
+                comboBox3.ValueMember = "idmoneda";
+            }
+            catch(Exception Ex) { }
+            
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string[] empresa = Globales.Empresa.CapturarEmpresa();
+            string[] usuario = Globales.Usuario.CapturarUsuario();
             DataTable id = new DataTable();
             orden_compra_BO orden = new orden_compra_BO();
             orden_compra_Entity oc = new orden_compra_Entity();
             try
             {
                 oc.id_sede = 1;
-                oc.id_empresa = 1;
+                oc.id_empresa = int.Parse(empresa[0]);
                 oc.observaacion = txtObservacion.Text;
                 oc.total = decimal.Parse(txtTotal.Text);
-                oc.usuario = "Admin";
+                oc.usuario = usuario[1];
                 oc.fecha_creacion = DateTime.Now;
                 oc.id_centro = int.Parse(comboBox2.SelectedValue.ToString());
                 oc.id_bodega = int.Parse(cboBodega.SelectedValue.ToString());
@@ -83,15 +87,7 @@ namespace SCM
                 idoc = int.Parse(id.Rows[0][0].ToString());
                 txtObservacion.Text = "";
                 txtTotal.Text = "";
-                txtTotal.Enabled = false;
-                txtObservacion.Enabled = false;
-                cboBodega.Enabled = false;
-                cboCuentaContable.Enabled = false;
-                cboProveedor.Enabled = false;
-                comboBox2.Enabled = false;
-                comboBox3.Enabled = false;
-                btnRegistrar.Enabled = false;
-                tabControl1.Enabled = true;
+                
 
 
             }
