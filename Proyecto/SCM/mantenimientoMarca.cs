@@ -25,7 +25,14 @@ namespace SCM
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            gbInsertar.Enabled = true;
+            Marca prdu = new Marca();
+            prdu.MdiParent = this.MdiParent;
+            prdu.btnEditar.Enabled = false;
+            prdu.btnEliminar.Enabled = false;
+            prdu.txtID.ReadOnly = true;
+            this.Hide();
+
+            prdu.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -141,31 +148,7 @@ namespace SCM
         #endregion
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtDescripcion.Text))
-            {
-                MessageBox.Show("Debe agregar la Descripción de Tipo de Movimiento de Inventarios.");
-                return;
-            }
-            else
-            {
-                try
-                {
-                    clsMarcas_Entity marc = new clsMarcas_Entity();
-                    clsMarcas_BO marcas = new clsMarcas_BO();
-                    marc.strDescripcion = txtDescripcion.Text;
-                    marcas.vInsertarMarca(marc);
-                    MessageBox.Show("Marca Ha sido Guardada.");
-                    vConsultarMarcasDisponibles();
-                    txtDescripcion.Text = "";
-                    gbInsertar.Enabled = false;
-
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+          
         }
 
         private void btnPrimero_Click(object sender, EventArgs e)
@@ -187,5 +170,28 @@ namespace SCM
         {
             funirUltimo(gvMarcas);
         }
+
+        private void gvMarcas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string idmarca, descripcion;
+            idmarca = gvMarcas.Rows[e.RowIndex].Cells[0].Value.ToString();
+            descripcion = gvMarcas.Rows[e.RowIndex].Cells[1].Value.ToString();
+
+            //    MessageBox.Show(operacion);
+
+            Marca frm = new Marca();
+            frm.txtID.Text = idmarca;
+            frm.txtDescripcion.Text = descripcion;
+            
+            frm.btnEditar.Enabled = false;
+            frm.btnEliminar.Enabled = true;
+            frm.btnGuardar.Enabled = false;
+            frm.txtID.ReadOnly = true;
+            frm.ShowInTaskbar = false;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog(mostrarMenu.ActiveForm);
+        }
     }
 }
+    
+

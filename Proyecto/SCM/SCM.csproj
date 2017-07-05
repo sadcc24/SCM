@@ -266,6 +266,12 @@
     <Compile Include="mantenimientoUsuarios.Designer.cs">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
     <Compile Include="mostrarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +315,12 @@
     </Compile>
     <Compile Include="seguimientoST.Designer.cs">
       <DependentUpon>seguimientoST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoMovimiento.Designer.cs">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="TipoSolicitud.cs">
       <SubType>Form</SubType>
@@ -439,6 +451,9 @@
     <EmbeddedResource Include="mantenimientoUsuarios.resx">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mostrarEmpresa.resx">
       <DependentUpon>mostrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -469,6 +484,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="seguimientoST.resx">
       <DependentUpon>seguimientoST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoMovimiento.resx">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoSolicitud.resx">
       <DependentUpon>TipoSolicitud.cs</DependentUpon>

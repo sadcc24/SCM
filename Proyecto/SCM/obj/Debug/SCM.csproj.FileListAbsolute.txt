@@ -249,3 +249,5 @@ C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.TipoMovimiento.resources
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\SCM\obj\Debug\SCM.Marca.resources

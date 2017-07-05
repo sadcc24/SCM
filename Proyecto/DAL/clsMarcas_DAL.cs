@@ -23,6 +23,10 @@ namespace DAL
                 + marcas.strDescripcion + "')");
         }
 
+        public void vEliminarMarca(clsMarcas_Entity marcas)
+        {
+            cnn.deleteSQL("DELETE FROM [dbo].[MARCA] where idmarca =" + marcas.strIdMarca);
+        }
 
 
 

@@ -21,7 +21,9 @@ namespace SCM
         private void generaContrasena_Load(object sender, EventArgs e)
         {
             btnActualizar.Enabled = false;
-
+            string[] empresa = Globales.Empresa.CapturarEmpresa();
+            this.lblempresa.Text = "(" + empresa[0] + ")" + empresa[1];
+            lblempresa.Visible = false;
             clsProductos_BO bodega = new clsProductos_BO();
             cmbBodega.DataSource = bodega.vdtComboBodega();
             cmbBodega.ValueMember = "ID";

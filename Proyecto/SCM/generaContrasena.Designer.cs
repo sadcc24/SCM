@@ -45,6 +45,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblempresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdFactura)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -210,11 +211,21 @@
             this.lblTitulo.Text = "Genera Contraseña a Proveedores";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblempresa
+            // 
+            this.lblempresa.AutoSize = true;
+            this.lblempresa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblempresa.Location = new System.Drawing.Point(830, 9);
+            this.lblempresa.Name = "lblempresa";
+            this.lblempresa.Size = new System.Drawing.Size(0, 19);
+            this.lblempresa.TabIndex = 30;
+            // 
             // generaContrasena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 419);
+            this.Controls.Add(this.lblempresa);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdFactura);
@@ -251,5 +262,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
         private System.Windows.Forms.ComboBox cmbBodega;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblempresa;
     }
 }

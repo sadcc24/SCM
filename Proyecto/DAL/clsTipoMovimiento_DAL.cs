@@ -23,9 +23,14 @@ namespace DAL
             cnn.insertSQL("INSERT INTO [dbo].[TIPOMOVIMIENTO] (descripcion,operacion,activo) VALUES ('"
                 + tipomovimiento.strDescripcion + "'," + tipomovimiento.strOperacion  + ",1)");
         }
-   
 
-     
+
+        public void vEliminarTipoMovimiento(clsTipoMovimiento_Entity tipomovimiento)
+        {
+            cnn.deleteSQL("DELETE FROM [dbo].[TIPOMOVIMIENTO] WHERE IDTIPOMOVIMIENTO =" + tipomovimiento.strIdTipoMovimiento);
+        }
+
+
 
         public DataTable vConsultarTipoMovimiento()
         {

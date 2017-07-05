@@ -174,7 +174,9 @@ namespace SCM
                                     pro.strPeso = strpeso;
                                     pro.struTamano = strutamano;
                                     pro.struPeso = strupeso;
-                                    pro.strIdEmpresa = "1";
+
+                                    string[] empresa = Globales.Empresa.CapturarEmpresa();
+                                    pro.strIdEmpresa = empresa[0];
 
 
                                     producto.vInsertarProducto(pro);
