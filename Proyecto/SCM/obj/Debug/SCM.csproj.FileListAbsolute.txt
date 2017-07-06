@@ -185,6 +185,12 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Trayecto
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
+<<<<<<< HEAD
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
+=======
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
+>>>>>>> e09cd8e64eb3f3eb4f64c6b6547ce2aed998aa46
