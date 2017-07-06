@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dllSeguridadSAD;
+using DAL;
 
 namespace SCM
 {
@@ -19,7 +20,7 @@ namespace SCM
             pbrBarra.Style = ProgressBarStyle.Continuous;
             pbrBarra.Maximum = 100;
             pbrBarra.Value = 0;
-
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Aplicación ejecutada");
             tmrReloj.Enabled = true;
         }
         public void incrementarBarra()

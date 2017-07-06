@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
+
 namespace SCM
 {
     public partial class mantenimientoUsuarios : Form
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         public mantenimientoUsuarios()
         {
             InitializeComponent();
@@ -36,13 +38,9 @@ namespace SCM
 
         private void mantenimientoUsuarios_Load(object sender, EventArgs e)
         {
-            string[] usuario = Globales.Usuario.CapturarUsuario();
-            string query = "SELECT Rol.idrol, Rol.Rol as Rol, codusuario FROM [dbo].[Usuario_1] INNER JOIN ROL ON Usuario_1.idrol = Rol.idrol  WHERE Status = 1 AND codusuario =" + usuario[0];
-            DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Usuario_1");
-
-            gvUsuariosA.DataSource = ds.Tables[0];
-            Globales.Rol = gvUsuariosA.Rows[0].Cells[0].Value.ToString();
-            if (Globales.Rol == "1")
+            string rolactual;
+            rolactual = Globales.Usuario.CapturarRol(Globales.Conexion);
+            if (rolactual == "1")
             {
                 //MessageBox.Show("Sí tiene permisos de Administrador");
                 vConsultarUsuariosActivas();

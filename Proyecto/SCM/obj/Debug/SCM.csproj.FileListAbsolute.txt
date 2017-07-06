@@ -126,8 +126,6 @@ C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SC
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\bin\Debug\dllSeguridadSAD.dll
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\bin\Debug\dllSeguridadSAD.pdb
 C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\SCM\obj\Debug\SCM.mostrarEmpresa.resources
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.dll
@@ -186,5 +184,7 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.TipoVehi
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe

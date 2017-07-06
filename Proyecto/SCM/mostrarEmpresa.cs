@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using dllSeguridadSAD;
-
+using DAL;
 
 namespace SCM
 {
@@ -52,12 +52,13 @@ namespace SCM
                     MessageBox.Show("Seleccione una empresa", "Seguridad SAD",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.Show();
+                    
                 }
                 if (autenticado == true)
                 {
-                   // MessageBox.Show("¡Bienvenido " + dgvEmpresa[1, seleccionado].Value.ToString() + "!", "Seguridad SAD",
-                   //             MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    // MessageBox.Show("¡Bienvenido " + dgvEmpresa[1, seleccionado].Value.ToString() + "!", "Seguridad SAD",
+                    //             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Empresa seleccionada");
                     mostrarMenu temp = new mostrarMenu();
                     this.Hide();
                     temp.Show();
@@ -72,6 +73,7 @@ namespace SCM
                 MessageBox.Show("Seleccione una empresa", "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Show();
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Error en Selección de Empresa");
             }
         }
     }

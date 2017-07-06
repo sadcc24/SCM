@@ -32,10 +32,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL">
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="dllSeguridadSAD">
       <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
     </Reference>
@@ -145,7 +149,6 @@
     <Compile Include="generaDevolucionProveedor.Designer.cs">
       <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Globales.cs" />
     <Compile Include="ingresoDetalleST.cs">
       <SubType>Form</SubType>
     </Compile>

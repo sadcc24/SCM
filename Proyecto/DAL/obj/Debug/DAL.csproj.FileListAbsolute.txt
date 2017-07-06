@@ -20,3 +20,5 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\dllSeguridadSAD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\dllSeguridadSAD.pdb

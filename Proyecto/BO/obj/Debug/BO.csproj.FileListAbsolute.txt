@@ -28,3 +28,5 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\dllSeguridadSAD.pdb

@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using Entity;
 using System.Data;
 
+
+
 namespace DAL
 {
     public class Lineas_DAL
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
 
         public void vInsertLinea(Lineas_Entity Linea)
         {

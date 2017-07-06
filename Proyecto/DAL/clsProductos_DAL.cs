@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Entity;
 using System.Data;
+
+
 namespace DAL
 {
   public  class clsProductos_DAL
@@ -13,7 +15,7 @@ namespace DAL
         // Analista : Pamela Jacqueline Selman David
         // Comentarios :
 
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         // MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         public DataTable dtComboBodega()

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace SCM
 {
@@ -321,6 +322,7 @@ namespace SCM
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Aplicación Cerrada");
             Application.Exit();
         }
 
@@ -331,6 +333,7 @@ namespace SCM
             cambio = MessageBox.Show("¿Está seguro de cambiar de Empresa?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (cambio == DialogResult.Yes)
             {
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Cambio de Empresa");
                 mostrarEmpresa temp = new mostrarEmpresa();   
                 temp.Show();
             }
@@ -347,6 +350,7 @@ namespace SCM
             cambio = MessageBox.Show("¿Está seguro de cambiar de Usuario?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (cambio == DialogResult.Yes)
             {
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Cierre de Sesión");
                 mostrarLogin temp = new mostrarLogin();
                 temp.Show();
             }

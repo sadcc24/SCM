@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dllSeguridadSAD">
+      <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
+    </Reference>
     <Reference Include="MRP_BD">
       <HintPath>..\..\MRP_BD.dll</HintPath>
     </Reference>
@@ -49,6 +52,7 @@
     <Compile Include="clsProductos_DAL.cs" />
     <Compile Include="clsTipoMovimiento_DAL.cs" />
     <Compile Include="estado_solicitud_DAL.cs" />
+    <Compile Include="Globales.cs" />
     <Compile Include="Lineas_DAL.cs" />
     <Compile Include="orden_compra_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
