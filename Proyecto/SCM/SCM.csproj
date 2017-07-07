@@ -34,7 +34,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <StartupObject />
+    <StartupObject>SCM.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DAL">
@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="autorizaPagoProveedores.Designer.cs">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
     <Compile Include="Bodegas.cs">
       <SubType>Form</SubType>
@@ -339,12 +345,16 @@
     </Compile>
     <EmbeddedResource Include="ajustarExistencias.resx">
       <DependentUpon>ajustarExistencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="AutorizacionOC.resx">
       <DependentUpon>AutorizacionOC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="autorizaPagoProveedores.resx">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bodegas.resx">
       <DependentUpon>Bodegas.cs</DependentUpon>

@@ -350,7 +350,7 @@ namespace SCM
             cambio = MessageBox.Show("¿Está seguro de cambiar de Usuario?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (cambio == DialogResult.Yes)
             {
-                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Cierre de Sesión");
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Sesión Finalizada");
                 mostrarLogin temp = new mostrarLogin();
                 temp.Show();
             }
@@ -419,6 +419,14 @@ namespace SCM
         private void tipoSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mantenimientoTipoSolicitud temp = new mantenimientoTipoSolicitud();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void bitácoraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bitacora temp = new Bitacora();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

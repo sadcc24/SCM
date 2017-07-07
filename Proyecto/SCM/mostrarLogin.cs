@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Seguridad
+    Fecha de asignación: 13/Junio
+    Fecha de entrega: 27/Junio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -47,6 +47,10 @@
             this.solicitudDeTransportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vehículosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.serviciosAVehículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoTrayectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auditoríaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.congelarExitenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capturarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,10 +78,7 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.tipoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoTrayectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.estadoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -232,6 +233,34 @@
             this.serviciosAVehículosToolStripMenuItem.Text = "Servicios a Vehículos";
             this.serviciosAVehículosToolStripMenuItem.Click += new System.EventHandler(this.serviciosAVehículosToolStripMenuItem_Click);
             // 
+            // tipoVehiculoToolStripMenuItem
+            // 
+            this.tipoVehiculoToolStripMenuItem.Name = "tipoVehiculoToolStripMenuItem";
+            this.tipoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoVehiculoToolStripMenuItem.Text = "Tipo Vehiculo";
+            this.tipoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.tipoVehiculoToolStripMenuItem_Click);
+            // 
+            // tipoTrayectoToolStripMenuItem
+            // 
+            this.tipoTrayectoToolStripMenuItem.Name = "tipoTrayectoToolStripMenuItem";
+            this.tipoTrayectoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoTrayectoToolStripMenuItem.Text = "Tipo Trayecto";
+            this.tipoTrayectoToolStripMenuItem.Click += new System.EventHandler(this.tipoTrayectoToolStripMenuItem_Click);
+            // 
+            // estadoSolicitudToolStripMenuItem
+            // 
+            this.estadoSolicitudToolStripMenuItem.Name = "estadoSolicitudToolStripMenuItem";
+            this.estadoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.estadoSolicitudToolStripMenuItem.Text = "Estado Solicitud";
+            this.estadoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.estadoSolicitudToolStripMenuItem_Click);
+            // 
+            // tipoSolicitudToolStripMenuItem
+            // 
+            this.tipoSolicitudToolStripMenuItem.Name = "tipoSolicitudToolStripMenuItem";
+            this.tipoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.tipoSolicitudToolStripMenuItem.Text = "Tipo Solicitud";
+            this.tipoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.tipoSolicitudToolStripMenuItem_Click);
+            // 
             // auditoríaToolStripMenuItem1
             // 
             this.auditoríaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -284,7 +313,8 @@
             this.configuracionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cambiarEmpresaToolStripMenuItem,
             this.cambioDeUsuarioToolStripMenuItem,
-            this.mantenimientoUsuariosToolStripMenuItem});
+            this.mantenimientoUsuariosToolStripMenuItem,
+            this.bitácoraDelSistemaToolStripMenuItem});
             this.configuracionesToolStripMenuItem.Image = global::SCM.Properties.Resources.ajustes;
             this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
             this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
@@ -430,33 +460,12 @@
             this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
             this.tsStatusFecha.Text = "Fecha";
             // 
-            // tipoVehiculoToolStripMenuItem
+            // bitácoraDelSistemaToolStripMenuItem
             // 
-            this.tipoVehiculoToolStripMenuItem.Name = "tipoVehiculoToolStripMenuItem";
-            this.tipoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.tipoVehiculoToolStripMenuItem.Text = "Tipo Vehiculo";
-            this.tipoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.tipoVehiculoToolStripMenuItem_Click);
-            // 
-            // tipoTrayectoToolStripMenuItem
-            // 
-            this.tipoTrayectoToolStripMenuItem.Name = "tipoTrayectoToolStripMenuItem";
-            this.tipoTrayectoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.tipoTrayectoToolStripMenuItem.Text = "Tipo Trayecto";
-            this.tipoTrayectoToolStripMenuItem.Click += new System.EventHandler(this.tipoTrayectoToolStripMenuItem_Click);
-            // 
-            // estadoSolicitudToolStripMenuItem
-            // 
-            this.estadoSolicitudToolStripMenuItem.Name = "estadoSolicitudToolStripMenuItem";
-            this.estadoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.estadoSolicitudToolStripMenuItem.Text = "Estado Solicitud";
-            this.estadoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.estadoSolicitudToolStripMenuItem_Click);
-            // 
-            // tipoSolicitudToolStripMenuItem
-            // 
-            this.tipoSolicitudToolStripMenuItem.Name = "tipoSolicitudToolStripMenuItem";
-            this.tipoSolicitudToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.tipoSolicitudToolStripMenuItem.Text = "Tipo Solicitud";
-            this.tipoSolicitudToolStripMenuItem.Click += new System.EventHandler(this.tipoSolicitudToolStripMenuItem_Click);
+            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
+            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
+            this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
             // 
             // mostrarMenu
             // 
@@ -535,6 +544,7 @@
         private System.Windows.Forms.ToolStripMenuItem tipoTrayectoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estadoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bitácoraDelSistemaToolStripMenuItem;
     }
 }
 

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Usuarios
+    Fecha de asignación: 20/Junio
+    Fecha de entrega: 03/Julio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,18 +44,19 @@ namespace SCM
 
         private void mantenimientoUsuarios_Load(object sender, EventArgs e)
         {
-            string rolactual;
-            rolactual = Globales.Usuario.CapturarRol(Globales.Conexion);
-            if (rolactual == "1")
+            //Verificación de Rol de Administrador            
+            if (Globales.Usuario.CapturarRol(Globales.Conexion) == "1")
             {
                 //MessageBox.Show("Sí tiene permisos de Administrador");
                 vConsultarUsuariosActivas();
             }
             else
             {
-                MessageBox.Show("No tiene permisos de Administrador");
+                MessageBox.Show("No tiene permisos de Administrador", "Seguridad SAD",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 this.BeginInvoke(new MethodInvoker(this.Close));
             }
+            //Verificación de Rol de Administrador
+
             string query2 = "SELECT idrol, Rol FROM [dbo].[Rol]";
             DataSet ds2 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query2, "Rol");
             int i;

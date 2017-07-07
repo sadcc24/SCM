@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Objetos Globales
+    Fecha de asignación: 20/Junio
+    Fecha de entrega: 03/Julio
+*/using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
