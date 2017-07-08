@@ -61,13 +61,13 @@ namespace SCM
             dgvDetalleST.Enabled = false;
         }
 
-        private void Enabled()
-        {
-            txtNotas.Enabled = true;
-            cmbTipoST.Enabled = true;
-            btnDetalle.Enabled = true;
-            dgvDetalleST.Enabled = true;
-        }
+        //private void Enabled()
+        //{
+        //    txtNotas.Enabled = true;
+        //    cmbTipoST.Enabled = true;
+        //    btnDetalle.Enabled = true;
+        //    dgvDetalleST.Enabled = true;
+        //}
 
         private void actualizaGridDetalle(int codigo)
         {
@@ -157,7 +157,10 @@ namespace SCM
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Enabled();
+            txtNotas.Enabled = true;
+            cmbTipoST.Enabled = true;
+            btnDetalle.Enabled = true;
+            dgvDetalleST.Enabled = true;
         }
 
      

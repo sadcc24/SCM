@@ -3,3 +3,7 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.pd
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.pdb

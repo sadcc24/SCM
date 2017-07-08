@@ -20,8 +20,8 @@ using DAL;
 namespace SCM
 {
     public partial class mostrarEmpresa : Form
-    {        
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
+    {
+        MRP_BD cnn = Globales.cnn;
         public mostrarEmpresa()
         {
             InitializeComponent();

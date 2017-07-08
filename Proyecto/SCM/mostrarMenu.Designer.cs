@@ -61,6 +61,7 @@
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +79,7 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kardexProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -303,6 +304,8 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kardexProductosToolStripMenuItem});
             this.reportesToolStripMenuItem.Image = global::SCM.Properties.Resources.estadisticas;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
@@ -340,6 +343,13 @@
             this.mantenimientoUsuariosToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.mantenimientoUsuariosToolStripMenuItem.Text = "Mantenimiento Usuarios";
             this.mantenimientoUsuariosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoUsuariosToolStripMenuItem_Click);
+            // 
+            // bitácoraDelSistemaToolStripMenuItem
+            // 
+            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
+            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
+            this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
             // 
             // helpMenu
             // 
@@ -460,12 +470,12 @@
             this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
             this.tsStatusFecha.Text = "Fecha";
             // 
-            // bitácoraDelSistemaToolStripMenuItem
+            // kardexProductosToolStripMenuItem
             // 
-            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
-            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
-            this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
+            this.kardexProductosToolStripMenuItem.Name = "kardexProductosToolStripMenuItem";
+            this.kardexProductosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.kardexProductosToolStripMenuItem.Text = "Kardex Productos";
+            this.kardexProductosToolStripMenuItem.Click += new System.EventHandler(this.kardexProductosToolStripMenuItem_Click);
             // 
             // mostrarMenu
             // 
@@ -545,6 +555,7 @@
         private System.Windows.Forms.ToolStripMenuItem estadoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitácoraDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kardexProductosToolStripMenuItem;
     }
 }
 

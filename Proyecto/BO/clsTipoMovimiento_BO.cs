@@ -20,8 +20,12 @@ namespace BO
             tipomovinsert.vInsertarTipoMovimiento(tipom);
         }
 
-       
-     
+        public void vEliminarTipoMovimiento(clsTipoMovimiento_Entity tipom)
+        {
+            clsTipoMovimiento_DAL tipomovdelete = new clsTipoMovimiento_DAL();
+            tipomovdelete.vEliminarTipoMovimiento(tipom);
+        }
+
 
         public DataTable vConsultarTipoMovimiento()
         {
