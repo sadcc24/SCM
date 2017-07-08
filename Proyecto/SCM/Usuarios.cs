@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Usuarios
+    Fecha de asignación: 20/Junio
+    Fecha de entrega: 03/Julio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 
 namespace SCM
 {

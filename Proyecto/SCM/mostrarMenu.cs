@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace SCM
 {
@@ -181,6 +182,7 @@ namespace SCM
 
         private void movimientosAlInventarioToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Movimientos de Inventario");
             ingresoInventario temp = new ingresoInventario();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -213,6 +215,7 @@ namespace SCM
 
         private void proveedoresYToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Genera Contraseña");
             generaContrasena temp = new generaContrasena();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -229,6 +232,7 @@ namespace SCM
 
         private void manteniminetoProdutosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Mantenimiento de Productos");
             mantenimientoProductos temp = new mantenimientoProductos();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -237,6 +241,7 @@ namespace SCM
 
         private void mantenimientoBodegasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Mantenimiento de Bodegas");
             mantenimientoBodegas temp = new mantenimientoBodegas();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -321,6 +326,7 @@ namespace SCM
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Aplicación Cerrada");
             Application.Exit();
         }
 
@@ -331,6 +337,7 @@ namespace SCM
             cambio = MessageBox.Show("¿Está seguro de cambiar de Empresa?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (cambio == DialogResult.Yes)
             {
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Cambio de Empresa");
                 mostrarEmpresa temp = new mostrarEmpresa();   
                 temp.Show();
             }
@@ -347,6 +354,7 @@ namespace SCM
             cambio = MessageBox.Show("¿Está seguro de cambiar de Usuario?", "Seguridad SAD", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (cambio == DialogResult.Yes)
             {
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Sesión Finalizada");
                 mostrarLogin temp = new mostrarLogin();
                 temp.Show();
             }
@@ -366,6 +374,7 @@ namespace SCM
 
         private void mantenimientosLíneasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Mantenimiento de Lineas");
             mantenimientoLineas temp = new mantenimientoLineas();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -374,6 +383,7 @@ namespace SCM
 
         private void mantenimientoTipoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Mantenimiento de Tipos de Movimiento");
             mantenimientoTipoMovimientoInventario temp = new mantenimientoTipoMovimientoInventario();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -382,7 +392,56 @@ namespace SCM
 
         private void mantenimientoMarcaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Mantenimiento de Marcas");
             mantenimientoMarca temp = new mantenimientoMarca();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void tipoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoVehiculo temp = new mantenimientoTipoVehiculo();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void tipoTrayectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTrayecto temp = new mantenimientoTrayecto();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void estadoSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoSolicitud temp = new mantenimientoEstadoSolicitud();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void tipoSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoSolicitud temp = new mantenimientoTipoSolicitud();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void bitácoraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bitacora temp = new Bitacora();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void kardexProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kardexProductos temp = new kardexProductos();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

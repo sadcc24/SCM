@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 namespace SCM
 {
     public partial class generaContrasena : Form
@@ -21,8 +22,8 @@ namespace SCM
         private void generaContrasena_Load(object sender, EventArgs e)
         {
             btnActualizar.Enabled = false;
-            string[] empresa = Globales.Empresa.CapturarEmpresa();
-            this.lblempresa.Text = "(" + empresa[0] + ")" + empresa[1];
+            //string[] empresa = Globales.Empresa.CapturarEmpresa();
+            //this.lblempresa.Text = "(" + empresa[0] + ")" + empresa[1];
             lblempresa.Visible = false;
             clsProductos_BO bodega = new clsProductos_BO();
             cmbBodega.DataSource = bodega.vdtComboBodega();
@@ -43,11 +44,12 @@ namespace SCM
             fac.strIdProveedor = idproveedor;
             fac.strBodega = cmbBodega.SelectedValue.ToString();
             grdFactura.DataSource = facturas.vConsultarFacturas(fac);
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Buscar Filtros.");
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            string idfactura,corrfactura,idserie,total,saldo,fecha,idproveedor,idbodega,idmovimiento;
+            string idfactura,/*corrfactura,idserie,total,*/saldo/*,fecha,idproveedor,idbodega,idmovimiento*/;
             try
             {
                 if (grdFactura.Rows.Count > 0)
@@ -61,7 +63,7 @@ namespace SCM
                     int id;
                     id = Convert.ToInt32(bodega.vConsultaUltimoID().Rows[0][0].ToString());
                     //    MessageBox.Show(id.ToString());
-                    id = id ;
+                   
                     foreach (DataGridViewRow fila in grdFactura.Rows)
                     {
                         if (Convert.ToBoolean(fila.Cells[0].Value))
@@ -82,6 +84,7 @@ namespace SCM
                         }
                     }
                     MessageBox.Show("CONTRASEÑA HA SIDO GUARDADA.");
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Generar Contraseña.");
                 }
                      
             }
@@ -97,6 +100,11 @@ namespace SCM
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +12,7 @@ namespace DAL
 {
    public class tipo_vehiculo_DAL
     {
-        MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
-        //   MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
 
         public void inserttipovehiculo(tipo_vehiculo_Entity tip)
@@ -24,7 +24,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -44,7 +44,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -56,7 +56,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
     }

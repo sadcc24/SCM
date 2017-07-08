@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 namespace SCM
 {
     public partial class mantenimientoMarca : Form
@@ -60,6 +61,7 @@ namespace SCM
         {
             clsMarcas_BO marcas = new clsMarcas_BO();
             gvMarcas.DataSource = marcas.vConsultarMarcas();
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Consultar Marcas.");
         }
 
         private void mantenimientoMarca_Load(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+
 using Entity;
 
 namespace DAL
@@ -11,8 +12,7 @@ namespace DAL
     class SeguimientoST_DAL
     {
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
-        MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
-        // MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         #region Bitacora
         public DataTable verBitacora(SolicitudTransporte_Entity st)
         {

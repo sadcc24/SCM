@@ -13,14 +13,14 @@ namespace DAL
         // Analista : Pamela Jacqueline Selman David
         // Comentarios :
 
-        MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD2017", "PJSELMAN\\SAD2017");
+        MRP_BD cnn = Globales.cnn;
         // MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
 
         public DataTable dtFacturasPendientes(clsInventarios_Entity facturas)
         {
             DataTable dtFacturas;
-            dtFacturas = cnn.getSQL("SELECT  [idfactura]  AS  ID ,[corrfactura] AS Correlativo ,[idserie] as Serie ,[total] as Total,[saldo] as Saldo,[fecha] as Fecha,[idproveedor] as Proveedor,[idbodega] as Bodega,[idmovimiento] as [ID MOVIMIENTO], idestadofactura as Estado FROM [SAD2017].[dbo].[FACTURAPROVEEDORES] where idestadofactura = 1 and idbodega = " + facturas.strBodega + " and idproveedor = " + facturas.strIdProveedor);
+            dtFacturas = cnn.getSQL("SELECT  [idfactura]  AS  ID ,[corrfactura] AS Correlativo ,[idserie] as Serie ,[total] as Total,[saldo] as Saldo,[fecha] as Fecha,[idproveedor] as Proveedor,[idbodega] as Bodega,[idmovimiento] as [ID MOVIMIENTO], idestadofactura as Estado FROM [dbo].[FACTURAPROVEEDORES] where idestadofactura = 1 and idbodega = " + facturas.strBodega + " and idproveedor = " + facturas.strIdProveedor);
             return dtFacturas;
         }
 

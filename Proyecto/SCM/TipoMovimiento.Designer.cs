@@ -39,12 +39,12 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbInsertar = new System.Windows.Forms.GroupBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.rbResta = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.rbSuma = new System.Windows.Forms.RadioButton();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.grupoFiltrar.SuspendLayout();
             this.gbInsertar.SuspendLayout();
             this.SuspendLayout();
@@ -159,6 +159,14 @@
             this.gbInsertar.TabStop = false;
             this.gbInsertar.Text = "Datos";
             // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(66, 15);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(83, 20);
+            this.txtID.TabIndex = 124;
+            this.txtID.Tag = "estado";
+            // 
             // rbResta
             // 
             this.rbResta.AutoSize = true;
@@ -169,6 +177,16 @@
             this.rbResta.TabStop = true;
             this.rbResta.Text = "Resta";
             this.rbResta.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(21, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 19);
+            this.label6.TabIndex = 123;
+            this.label6.Text = "ID:";
             // 
             // rbSuma
             // 
@@ -198,24 +216,6 @@
             this.label2.TabIndex = 118;
             this.label2.Text = "Descripción:";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(66, 15);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(83, 20);
-            this.txtID.TabIndex = 124;
-            this.txtID.Tag = "estado";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 19);
-            this.label6.TabIndex = 123;
-            this.label6.Text = "ID:";
-            // 
             // TipoMovimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +228,7 @@
             this.Name = "TipoMovimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tipo Movimiento";
+            this.Load += new System.EventHandler(this.TipoMovimiento_Load);
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
             this.gbInsertar.ResumeLayout(false);

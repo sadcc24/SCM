@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 namespace SCM
 {
     public partial class Marca : Form
@@ -34,7 +35,8 @@ namespace SCM
                     marc.strDescripcion = txtDescripcion.Text;
                     marcas.vInsertarMarca(marc);
                     MessageBox.Show("Marca Ha sido Guardada.");
-                   // vConsultarMarcasDisponibles();
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Guardar Marca.");
+                    // vConsultarMarcasDisponibles();
                     txtDescripcion.Text = "";
                 
 
@@ -62,6 +64,7 @@ namespace SCM
 
                 tipo.vEliminarMarca(tip);
                 MessageBox.Show("Marca ha sido eliminada..");
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Eliminar Marca.");
                 //  vConsultarTiposActivos();
 
 
@@ -70,9 +73,15 @@ namespace SCM
             catch (Exception ex)
             {
                 // MessageBox.Show(ex.Message);
+                string error = ex.ToString();
                 MessageBox.Show("No es posible eliminar la marca, hay productos asociados a la misma.");
 
             }
+        }
+
+        private void Marca_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

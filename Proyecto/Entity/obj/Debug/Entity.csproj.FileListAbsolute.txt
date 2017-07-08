@@ -1,18 +1,9 @@
-C:\Users\JACC\Desktop\SCM\Entity\bin\Debug\Entity.dll
-C:\Users\JACC\Desktop\SCM\Entity\bin\Debug\Entity.pdb
-C:\Users\JACC\Desktop\SCM\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\JACC\Desktop\SCM\Entity\obj\Debug\Entity.dll
-C:\Users\JACC\Desktop\SCM\Entity\obj\Debug\Entity.pdb
-C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\bin\Debug\Entity.dll
-C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\bin\Debug\Entity.pdb
-C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\obj\Debug\Entity.dll
-C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\Entity\obj\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.pdb
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\bin\Debug\Entity.dll
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\bin\Debug\Entity.pdb
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.dll
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Proyecto\Entity\obj\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.pdb

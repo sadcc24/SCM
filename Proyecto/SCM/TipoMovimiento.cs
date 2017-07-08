@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 namespace SCM
 {
     public partial class TipoMovimiento : Form
@@ -49,6 +50,7 @@ namespace SCM
                     tip.strOperacion = operacion.ToString();
                     tipo.vInsertarTipoMovimiento(tip);
                     MessageBox.Show("Tipo de Movimiento Ha sido Guardado.");
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Guardar Tipo Movimiento.");
                     txtDescripcion.Text = "";
                     //  vConsultarTiposActivos();
 
@@ -72,17 +74,24 @@ namespace SCM
             
                 tipo.vEliminarTipoMovimiento(tip);
                 MessageBox.Show("Tipo de Movimiento Ha sido Eliminado.");
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Eliminar Tipo Movimiento.");
                 //  vConsultarTiposActivos();
-              
+
 
             }
 
             catch (Exception ex)
             {
                 // MessageBox.Show(ex.Message);
+                string error = ex.ToString();
                 MessageBox.Show("No es posible eliminar este tipo de  movimiento, ya existen registros asociados en Movimientos de inventario.");
 
             }
+        }
+
+        private void TipoMovimiento_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,10 +39,10 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbInsertar = new System.Windows.Forms.GroupBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.grupoFiltrar.SuspendLayout();
             this.gbInsertar.SuspendLayout();
             this.SuspendLayout();
@@ -156,23 +156,6 @@
             this.gbInsertar.TabStop = false;
             this.gbInsertar.Text = "Datos";
             // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(268, 31);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(328, 20);
-            this.txtDescripcion.TabIndex = 117;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(173, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 19);
-            this.label2.TabIndex = 118;
-            this.label2.Text = "Descripción:";
-            // 
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(67, 30);
@@ -191,6 +174,23 @@
             this.label6.TabIndex = 125;
             this.label6.Text = "ID:";
             // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(268, 31);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(328, 20);
+            this.txtDescripcion.TabIndex = 117;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(173, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 19);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "Descripción:";
+            // 
             // Marca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +203,7 @@
             this.Name = "Marca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marca";
+            this.Load += new System.EventHandler(this.Marca_Load);
             this.grupoFiltrar.ResumeLayout(false);
             this.grupoFiltrar.PerformLayout();
             this.gbInsertar.ResumeLayout(false);

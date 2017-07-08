@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
-
+using DAL;
 namespace SCM
 {
     public partial class Bodegas : Form
@@ -75,9 +75,11 @@ namespace SCM
                                     bod.strNombreEncargado = txtEncargado.Text;
                                     bod.iStockMinimo = txtSMin.Text;
                                     bod.iStockMaximo = txtSMax.Text;
-                                    bod.iIdEmpresa = "1";
+                                    string[] empresa = Globales.Empresa.CapturarEmpresa();
+                                    bod.iIdEmpresa = empresa[0];
                                     bodega.vInsertarBodega(bod);
                                     MessageBox.Show("Bodega ha sido guardada.");
+                                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Guardar Bodegas.");
                                     mantenimientoBodegas prdu = new mantenimientoBodegas();
                                     prdu.MdiParent = this.MdiParent;
                                     this.Hide();
@@ -188,7 +190,9 @@ namespace SCM
                                         bod.iStockMaximo = txtSMax.Text;
                                         bodega.vModificarBodega(bod);
                                         MessageBox.Show("Bodega ha sido Modificada.");
+                                        Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Modificar Bodegas.");
                                         mantenimientoBodegas prdu = new mantenimientoBodegas();
+                                        Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Consultar Bodegas.");
                                         prdu.MdiParent = this.MdiParent;
                                         this.Hide();
                                         prdu.Show();
@@ -224,6 +228,7 @@ namespace SCM
 
                     bodega.vEliminarBodega(bod);
                     MessageBox.Show("Bodega ha sido Eliminada.");
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Eliminar Bodegas.");
                     mantenimientoBodegas prdu = new mantenimientoBodegas();
                     prdu.MdiParent = this.MdiParent;
                     this.Hide();

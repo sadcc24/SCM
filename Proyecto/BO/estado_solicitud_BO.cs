@@ -20,7 +20,7 @@ namespace BO
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -41,6 +41,7 @@ namespace BO
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
 
             }
         }
@@ -54,7 +55,7 @@ namespace BO
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
     }
