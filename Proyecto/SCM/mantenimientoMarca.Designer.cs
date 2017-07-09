@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mantenimientoMarca));
-            this.gbInsertar = new System.Windows.Forms.GroupBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gvMarcas = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -47,56 +43,15 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.z = new System.Windows.Forms.Label();
-            this.gbInsertar.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbInsertar
-            // 
-            this.gbInsertar.Controls.Add(this.txtDescripcion);
-            this.gbInsertar.Controls.Add(this.label2);
-            this.gbInsertar.Controls.Add(this.btnGuardar);
-            this.gbInsertar.Enabled = false;
-            this.gbInsertar.Location = new System.Drawing.Point(430, 245);
-            this.gbInsertar.Name = "gbInsertar";
-            this.gbInsertar.Size = new System.Drawing.Size(465, 182);
-            this.gbInsertar.TabIndex = 125;
-            this.gbInsertar.TabStop = false;
-            this.gbInsertar.Text = "Datos";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(122, 85);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(328, 20);
-            this.txtDescripcion.TabIndex = 117;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 19);
-            this.label2.TabIndex = 118;
-            this.label2.Text = "Descripción:";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(411, 134);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(48, 42);
-            this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.gvMarcas);
-            this.groupBox2.Location = new System.Drawing.Point(9, 177);
+            this.groupBox2.Location = new System.Drawing.Point(229, 171);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(397, 331);
             this.groupBox2.TabIndex = 124;
@@ -113,6 +68,7 @@
             this.gvMarcas.ReadOnly = true;
             this.gvMarcas.Size = new System.Drawing.Size(377, 294);
             this.gvMarcas.TabIndex = 0;
+            this.gvMarcas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvMarcas_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -248,7 +204,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 514);
-            this.Controls.Add(this.gbInsertar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.z);
@@ -258,8 +213,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento Marca";
             this.Load += new System.EventHandler(this.mantenimientoMarca_Load);
-            this.gbInsertar.ResumeLayout(false);
-            this.gbInsertar.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvMarcas)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -270,11 +223,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox gbInsertar;
-        public System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView gvMarcas;
         private System.Windows.Forms.GroupBox groupBox1;

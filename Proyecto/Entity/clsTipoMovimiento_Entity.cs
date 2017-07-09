@@ -13,7 +13,7 @@ namespace Entity
         // Comentarios :
         private string _strDescripcion;
         private string _strOperacion;
-
+        private string _strIdTipoMovimiento;
         public string strDescripcion
         {
             get { return _strDescripcion; }
@@ -24,6 +24,12 @@ namespace Entity
         {
             get { return _strOperacion; }
             set { _strOperacion = value; }
+        }
+
+        public string strIdTipoMovimiento
+        {
+            get { return _strIdTipoMovimiento; }
+            set { _strIdTipoMovimiento = value; }
         }
     }
 }

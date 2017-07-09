@@ -7,46 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BO;
 using Entity;
+using DAL;
+using BO;
 namespace SCM
 {
-    public partial class mantenimientoTipoMovimientoInventario : Form
+    public partial class kardexProductos : Form
     {
-        public mantenimientoTipoMovimientoInventario()
+        public kardexProductos()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void z_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void mantenimientoTipoMovimientoInventario_Load(object sender, EventArgs e)
+        private void groupBox3_Enter(object sender, EventArgs e)
         {
-            vConsultarTiposActivos();
+
         }
 
-        private void vConsultarTiposActivos()
+        private void kardexProductos_Load(object sender, EventArgs e)
         {
-            clsTipoMovimiento_BO tipom = new clsTipoMovimiento_BO();
-            gvTiposMovimiento.DataSource = tipom.vConsultarTipoMovimiento();
+            clsProductos_BO producto = new clsProductos_BO();
+            cmbProductos.DataSource = producto.vConsultaProducto();
+            cmbProductos.ValueMember = "ID";
+            cmbProductos.DisplayMember = "Descripcion";
+            gvExistencias.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gvProductos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gvMovimientos.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gvExistencias.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gvProductos.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gvMovimientos.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                clsTipoMovimiento_Entity tip = new clsTipoMovimiento_Entity();
-                clsTipoMovimiento_BO tipmov = new clsTipoMovimiento_BO();
-                tip.strDescripcion = txtTipoMov.Text;
-                gvTiposMovimiento.DataSource = tipmov.vConsultaFiltro(tip);
+                clsProductos_Entity pro = new clsProductos_Entity();
+                clsProductos_BO producto = new clsProductos_BO();
+                pro.strIdProd= cmbProductos.SelectedValue.ToString();
+                gvMovimientos.DataSource = producto.vMovimientoProductos(pro);
+                gvProductos.DataSource = producto.vConsultaFiltro(pro);
+                string[] empresa = Globales.Empresa.CapturarEmpresa();
+                pro.strIdEmpresa = empresa[0];
+                gvExistencias.DataSource = producto.vExistenciaProductos(pro);
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Consulta Kardex Productos");
             }
 
             catch (Exception ex)
@@ -134,72 +150,39 @@ namespace SCM
 
         }
         #endregion
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnUltimo_Click(object sender, EventArgs e)
         {
-            vConsultarTiposActivos();
+            funirUltimo(gvMovimientos);
         }
 
         private void btnPrimero_Click(object sender, EventArgs e)
         {
-            funirPrimero(gvTiposMovimiento);
+            funirPrimero(gvMovimientos);
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            funirAnterior(gvTiposMovimiento);
+            funirAnterior(gvMovimientos);
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            funirSiguiente(gvTiposMovimiento);
+            funirSiguiente(gvMovimientos);
         }
 
-        private void btnUltimo_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            funirUltimo(gvTiposMovimiento);
+
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TipoMovimiento prdu = new TipoMovimiento();
-            prdu.MdiParent = this.MdiParent;
-            prdu.btnEditar.Enabled = false;
-            prdu.btnEliminar.Enabled = false;
-            prdu.txtID.ReadOnly = true;
-            this.Hide();
 
-            prdu.Show();
         }
 
-        private void gvTiposMovimiento_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string idtipomovimiento, descripcion, operacion;
-            idtipomovimiento = gvTiposMovimiento.Rows[e.RowIndex].Cells[0].Value.ToString();
-            descripcion = gvTiposMovimiento.Rows[e.RowIndex].Cells[1].Value.ToString();
-            operacion = gvTiposMovimiento.Rows[e.RowIndex].Cells[2].Value.ToString();
 
-        //    MessageBox.Show(operacion);
-
-            TipoMovimiento frm = new TipoMovimiento();
-            frm.txtID.Text = idtipomovimiento;
-            frm.txtDescripcion.Text = descripcion;
-           if (operacion == "False")
-            {
-                frm.rbResta.Checked = true;
-            }
-            else {
-                if (operacion == "True")
-                {
-                    frm.rbSuma.Checked = true;
-                }
-            }
-            frm.btnEditar.Enabled = false;
-            frm.btnEliminar.Enabled = true;
-            frm.btnGuardar.Enabled = false;
-            frm.txtID.ReadOnly = true;
-            frm.ShowInTaskbar = false;
-            frm.StartPosition = FormStartPosition.CenterParent;
-            frm.ShowDialog(mostrarMenu.ActiveForm);
         }
     }
 }

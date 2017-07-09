@@ -50,7 +50,7 @@ namespace SCM
                 comboBox3.DisplayMember = "nombre_moneda";
                 comboBox3.ValueMember = "idmoneda";
             }
-            catch(Exception Ex) { }
+            catch(Exception Ex) { String error = Ex.ToString(); }
             
         }
 
@@ -94,6 +94,7 @@ namespace SCM
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
                 MessageBox.Show("Error en el Registro de Datos");
             }
         }

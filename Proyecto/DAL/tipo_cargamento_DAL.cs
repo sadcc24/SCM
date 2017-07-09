@@ -22,7 +22,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -42,6 +42,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
 
             }
         }
@@ -54,7 +55,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
     }

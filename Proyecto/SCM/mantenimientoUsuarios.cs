@@ -59,7 +59,7 @@ namespace SCM
 
             string query2 = "SELECT idrol, Rol FROM [dbo].[Rol]";
             DataSet ds2 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query2, "Rol");
-            int i;
+            //int i;
             gvUsuariosA.DataSource = ds2.Tables[0];
         }
         

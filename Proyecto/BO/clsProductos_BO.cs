@@ -115,5 +115,21 @@ namespace BO
             dtProducto = productoconfilt.vConsultarFiltro(producto);
             return dtProducto;
         }
+
+        public DataTable vMovimientoProductos(clsProductos_Entity producto)
+        {
+            DataTable dtProducto;
+            clsProductos_DAL productoconfilt = new clsProductos_DAL();
+            dtProducto = productoconfilt.vMovimientoProductos(producto);
+            return dtProducto;
+        }
+
+        public DataTable vExistenciaProductos(clsProductos_Entity producto)
+        {
+            DataTable dtProducto;
+            clsProductos_DAL productoconfilt = new clsProductos_DAL();
+            dtProducto = productoconfilt.vExistenciaProductos(producto);
+            return dtProducto;
+        }
     }
 }

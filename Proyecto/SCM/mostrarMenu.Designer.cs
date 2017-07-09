@@ -61,8 +61,11 @@
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.empresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
             this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,8 +84,12 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+<<<<<<< HEAD
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusMoneda = new System.Windows.Forms.ToolStripStatusLabel();
+=======
+            this.kardexProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -307,6 +314,8 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kardexProductosToolStripMenuItem});
             this.reportesToolStripMenuItem.Image = global::SCM.Properties.Resources.estadisticas;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
@@ -347,6 +356,7 @@
             this.mantenimientoUsuariosToolStripMenuItem.Text = "Usuarios";
             this.mantenimientoUsuariosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoUsuariosToolStripMenuItem_Click);
             // 
+<<<<<<< HEAD
             // empresasToolStripMenuItem
             // 
             this.empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
@@ -364,6 +374,12 @@
             // 
             this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
             this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+=======
+            // bitácoraDelSistemaToolStripMenuItem
+            // 
+            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
+            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
             this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
             this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
             // 
@@ -496,6 +512,7 @@
             this.tsStatusFecha.Size = new System.Drawing.Size(44, 18);
             this.tsStatusFecha.Text = "Fecha";
             // 
+<<<<<<< HEAD
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -508,6 +525,14 @@
             this.tsStatusMoneda.Name = "tsStatusMoneda";
             this.tsStatusMoneda.Size = new System.Drawing.Size(59, 18);
             this.tsStatusMoneda.Text = "Moneda";
+=======
+            // kardexProductosToolStripMenuItem
+            // 
+            this.kardexProductosToolStripMenuItem.Name = "kardexProductosToolStripMenuItem";
+            this.kardexProductosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.kardexProductosToolStripMenuItem.Text = "Kardex Productos";
+            this.kardexProductosToolStripMenuItem.Click += new System.EventHandler(this.kardexProductosToolStripMenuItem_Click);
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
             // 
             // mostrarMenu
             // 
@@ -587,10 +612,14 @@
         private System.Windows.Forms.ToolStripMenuItem estadoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitácoraDelSistemaToolStripMenuItem;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem empresasToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel tsStatusMoneda;
+=======
+        private System.Windows.Forms.ToolStripMenuItem kardexProductosToolStripMenuItem;
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
     }
 }
 
