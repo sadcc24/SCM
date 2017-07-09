@@ -454,9 +454,15 @@ namespace SCM
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             mantenimientoMonedas temp = new mantenimientoMonedas();
+=======
+        private void kardexProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            kardexProductos temp = new kardexProductos();
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
 =======
         private void kardexProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {

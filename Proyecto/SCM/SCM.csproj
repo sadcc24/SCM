@@ -288,17 +288,23 @@
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Monedas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Monedas.designer.cs">
       <DependentUpon>Monedas.cs</DependentUpon>
 =======
+=======
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
     <Compile Include="Marca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Marca.Designer.cs">
       <DependentUpon>Marca.cs</DependentUpon>
+<<<<<<< HEAD
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
+=======
 >>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
     </Compile>
     <Compile Include="mostrarEmpresa.cs">
@@ -491,8 +497,13 @@
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="Monedas.resx">
       <DependentUpon>Monedas.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
 =======
     <EmbeddedResource Include="Marca.resx">
       <DependentUpon>Marca.cs</DependentUpon>

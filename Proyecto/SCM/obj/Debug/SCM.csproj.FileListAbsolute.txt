@@ -133,4 +133,7 @@ C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debu
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.pdb
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+<<<<<<< HEAD
+>>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
+=======
 >>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
