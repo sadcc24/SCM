@@ -37,8 +37,9 @@
     <StartupObject>SCM.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DAL">
-      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DAL.dll</HintPath>
     </Reference>
     <Reference Include="dllSeguridadSAD">
       <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
@@ -287,25 +288,17 @@
     <Compile Include="mantenimientoUsuarios.Designer.cs">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <Compile Include="Monedas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Monedas.designer.cs">
-      <DependentUpon>Monedas.cs</DependentUpon>
-=======
-=======
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
     <Compile Include="Marca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Marca.Designer.cs">
       <DependentUpon>Marca.cs</DependentUpon>
-<<<<<<< HEAD
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
-=======
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
+    </Compile>
+    <Compile Include="Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monedas.designer.cs">
+      <DependentUpon>Monedas.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarEmpresa.cs">
       <SubType>Form</SubType>
@@ -496,18 +489,11 @@
     <EmbeddedResource Include="mantenimientoUsuarios.resx">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< HEAD
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Monedas.resx">
       <DependentUpon>Monedas.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Marca.resx">
-      <DependentUpon>Marca.cs</DependentUpon>
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
-=======
-    <EmbeddedResource Include="Marca.resx">
-      <DependentUpon>Marca.cs</DependentUpon>
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarEmpresa.resx">
       <DependentUpon>mostrarEmpresa.cs</DependentUpon>

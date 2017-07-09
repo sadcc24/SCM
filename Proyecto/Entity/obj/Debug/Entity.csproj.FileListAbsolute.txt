@@ -2,14 +2,3 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.dl
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.pdb
-<<<<<<< HEAD
-=======
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.dll
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.pdb
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.dll
-C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.pdb
-<<<<<<< HEAD
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
-=======
->>>>>>> 60ffe7c293063525d154b9d33387a568d9128689
