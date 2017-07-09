@@ -20,8 +20,8 @@ using DAL;
 namespace SCM
 {
     public partial class mostrarEmpresa : Form
-    {        
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
+    {
+        MRP_BD cnn = Globales.cnn;
         public mostrarEmpresa()
         {
             InitializeComponent();
@@ -30,12 +30,23 @@ namespace SCM
         public void ActualizarGridView()
         {
             string[] usuario = Globales.Usuario.CapturarUsuario();
-            string regusuario = usuario[0];
-            dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + regusuario);
-            int i;
-            for (i= 0; i < dgvEmpresa.RowCount-1; i++)
+            if (usuario[0] != "No Autenticado")
+            {                
+                dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + usuario[0]);
+                int i;
+                for (i = 0; i < dgvEmpresa.RowCount - 1; i++)
+                {
+                    cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                }
+            }
+            if (cmbEmpresa.Items.Count == 0)
             {
-                cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                this.Close();
+                MessageBox.Show("El usuario " +usuario[1] + " no tiene asignado ninguna empresa", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                mostrarLogin Login = new mostrarLogin();
+                Login.Show();
+
             }
         }
         private void frmEmpresa_Load(object sender, EventArgs e)

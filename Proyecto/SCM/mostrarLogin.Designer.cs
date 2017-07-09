@@ -137,6 +137,7 @@
             this.Name = "mostrarLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCM | Iniciar Sesión";
+            this.Load += new System.EventHandler(this.mostrarLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

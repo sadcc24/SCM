@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Menú
+    Fecha de asignación: 23/Junio
+    Fecha de entrega: 20/Junio
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -313,11 +320,18 @@ namespace SCM
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            string[] empresa = Globales.Empresa.CapturarEmpresa();
-            this.tsStatusEmpresa.Text = empresa[1];
+            
+            //Captura de Rol, Usuario, Moneda y Empresa Actuales de Seguridad SAD
+            string rolactual = Globales.Usuario.CapturarRol(Globales.Conexion);
             string[] usuario = Globales.Usuario.CapturarUsuario();
             this.tsStatusUsuario.Text = usuario[1];
+            string[] moneda = Globales.Usuario.CapturarMoneda(Globales.Conexion);
+            this.tsStatusMoneda.Text = moneda[1];
+            string[] empresa = Globales.Empresa.CapturarEmpresa();
+            this.tsStatusEmpresa.Text = empresa[1];
+            //Captura de Fecha Actual
             this.tsStatusFecha.Text = DateTime.Now.ToString("D");
+            
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -427,6 +441,14 @@ namespace SCM
         private void bitácoraDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Bitacora temp = new Bitacora();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mantenimientoMonedas temp = new mantenimientoMonedas();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

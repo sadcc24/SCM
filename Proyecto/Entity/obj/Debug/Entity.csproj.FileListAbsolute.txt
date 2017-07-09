@@ -2,4 +2,3 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.dl
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\bin\Debug\Entity.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.pdb
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

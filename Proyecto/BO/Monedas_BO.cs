@@ -17,39 +17,39 @@ namespace BO
 {
     public class Monedas_BO
     {
-        public void vInsertarUsuario(Usuarios_Entity usuario)
+        public void vInsertarMoneda(Monedas_Entity Moneda)
         {
-            Usuarios_DAL usuarioinsert = new Usuarios_DAL();
-            usuarioinsert.vInsertUsuario(usuario);
+            Monedas_DAL Monedainsert = new Monedas_DAL();
+            Monedainsert.vInsertMoneda(Moneda);
         }
 
-        public void vModificarUsuario(Usuarios_Entity usuario)
+        public void vModificarMoneda(Monedas_Entity Moneda)
         {
-            Usuarios_DAL usuarioupdate = new Usuarios_DAL();
-            usuarioupdate.vModificarUsuario(usuario);
+            Monedas_DAL Monedaupdate = new Monedas_DAL();
+            Monedaupdate.vModificarMoneda(Moneda);
         }
 
-        public void vEliminarUsuario(Usuarios_Entity usuario)
+        public void vEliminarMoneda(Monedas_Entity Moneda)
         {
-            Usuarios_DAL usuariodelete = new Usuarios_DAL();
-            usuariodelete.vEliminarUsuario(usuario);
+            Monedas_DAL Monedadelete = new Monedas_DAL();
+            Monedadelete.vEliminarMoneda(Moneda);
         }
 
-        public DataTable vConsultaUsuarios()
+        public DataTable vConsultaMonedas()
         {
-            DataTable dtusuarios;
-            Usuarios_DAL usuarioconsulta = new Usuarios_DAL();
-            dtusuarios = usuarioconsulta.vConsultarUsuario();
-            return dtusuarios;
+            DataTable dtMonedas;
+            Monedas_DAL Monedaconsulta = new Monedas_DAL();
+            dtMonedas = Monedaconsulta.vConsultarMoneda();
+            return dtMonedas;
 
         }
 
-        public DataTable vConsultaFiltro(Usuarios_Entity usuario)
+        public DataTable vConsultaFiltro(Monedas_Entity Moneda)
         {
-            DataTable dtUsuarios;
-            Usuarios_DAL usuarioconsultafiltro = new Usuarios_DAL();
-            dtUsuarios = usuarioconsultafiltro.vConsultarFiltro(usuario);
-            return dtUsuarios;
+            DataTable dtMonedas;
+            Monedas_DAL Monedaconsultafiltro = new Monedas_DAL();
+            dtMonedas = Monedaconsultafiltro.vConsultarFiltro(Moneda);
+            return dtMonedas;
         }
 
     }

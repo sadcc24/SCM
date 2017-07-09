@@ -17,8 +17,8 @@ namespace DAL
     {      
         public void vInsertUsuario(Usuarios_Entity usuario)
         {
-            Globales.cnn.insertSQL("INSERT INTO [dbo].[Usuario_1] (idrol,usuario,password,rol,status,preguntasecreta) VALUES ('"
-                + usuario.iRol + "','" + usuario.strUsuario + "','" + usuario .strPassword + "','NULL','" + usuario.iStatus + "','" + usuario.strPregunta + "')");
+            Globales.cnn.insertSQL("INSERT INTO [dbo].[Usuario_1] (idrol,usuario,password,status,preguntasecreta) VALUES ('"
+                + usuario.iRol + "','" + usuario.strUsuario + "','" + usuario .strPassword + "','" + usuario.iStatus + "','" + usuario.strPregunta + "')");
         }
 
         public void vModificarUsuario(Usuarios_Entity usuario)

@@ -61,6 +61,9 @@
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +81,8 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.bitácoraDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsStatusMoneda = new System.Windows.Forms.ToolStripStatusLabel();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -314,6 +318,8 @@
             this.cambiarEmpresaToolStripMenuItem,
             this.cambioDeUsuarioToolStripMenuItem,
             this.mantenimientoUsuariosToolStripMenuItem,
+            this.empresasToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.bitácoraDelSistemaToolStripMenuItem});
             this.configuracionesToolStripMenuItem.Image = global::SCM.Properties.Resources.ajustes;
             this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
@@ -323,23 +329,43 @@
             // cambiarEmpresaToolStripMenuItem
             // 
             this.cambiarEmpresaToolStripMenuItem.Name = "cambiarEmpresaToolStripMenuItem";
-            this.cambiarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.cambiarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cambiarEmpresaToolStripMenuItem.Text = "Cambiar Empresa";
             this.cambiarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.cambiarEmpresaToolStripMenuItem_Click);
             // 
             // cambioDeUsuarioToolStripMenuItem
             // 
             this.cambioDeUsuarioToolStripMenuItem.Name = "cambioDeUsuarioToolStripMenuItem";
-            this.cambioDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.cambioDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cambioDeUsuarioToolStripMenuItem.Text = "Cambio de Usuario";
             this.cambioDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cambioDeUsuarioToolStripMenuItem_Click);
             // 
             // mantenimientoUsuariosToolStripMenuItem
             // 
             this.mantenimientoUsuariosToolStripMenuItem.Name = "mantenimientoUsuariosToolStripMenuItem";
-            this.mantenimientoUsuariosToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.mantenimientoUsuariosToolStripMenuItem.Text = "Mantenimiento Usuarios";
+            this.mantenimientoUsuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoUsuariosToolStripMenuItem.Text = "Usuarios";
             this.mantenimientoUsuariosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoUsuariosToolStripMenuItem_Click);
+            // 
+            // empresasToolStripMenuItem
+            // 
+            this.empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
+            this.empresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresasToolStripMenuItem.Text = "Empresas";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "Monedas";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // bitácoraDelSistemaToolStripMenuItem
+            // 
+            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
+            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
+            this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
             // 
             // helpMenu
             // 
@@ -397,6 +423,9 @@
             // 
             // statusStrip
             // 
+            this.statusStrip.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip.GripMargin = new System.Windows.Forms.Padding(3);
+            this.statusStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel,
             this.tsStatusEmpresa,
@@ -405,73 +434,86 @@
             this.toolStripStatusLabel4,
             this.tsStatusUsuario,
             this.toolStripStatusLabel6,
-            this.tsStatusFecha});
-            this.statusStrip.Location = new System.Drawing.Point(0, 704);
+            this.tsStatusFecha,
+            this.toolStripStatusLabel1,
+            this.tsStatusMoneda});
+            this.statusStrip.Location = new System.Drawing.Point(0, 703);
+            this.statusStrip.Margin = new System.Windows.Forms.Padding(1);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1354, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1354, 23);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
             // toolStripStatusLabel
             // 
+            this.toolStripStatusLabel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(55, 17);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(65, 18);
             this.toolStripStatusLabel.Text = "Empresa:";
             // 
             // tsStatusEmpresa
             // 
             this.tsStatusEmpresa.Name = "tsStatusEmpresa";
-            this.tsStatusEmpresa.Size = new System.Drawing.Size(52, 17);
+            this.tsStatusEmpresa.Size = new System.Drawing.Size(61, 18);
             this.tsStatusEmpresa.Text = "Empresa";
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(52, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(61, 18);
             this.toolStripStatusLabel2.Text = "Módulo:";
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(32, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(35, 18);
             this.toolStripStatusLabel3.Text = "SCM";
             // 
             // toolStripStatusLabel4
             // 
+            this.toolStripStatusLabel4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(50, 17);
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(60, 18);
             this.toolStripStatusLabel4.Text = "Usuario:";
             // 
             // tsStatusUsuario
             // 
             this.tsStatusUsuario.Name = "tsStatusUsuario";
-            this.tsStatusUsuario.Size = new System.Drawing.Size(47, 17);
+            this.tsStatusUsuario.Size = new System.Drawing.Size(55, 18);
             this.tsStatusUsuario.Text = "Usuario";
             // 
             // toolStripStatusLabel6
             // 
+            this.toolStripStatusLabel6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel6.Name = "toolStripStatusLabel6";
-            this.toolStripStatusLabel6.Size = new System.Drawing.Size(41, 17);
+            this.toolStripStatusLabel6.Size = new System.Drawing.Size(48, 18);
             this.toolStripStatusLabel6.Text = "Fecha:";
             // 
             // tsStatusFecha
             // 
             this.tsStatusFecha.Name = "tsStatusFecha";
-            this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
+            this.tsStatusFecha.Size = new System.Drawing.Size(44, 18);
             this.tsStatusFecha.Text = "Fecha";
             // 
-            // bitácoraDelSistemaToolStripMenuItem
+            // toolStripStatusLabel1
             // 
-            this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
-            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
-            this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
+            this.toolStripStatusLabel1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(64, 18);
+            this.toolStripStatusLabel1.Text = "Moneda:";
+            // 
+            // tsStatusMoneda
+            // 
+            this.tsStatusMoneda.Name = "tsStatusMoneda";
+            this.tsStatusMoneda.Size = new System.Drawing.Size(59, 18);
+            this.tsStatusMoneda.Text = "Moneda";
             // 
             // mostrarMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1354, 726);
@@ -545,6 +587,10 @@
         private System.Windows.Forms.ToolStripMenuItem estadoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitácoraDelSistemaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem empresasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel tsStatusMoneda;
     }
 }
 

@@ -233,6 +233,12 @@
     <Compile Include="mantenimientoMarca.Designer.cs">
       <DependentUpon>mantenimientoMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="mantenimientoMonedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoMonedas.designer.cs">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,12 @@
     </Compile>
     <Compile Include="mantenimientoUsuarios.Designer.cs">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monedas.designer.cs">
+      <DependentUpon>Monedas.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarEmpresa.cs">
       <SubType>Form</SubType>
@@ -431,6 +443,9 @@
     <EmbeddedResource Include="mantenimientoMarca.resx">
       <DependentUpon>mantenimientoMarca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoMonedas.resx">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoProductos.resx">
       <DependentUpon>mantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -451,6 +466,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoUsuarios.resx">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monedas.resx">
+      <DependentUpon>Monedas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarEmpresa.resx">
       <DependentUpon>mostrarEmpresa.cs</DependentUpon>
