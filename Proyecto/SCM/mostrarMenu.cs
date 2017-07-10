@@ -466,5 +466,21 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void empresasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEmpresas temp = new mantenimientoEmpresas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void asignaciónDeEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEmpleados temp = new mantenimientoEmpleados();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

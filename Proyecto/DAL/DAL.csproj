@@ -52,6 +52,8 @@
     <Compile Include="clsMarcas_DAL.cs" />
     <Compile Include="clsProductos_DAL.cs" />
     <Compile Include="clsTipoMovimiento_DAL.cs" />
+    <Compile Include="Empleados_DAL.cs" />
+    <Compile Include="Empresas_DAL.cs" />
     <Compile Include="estado_solicitud_DAL.cs" />
     <Compile Include="Globales.cs" />
     <Compile Include="Lineas_DAL.cs" />

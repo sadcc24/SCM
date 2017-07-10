@@ -70,6 +70,8 @@ namespace SCM
             string[] user = Globales.Usuario.CapturarUsuario();
             if (user[0] == "No Autenticado")
             {
+                MessageBox.Show("Debe crear un usuario de Rol: 1 Administrador", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Usuarios frm = new Usuarios();
                 frm.txtCod.ReadOnly = true;
                 frm.btnEditar.Enabled = false;
@@ -77,9 +79,16 @@ namespace SCM
                 frm.txtCod.ReadOnly = true;
                 frm.ShowInTaskbar = false;
                 frm.StartPosition = FormStartPosition.CenterScreen;
-                frm.ShowDialog(mostrarLogin.ActiveForm);
-                this.Show();
+                frm.ShowDialog(mostrarLogin.ActiveForm);                              
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Empleados frm = new Empleados();
+            frm.ShowInTaskbar = false;
+            frm.StartPosition = FormStartPosition.CenterScreen;
+            frm.ShowDialog(mostrarLogin.ActiveForm);
         }
     }
 }

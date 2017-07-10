@@ -41,16 +41,52 @@ namespace SCM
             }
             if (cmbEmpresa.Items.Count == 0)
             {
-                this.Close();
+                
                 MessageBox.Show("El usuario " +usuario[1] + " no tiene asignado ninguna empresa", "Seguridad SAD",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                mostrarLogin Login = new mostrarLogin();
-                Login.Show();
+                //Verificación de Rol de Administrador            
+                if (Globales.Usuario.CapturarRol(Globales.Conexion) == "1")
+                {
+                    //MessageBox.Show("Sí tiene permisos de Administrador");
+
+                    Empleados frm = new Empleados();
+                    frm.ShowInTaskbar = false;
+                    frm.StartPosition = FormStartPosition.CenterScreen;
+                    frm.ShowDialog(mostrarEmpresa.ActiveForm);
+
+                }
+                else
+                {
+                    MessageBox.Show("No tiene permisos de Administrador", "Seguridad SAD", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.BeginInvoke(new MethodInvoker(this.Close));
+                }
+                //Verificación de Rol de Administrador
 
             }
         }
         private void frmEmpresa_Load(object sender, EventArgs e)
         {
+            string[] emp = Globales.Empresa.CapturarEmpresa();
+            if (emp[0] == "No Autenticado")
+            {
+                MessageBox.Show("Debe crear una empresa", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Empresas frm = new Empresas();
+                frm.txtCod.ReadOnly = true;
+                frm.btnEditar.Enabled = false;
+                frm.btnEliminar.Enabled = false;
+                frm.txtCod.ReadOnly = true;
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterScreen;
+                frm.ShowDialog(mostrarEmpresa.ActiveForm);
+
+                Empleados frm2 = new Empleados();
+                frm2.ShowInTaskbar = false;
+                frm2.StartPosition = FormStartPosition.CenterScreen;
+                frm2.ShowDialog(mostrarEmpresa.ActiveForm);
+            }
+            else
+                this.Close();
             ActualizarGridView();            
         }
 

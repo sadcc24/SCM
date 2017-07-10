@@ -39,9 +39,10 @@
   <ItemGroup>
     <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DAL.dll</HintPath>
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
     </Reference>
-    <Reference Include="dllSeguridadSAD">
+    <Reference Include="dllSeguridadSAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
     </Reference>
     <Reference Include="MRP_BD">
@@ -138,6 +139,18 @@
     <Compile Include="descongelarExistencias.Designer.cs">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empresas.designer.cs">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstadoSolicitud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +234,18 @@
     </Compile>
     <Compile Include="mantenimientoBodegas.Designer.cs">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEmpleados.designer.cs">
+      <DependentUpon>mantenimientoEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEmpresas.designer.cs">
+      <DependentUpon>mantenimientoEmpresas.cs</DependentUpon>
     </Compile>
     <Compile Include="mantenimientoEstadoSolicitud.cs">
       <SubType>Form</SubType>
@@ -414,6 +439,12 @@
     <EmbeddedResource Include="descongelarExistencias.resx">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empresas.resx">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstadoSolicitud.resx">
       <DependentUpon>EstadoSolicitud.cs</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +486,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoBodegas.resx">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEmpleados.resx">
+      <DependentUpon>mantenimientoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEmpresas.resx">
+      <DependentUpon>mantenimientoEmpresas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoEstadoSolicitud.resx">
       <DependentUpon>mantenimientoEstadoSolicitud.cs</DependentUpon>
@@ -603,6 +640,9 @@
   <ItemGroup>
     <Folder Include="iconos\iconos\" />
     <Folder Include="Resources\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

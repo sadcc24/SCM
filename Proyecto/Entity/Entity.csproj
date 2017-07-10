@@ -47,6 +47,8 @@
     <Compile Include="clsProductos_Entity.cs" />
     <Compile Include="clsTipoMovimiento_Entity.cs" />
     <Compile Include="Detalle_ST_Entity.cs" />
+    <Compile Include="Empleados_Entity.cs" />
+    <Compile Include="Empresas_Entity.cs" />
     <Compile Include="estado_solicitud_Entity.cs" />
     <Compile Include="Lineas_Entity.cs" />
     <Compile Include="Monedas_Entity.cs" />

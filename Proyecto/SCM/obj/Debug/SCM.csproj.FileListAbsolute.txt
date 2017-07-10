@@ -2,10 +2,12 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.conf
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
@@ -21,6 +23,8 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarVe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.capturarExistencias.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.congelarExistencias.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.descongelarExistencias.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Empleados.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Empresas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.EstadoSolicitud.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.generaContrasena.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
@@ -35,6 +39,8 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoV
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Lineas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpleados.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpresas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEstadoSolicitud.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoLineas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoMarca.resources

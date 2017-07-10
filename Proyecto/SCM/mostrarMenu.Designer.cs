@@ -84,6 +84,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusMoneda = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.asignaciónDeEmpresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -330,7 +331,8 @@
             this.mantenimientoUsuariosToolStripMenuItem,
             this.empresasToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.bitácoraDelSistemaToolStripMenuItem});
+            this.bitácoraDelSistemaToolStripMenuItem,
+            this.asignaciónDeEmpresasToolStripMenuItem});
             this.configuracionesToolStripMenuItem.Image = global::SCM.Properties.Resources.ajustes;
             this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
             this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
@@ -339,41 +341,42 @@
             // cambiarEmpresaToolStripMenuItem
             // 
             this.cambiarEmpresaToolStripMenuItem.Name = "cambiarEmpresaToolStripMenuItem";
-            this.cambiarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cambiarEmpresaToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.cambiarEmpresaToolStripMenuItem.Text = "Cambiar Empresa";
             this.cambiarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.cambiarEmpresaToolStripMenuItem_Click);
             // 
             // cambioDeUsuarioToolStripMenuItem
             // 
             this.cambioDeUsuarioToolStripMenuItem.Name = "cambioDeUsuarioToolStripMenuItem";
-            this.cambioDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cambioDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.cambioDeUsuarioToolStripMenuItem.Text = "Cambio de Usuario";
             this.cambioDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.cambioDeUsuarioToolStripMenuItem_Click);
             // 
             // mantenimientoUsuariosToolStripMenuItem
             // 
             this.mantenimientoUsuariosToolStripMenuItem.Name = "mantenimientoUsuariosToolStripMenuItem";
-            this.mantenimientoUsuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoUsuariosToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.mantenimientoUsuariosToolStripMenuItem.Text = "Usuarios";
             this.mantenimientoUsuariosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoUsuariosToolStripMenuItem_Click);
             // 
             // empresasToolStripMenuItem
             // 
             this.empresasToolStripMenuItem.Name = "empresasToolStripMenuItem";
-            this.empresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empresasToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.empresasToolStripMenuItem.Text = "Empresas";
+            this.empresasToolStripMenuItem.Click += new System.EventHandler(this.empresasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
             this.toolStripMenuItem1.Text = "Monedas";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // bitácoraDelSistemaToolStripMenuItem
             // 
             this.bitácoraDelSistemaToolStripMenuItem.Name = "bitácoraDelSistemaToolStripMenuItem";
-            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bitácoraDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bitácoraDelSistemaToolStripMenuItem.Text = "Bitácora del Sistema";
             this.bitácoraDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDelSistemaToolStripMenuItem_Click);
             // 
@@ -519,6 +522,13 @@
             this.tsStatusMoneda.Size = new System.Drawing.Size(59, 18);
             this.tsStatusMoneda.Text = "Moneda";
             // 
+            // asignaciónDeEmpresasToolStripMenuItem
+            // 
+            this.asignaciónDeEmpresasToolStripMenuItem.Name = "asignaciónDeEmpresasToolStripMenuItem";
+            this.asignaciónDeEmpresasToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.asignaciónDeEmpresasToolStripMenuItem.Text = "Asignación de Empresas";
+            this.asignaciónDeEmpresasToolStripMenuItem.Click += new System.EventHandler(this.asignaciónDeEmpresasToolStripMenuItem_Click);
+            // 
             // mostrarMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -601,7 +611,8 @@
         private System.Windows.Forms.ToolStripMenuItem empresasToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel tsStatusMoneda;
-        private System.Windows.Forms.ToolStripMenuItem kardexProductosToolStripMenuItem;        
+        private System.Windows.Forms.ToolStripMenuItem kardexProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignaciónDeEmpresasToolStripMenuItem;
     }
 }
 

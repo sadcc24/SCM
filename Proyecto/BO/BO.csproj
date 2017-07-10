@@ -46,6 +46,8 @@
     <Compile Include="clsMarcas_BO.cs" />
     <Compile Include="clsProductos_BO.cs" />
     <Compile Include="clsTipoMovimiento_BO.cs" />
+    <Compile Include="Empleados_BO.cs" />
+    <Compile Include="Empresas_BO.cs" />
     <Compile Include="estado_solicitud_BO.cs" />
     <Compile Include="Lineas_BO.cs" />
     <Compile Include="Monedas_BO.cs" />

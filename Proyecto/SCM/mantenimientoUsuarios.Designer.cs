@@ -91,11 +91,11 @@
             this.z.AutoSize = true;
             this.z.Dock = System.Windows.Forms.DockStyle.Right;
             this.z.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.z.Location = new System.Drawing.Point(723, 0);
+            this.z.Location = new System.Drawing.Point(765, 0);
             this.z.Name = "z";
-            this.z.Size = new System.Drawing.Size(197, 39);
+            this.z.Size = new System.Drawing.Size(155, 39);
             this.z.TabIndex = 117;
-            this.z.Text = "USUARIOS";
+            this.z.Text = "Usuarios";
             // 
             // groupBox1
             // 
