@@ -70,10 +70,20 @@ namespace SCM
             string[] user = Globales.Usuario.CapturarUsuario();
             if (user[0] == "No Autenticado")
             {
-                MessageBox.Show("Debe crear un usuario de Rol: 1 Administrador", "Seguridad SAD",
+                MessageBox.Show("Debe crear un usuario administrador", "Seguridad SAD",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Usuarios frm = new Usuarios();
                 frm.txtCod.ReadOnly = true;
+                string query = "SELECT idrol, Rol FROM [dbo].[Rol]";
+                DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Rol");
+                int i;
+                frm.gvUsuariosA.DataSource = ds.Tables[0];
+                for (i = 0; i < frm.gvUsuariosA.RowCount - 1; i++)
+                {
+                    frm.cmbRol.Items.Add(frm.gvUsuariosA[0, i].Value.ToString() + " " + frm.gvUsuariosA[1, i].Value.ToString());
+                }
+                frm.cmbRol.SelectedIndex = 0;
+                frm.cmbRol.Enabled = false;
                 frm.btnEditar.Enabled = false;
                 frm.btnEliminar.Enabled = false;
                 frm.txtCod.ReadOnly = true;

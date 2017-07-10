@@ -73,6 +73,7 @@ namespace SCM
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Empresas frm = new Empresas();
                 frm.txtCod.ReadOnly = true;
+                frm.txtCod.Visible = false;
                 frm.btnEditar.Enabled = false;
                 frm.btnEliminar.Enabled = false;
                 frm.txtCod.ReadOnly = true;

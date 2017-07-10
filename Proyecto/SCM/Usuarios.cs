@@ -97,6 +97,8 @@ namespace SCM
                                     this.Hide();
                                     prdu.Show();
                                 }
+                                else
+                                    this.Hide();
                             }
                             catch (Exception ex)
                             {

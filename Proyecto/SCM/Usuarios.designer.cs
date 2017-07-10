@@ -351,6 +351,6 @@
         public System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox cmbRol;
-        private System.Windows.Forms.DataGridView gvUsuariosA;
+        public System.Windows.Forms.DataGridView gvUsuariosA;
     }
 }
