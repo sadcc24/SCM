@@ -53,7 +53,8 @@ namespace SCM
                     frm.ShowInTaskbar = false;
                     frm.StartPosition = FormStartPosition.CenterScreen;
                     frm.ShowDialog(mostrarEmpresa.ActiveForm);
-
+                    ActualizarGridView();
+                    this.Show();
                 }
                 else
                 {
@@ -67,6 +68,7 @@ namespace SCM
         private void frmEmpresa_Load(object sender, EventArgs e)
         {
             string[] emp = Globales.Empresa.CapturarEmpresa();
+            this.Hide();
             if (emp[0] == "No Autenticado")
             {
                 MessageBox.Show("Debe crear una empresa", "Seguridad SAD",
@@ -85,9 +87,8 @@ namespace SCM
                 frm2.ShowInTaskbar = false;
                 frm2.StartPosition = FormStartPosition.CenterScreen;
                 frm2.ShowDialog(mostrarEmpresa.ActiveForm);
+                this.Show();
             }
-            else
-                this.Close();
             ActualizarGridView();            
         }
 

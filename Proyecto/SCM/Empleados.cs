@@ -104,8 +104,16 @@ namespace SCM
                             Employer.idestado= txtEstado.Text;
                             Empleados.vInsertarEmpleado(Employer);
                             MessageBox.Show("Asignación ha sido creada.");
-                            
-                            this.Hide();
+                            string[] empresa = Globales.Empresa.CapturarEmpresa();
+                            /*if (empresa[0] != "No Autenticado")
+                            {
+                                mantenimientoEmpleados prdu = new mantenimientoEmpleados();
+                                prdu.MdiParent = this.MdiParent;
+                                this.Hide();
+                                prdu.Show();
+                            }
+                            else*/
+                                this.Hide();                          
                             
                         }
                         catch (Exception ex)

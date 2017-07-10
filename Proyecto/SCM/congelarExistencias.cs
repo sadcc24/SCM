@@ -38,7 +38,15 @@ namespace SCM
             for (i = 0; i < dgvBodega.RowCount - 1; i++)
             {
                 cmbBodega.Items.Add(dgvBodega[0, i].Value.ToString() + " " + dgvBodega[1, i].Value.ToString());
-            }            
+            }
+            //cmbMarca
+            string query3 = "SELECT idmarca, descripcion FROM [dbo].[Marca]";
+            DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query3, "Marca");
+            dgvMarcas.DataSource = ds3.Tables[0];
+            for (i = 0; i < dgvMarcas.RowCount - 1; i++)
+            {
+                cmbMarca.Items.Add(dgvMarcas[0, i].Value.ToString() + " " + dgvMarcas[1, i].Value.ToString());
+            }
         }
 
         private void btnCongelar_Click(object sender, EventArgs e)
