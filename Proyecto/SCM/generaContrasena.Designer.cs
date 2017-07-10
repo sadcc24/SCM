@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(generaContrasena));
             this.grdFactura = new System.Windows.Forms.DataGridView();
+            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbBodega = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmbProveedor = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnBuscarOC = new System.Windows.Forms.Button();
@@ -42,9 +45,7 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbBodega = new System.Windows.Forms.ComboBox();
+            this.lblempresa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdFactura)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,11 @@
             this.grdFactura.Name = "grdFactura";
             this.grdFactura.Size = new System.Drawing.Size(921, 248);
             this.grdFactura.TabIndex = 14;
+            // 
+            // Seleccionar
+            // 
+            this.Seleccionar.HeaderText = "Seleccionar";
+            this.Seleccionar.Name = "Seleccionar";
             // 
             // groupBox1
             // 
@@ -80,6 +86,26 @@
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Genera Contraseña";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cmbBodega
+            // 
+            this.cmbBodega.FormattingEnabled = true;
+            this.cmbBodega.Location = new System.Drawing.Point(618, 82);
+            this.cmbBodega.Name = "cmbBodega";
+            this.cmbBodega.Size = new System.Drawing.Size(161, 21);
+            this.cmbBodega.TabIndex = 32;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(516, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 19);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "BODEGA:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmbProveedor
             // 
@@ -186,34 +212,21 @@
             this.lblTitulo.Text = "Genera Contraseña a Proveedores";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Seleccionar
+            // lblempresa
             // 
-            this.Seleccionar.HeaderText = "Seleccionar";
-            this.Seleccionar.Name = "Seleccionar";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(516, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 19);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "BODEGA:";
-            // 
-            // cmbBodega
-            // 
-            this.cmbBodega.FormattingEnabled = true;
-            this.cmbBodega.Location = new System.Drawing.Point(618, 82);
-            this.cmbBodega.Name = "cmbBodega";
-            this.cmbBodega.Size = new System.Drawing.Size(161, 21);
-            this.cmbBodega.TabIndex = 32;
+            this.lblempresa.AutoSize = true;
+            this.lblempresa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblempresa.Location = new System.Drawing.Point(830, 9);
+            this.lblempresa.Name = "lblempresa";
+            this.lblempresa.Size = new System.Drawing.Size(0, 19);
+            this.lblempresa.TabIndex = 30;
             // 
             // generaContrasena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 419);
+            this.Controls.Add(this.lblempresa);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grdFactura);
@@ -250,5 +263,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Seleccionar;
         private System.Windows.Forms.ComboBox cmbBodega;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblempresa;
     }
 }

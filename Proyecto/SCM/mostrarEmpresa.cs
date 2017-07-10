@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Seguridad
+    Fecha de asignación: 13/Junio
+    Fecha de entrega: 27/Junio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,13 +15,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
 using dllSeguridadSAD;
-
+using DAL;
 
 namespace SCM
 {
     public partial class mostrarEmpresa : Form
-    {        
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "localhost");
+    {
+        MRP_BD cnn = Globales.cnn;
         public mostrarEmpresa()
         {
             InitializeComponent();
@@ -24,12 +30,23 @@ namespace SCM
         public void ActualizarGridView()
         {
             string[] usuario = Globales.Usuario.CapturarUsuario();
-            string regusuario = usuario[0];
-            dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + regusuario);
-            int i;
-            for (i= 0; i < dgvEmpresa.RowCount-1; i++)
+            if (usuario[0] != "No Autenticado")
+            {                
+                dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + usuario[0]);
+                int i;
+                for (i = 0; i < dgvEmpresa.RowCount - 1; i++)
+                {
+                    cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                }
+            }
+            if (cmbEmpresa.Items.Count == 0)
             {
-                cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                this.Close();
+                MessageBox.Show("El usuario " +usuario[1] + " no tiene asignado ninguna empresa", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                mostrarLogin Login = new mostrarLogin();
+                Login.Show();
+
             }
         }
         private void frmEmpresa_Load(object sender, EventArgs e)
@@ -52,12 +69,13 @@ namespace SCM
                     MessageBox.Show("Seleccione una empresa", "Seguridad SAD",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.Show();
+                    
                 }
                 if (autenticado == true)
                 {
-                   // MessageBox.Show("¡Bienvenido " + dgvEmpresa[1, seleccionado].Value.ToString() + "!", "Seguridad SAD",
-                   //             MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    // MessageBox.Show("¡Bienvenido " + dgvEmpresa[1, seleccionado].Value.ToString() + "!", "Seguridad SAD",
+                    //             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Empresa seleccionada");
                     mostrarMenu temp = new mostrarMenu();
                     this.Hide();
                     temp.Show();
@@ -72,6 +90,7 @@ namespace SCM
                 MessageBox.Show("Seleccione una empresa", "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Show();
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Error en Selección de Empresa");
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace DAL
 {
    public class tipo_cargamento_DAL
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
 
         public void inserttipocargamento(tipo_cargamento_Entity tip)
         {
@@ -21,7 +22,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -41,6 +42,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
 
             }
         }
@@ -53,7 +55,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
     }

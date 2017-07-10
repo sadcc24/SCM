@@ -14,7 +14,8 @@ namespace DAL
         // Analista : Pamela Jacqueline Selman David
         // Comentarios :
 
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
+        //  MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         // MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         public void vInsertarTipoMovimiento(clsTipoMovimiento_Entity tipomovimiento)
@@ -22,9 +23,14 @@ namespace DAL
             cnn.insertSQL("INSERT INTO [dbo].[TIPOMOVIMIENTO] (descripcion,operacion,activo) VALUES ('"
                 + tipomovimiento.strDescripcion + "'," + tipomovimiento.strOperacion  + ",1)");
         }
-   
 
-     
+
+        public void vEliminarTipoMovimiento(clsTipoMovimiento_Entity tipomovimiento)
+        {
+            cnn.deleteSQL("DELETE FROM [dbo].[TIPOMOVIMIENTO] WHERE IDTIPOMOVIMIENTO =" + tipomovimiento.strIdTipoMovimiento);
+        }
+
+
 
         public DataTable vConsultarTipoMovimiento()
         {

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Usuarios
+    Fecha de asignación: 20/Junio
+    Fecha de entrega: 03/Julio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +15,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
+
 namespace SCM
 {
     public partial class mantenimientoUsuarios : Form
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         public mantenimientoUsuarios()
         {
             InitializeComponent();
@@ -36,25 +44,22 @@ namespace SCM
 
         private void mantenimientoUsuarios_Load(object sender, EventArgs e)
         {
-            string[] usuario = Globales.Usuario.CapturarUsuario();
-            string query = "SELECT Rol.idrol, Rol.Rol as Rol, codusuario FROM [dbo].[Usuario_1] INNER JOIN ROL ON Usuario_1.idrol = Rol.idrol  WHERE Status = 1 AND codusuario =" + usuario[0];
-            DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Usuario_1");
-
-            gvUsuariosA.DataSource = ds.Tables[0];
-            Globales.Rol = gvUsuariosA.Rows[0].Cells[0].Value.ToString();
-            if (Globales.Rol == "1")
+            //Verificación de Rol de Administrador            
+            if (Globales.Usuario.CapturarRol(Globales.Conexion) == "1")
             {
                 //MessageBox.Show("Sí tiene permisos de Administrador");
                 vConsultarUsuariosActivas();
             }
             else
             {
-                MessageBox.Show("No tiene permisos de Administrador");
+                MessageBox.Show("No tiene permisos de Administrador", "Seguridad SAD",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 this.BeginInvoke(new MethodInvoker(this.Close));
             }
+            //Verificación de Rol de Administrador
+
             string query2 = "SELECT idrol, Rol FROM [dbo].[Rol]";
             DataSet ds2 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query2, "Rol");
-            int i;
+            //int i;
             gvUsuariosA.DataSource = ds2.Tables[0];
         }
         

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Líneas
+    Fecha de asignación: 27/Junio
+    Fecha de entrega: 03/Julio
+*/using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +11,13 @@ using System.Threading.Tasks;
 using Entity;
 using System.Data;
 
+
+
 namespace DAL
 {
     public class Lineas_DAL
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
 
         public void vInsertLinea(Lineas_Entity Linea)
         {

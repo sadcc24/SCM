@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Seguridad
+    Fecha de asignación: 13/Junio
+    Fecha de entrega: 27/Junio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dllSeguridadSAD;
+using DAL;
 
 namespace SCM
 {
@@ -21,7 +28,8 @@ namespace SCM
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            bool autenticado = false;            
+            bool autenticado = false;
+            
             try
             {
                 if ((txtUsuario.Text != "") || (txtPassword.Text != ""))
@@ -31,27 +39,47 @@ namespace SCM
                     MessageBox.Show("Ingrese su usuario y/o contraseña", "Seguridad SAD",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     this.Show();
+                    
                 }
                 if (autenticado == true)
                 {
-                    //MessageBox.Show("¡Bienvenido "+ txtUsuario.Text + "!", "Seguridad SAD",
-                    //            MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion,"Bitacora","Sesión Iniciada");
                     mostrarEmpresa temp = new mostrarEmpresa();
-                    this.Hide();
+                    this.Close();
                     temp.Show();
                 }
                 else
                     this.Show();
             }
-            catch
+            catch (Exception error)
             {
                 //en caso que la contraseña sea erronea mostrara un mensaje
                 //dentro de los parentesis va: "Mensaje a mostrar","Titulo de la ventana",botones a mostrar en ste caso OK, icono a mostrar en este caso uno de error
-                MessageBox.Show("Error! Su contraseña y/o usuario son invalidos", "Error",
+                MessageBox.Show("Error! Su contraseña y/o usuario son invalidos: " +
+                        System.Environment.NewLine + System.Environment.NewLine +
+                        error.GetType().ToString() + System.Environment.NewLine
+                        + error.Message, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Show();
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Error al Iniciar Sesión");
             }            
+        }
+
+        private void mostrarLogin_Load(object sender, EventArgs e)
+        {
+            string[] user = Globales.Usuario.CapturarUsuario();
+            if (user[0] == "No Autenticado")
+            {
+                Usuarios frm = new Usuarios();
+                frm.txtCod.ReadOnly = true;
+                frm.btnEditar.Enabled = false;
+                frm.btnEliminar.Enabled = false;
+                frm.txtCod.ReadOnly = true;
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterScreen;
+                frm.ShowDialog(mostrarLogin.ActiveForm);
+                this.Show();
+            }
         }
     }
 }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Seguridad
+    Fecha de asignación: 13/Junio
+    Fecha de entrega: 27/Junio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using dllSeguridadSAD;
+using DAL;
 
 namespace SCM
 {
@@ -19,7 +26,7 @@ namespace SCM
             pbrBarra.Style = ProgressBarStyle.Continuous;
             pbrBarra.Maximum = 100;
             pbrBarra.Value = 0;
-
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Aplicación ejecutada");
             tmrReloj.Enabled = true;
         }
         public void incrementarBarra()

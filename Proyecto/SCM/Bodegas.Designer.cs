@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bodegas));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSMax = new System.Windows.Forms.TextBox();
             this.txtSMin = new System.Windows.Forms.TextBox();
@@ -41,9 +44,6 @@
             this.txtBodega = new System.Windows.Forms.TextBox();
             this.grupoFiltrar = new System.Windows.Forms.GroupBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -76,6 +76,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bodegas";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(51, 15);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(83, 20);
+            this.txtID.TabIndex = 110;
+            this.txtID.Tag = "estado";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 19);
+            this.label6.TabIndex = 109;
+            this.label6.Text = "ID:";
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(342, 172);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.ReadOnly = true;
+            this.txtEstado.Size = new System.Drawing.Size(168, 20);
+            this.txtEstado.TabIndex = 108;
+            this.txtEstado.Tag = "estado";
+            this.txtEstado.Text = "ACTIVO";
             // 
             // label5
             // 
@@ -185,34 +213,6 @@
             this.lblTitulo.Text = "Mantenimiento Bodegas";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(342, 172);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.ReadOnly = true;
-            this.txtEstado.Size = new System.Drawing.Size(168, 20);
-            this.txtEstado.TabIndex = 108;
-            this.txtEstado.Tag = "estado";
-            this.txtEstado.Text = "ACTIVO";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 19);
-            this.label6.TabIndex = 109;
-            this.label6.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(51, 15);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(83, 20);
-            this.txtID.TabIndex = 110;
-            this.txtID.Tag = "estado";
-            // 
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
@@ -285,12 +285,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 320);
+            this.ClientSize = new System.Drawing.Size(836, 438);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grupoFiltrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(852, 477);
-            this.MinimumSize = new System.Drawing.Size(852, 359);
+            this.MinimumSize = new System.Drawing.Size(852, 477);
             this.Name = "Bodegas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento Bodegas";

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Usuarios
+    Fecha de asignación: 20/Junio
+    Fecha de entrega: 03/Julio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 
 namespace SCM
 {
@@ -24,7 +31,7 @@ namespace SCM
             // cmbEstado.Items.Insert(1,"ACTIVO");
             //  cmbEstado.Items.Insert(0, "INACTIVO");
             btnCancelar.Enabled = false;            
-            string[] usuario = Globales.Usuario.CapturarUsuario();
+            
             string query = "SELECT idrol, Rol FROM [dbo].[Rol]";
             DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Rol");
             int i;
@@ -34,6 +41,7 @@ namespace SCM
                 cmbRol.Items.Add(gvUsuariosA[0, i].Value.ToString() + " " + gvUsuariosA[1, i].Value.ToString());
             }
 
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -81,10 +89,14 @@ namespace SCM
                                 User.strPregunta = txtPregunta.Text;
                                 Usuario.vInsertarUsuario(User);
                                 MessageBox.Show("Usuario ha sido creado.");
-                                mantenimientoUsuarios prdu = new mantenimientoUsuarios();
-                                prdu.MdiParent = this.MdiParent;
-                                this.Hide();
-                                prdu.Show();
+                                string[] user = Globales.Usuario.CapturarUsuario();
+                                if (user[0] != "No Autenticado")
+                                {
+                                    mantenimientoUsuarios prdu = new mantenimientoUsuarios();
+                                    prdu.MdiParent = this.MdiParent;
+                                    this.Hide();
+                                    prdu.Show();
+                                }
                             }
                             catch (Exception ex)
                             {

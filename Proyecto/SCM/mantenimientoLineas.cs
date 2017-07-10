@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Líneas
+    Fecha de asignación: 27/Junio
+    Fecha de entrega: 03/Julio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +15,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
+
 namespace SCM
 {
     public partial class mantenimientoLineas : Form
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         public mantenimientoLineas()
         {
             InitializeComponent();

@@ -14,11 +14,17 @@ namespace Entity
         // Comentarios :
 
         private string _strDescripcion;
-
+        private string _strIdMarca;
         public string strDescripcion
         {
             get { return _strDescripcion; }
             set { _strDescripcion = value; }
+        }
+
+        public string strIdMarca
+        {
+            get { return _strIdMarca; }
+            set { _strIdMarca = value; }
         }
     }
 }

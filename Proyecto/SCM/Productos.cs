@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BO;
 using Entity;
+using DAL;
 namespace SCM
 {
     public partial class Productos : Form
@@ -92,7 +93,7 @@ namespace SCM
                     pro.strIdProd = txtID.Text;
                     producto.vEliminarProducto(pro);
                     MessageBox.Show("Producto ha sido Borrado.");
-
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Eliminar Productos.");
                     mantenimientoProductos prdu = new mantenimientoProductos();
                     prdu.MdiParent = this.MdiParent;
                     //prdu.vConsultarProductosActivos();
@@ -174,12 +175,15 @@ namespace SCM
                                     pro.strPeso = strpeso;
                                     pro.struTamano = strutamano;
                                     pro.struPeso = strupeso;
+
+                                    //string[] empresa = Globales.Empresa.CapturarEmpresa();
+                                    //pro.strIdEmpresa = empresa[0];
                                     pro.strIdEmpresa = "1";
 
 
                                     producto.vInsertarProducto(pro);
                                     MessageBox.Show("Producto ha sido Guardado.");
-
+                                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Guardar Productos.");
                                     mantenimientoProductos prdu = new mantenimientoProductos();
                                     prdu.MdiParent = this.MdiParent;
                                     //prdu.vConsultarProductosActivos();
@@ -245,7 +249,7 @@ namespace SCM
 
                     producto.vModificarProducto(pro);
                     MessageBox.Show("Producto ha sido Actualizado.");
-
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Editar Productos.");
                     mantenimientoProductos prdu = new mantenimientoProductos();
                     prdu.MdiParent = this.MdiParent;
                     //prdu.vConsultarProductosActivos();

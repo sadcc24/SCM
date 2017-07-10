@@ -32,10 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
+    <StartupObject>SCM.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="dllSeguridadSAD">
       <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
     </Reference>
@@ -72,6 +77,12 @@
     </Compile>
     <Compile Include="autorizaPagoProveedores.Designer.cs">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
     <Compile Include="Bodegas.cs">
       <SubType>Form</SubType>
@@ -145,7 +156,6 @@
     <Compile Include="generaDevolucionProveedor.Designer.cs">
       <DependentUpon>generaDevolucionProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Globales.cs" />
     <Compile Include="ingresoDetalleST.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +204,12 @@
     <Compile Include="ingresoVehiculo.Designer.cs">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="kardexProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kardexProductos.Designer.cs">
+      <DependentUpon>kardexProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lineas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +239,12 @@
     </Compile>
     <Compile Include="mantenimientoMarca.Designer.cs">
       <DependentUpon>mantenimientoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoMonedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoMonedas.designer.cs">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
     </Compile>
     <Compile Include="mantenimientoProductos.cs">
       <SubType>Form</SubType>
@@ -265,6 +287,18 @@
     </Compile>
     <Compile Include="mantenimientoUsuarios.Designer.cs">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monedas.designer.cs">
+      <DependentUpon>Monedas.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarEmpresa.cs">
       <SubType>Form</SubType>
@@ -310,6 +344,12 @@
     <Compile Include="seguimientoST.Designer.cs">
       <DependentUpon>seguimientoST.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoMovimiento.Designer.cs">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoSolicitud.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -336,12 +376,16 @@
     </Compile>
     <EmbeddedResource Include="ajustarExistencias.resx">
       <DependentUpon>ajustarExistencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="AutorizacionOC.resx">
       <DependentUpon>AutorizacionOC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="autorizaPagoProveedores.resx">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bodegas.resx">
       <DependentUpon>Bodegas.cs</DependentUpon>
@@ -403,6 +447,9 @@
     <EmbeddedResource Include="ingresoVehiculo.resx">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kardexProductos.resx">
+      <DependentUpon>kardexProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lineas.resx">
       <DependentUpon>Lineas.cs</DependentUpon>
     </EmbeddedResource>
@@ -417,6 +464,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoMarca.resx">
       <DependentUpon>mantenimientoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoMonedas.resx">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoProductos.resx">
       <DependentUpon>mantenimientoProductos.cs</DependentUpon>
@@ -438,6 +488,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoUsuarios.resx">
       <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monedas.resx">
+      <DependentUpon>Monedas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarEmpresa.resx">
       <DependentUpon>mostrarEmpresa.cs</DependentUpon>
@@ -469,6 +525,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="seguimientoST.resx">
       <DependentUpon>seguimientoST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoMovimiento.resx">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoSolicitud.resx">
       <DependentUpon>TipoSolicitud.cs</DependentUpon>

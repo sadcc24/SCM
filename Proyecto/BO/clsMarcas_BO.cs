@@ -19,7 +19,11 @@ namespace BO
             marcainsert.vInsertarMarca(marca);
         }
 
-
+        public void vEliminarMarca(clsMarcas_Entity marca)
+        {
+            clsMarcas_DAL marcadelete = new clsMarcas_DAL();
+            marcadelete.vEliminarMarca(marca);
+        }
 
 
         public DataTable vConsultarMarcas()

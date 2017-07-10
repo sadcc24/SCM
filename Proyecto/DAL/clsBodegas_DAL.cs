@@ -13,8 +13,9 @@ namespace DAL
         // Programador : Pamela Jacqueline Selman David
         // Analista : Pamela Jacqueline Selman David
         // Comentarios :
+        MRP_BD cnn = Globales.cnn;
 
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        //  MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         // MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         public void vInsertBodega(clsBodegas_Entity bodega) {                       

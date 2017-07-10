@@ -36,44 +36,7 @@ namespace SCM
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            int operacion = 0;
-
-            if (rbSuma.Checked == true)
-            {
-                operacion = 1;
-            }
-            else {
-                if (rbResta.Checked == true)
-                {
-                    operacion = 0;
-                }
-            }
-
-            if (string.IsNullOrEmpty(txtDescripcion.Text))
-            {
-                MessageBox.Show("Debe agregar la Descripción de Tipo de Movimiento de Inventarios.");
-                return;
-            }
-            else {
-                try
-                {
-                    clsTipoMovimiento_Entity tip = new clsTipoMovimiento_Entity();
-                    clsTipoMovimiento_BO tipo = new clsTipoMovimiento_BO();
-                    tip.strDescripcion = txtDescripcion.Text;
-                    tip.strOperacion = operacion.ToString();
-                    tipo.vInsertarTipoMovimiento(tip);
-                    MessageBox.Show("Tipo de Movimiento Ha sido Guardado.");
-                    vConsultarTiposActivos();
-                    txtDescripcion.Text = "";
-                    gbInsertar.Enabled = false;
-                   
-                }
-
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -198,7 +161,45 @@ namespace SCM
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            gbInsertar.Enabled = true;
+            TipoMovimiento prdu = new TipoMovimiento();
+            prdu.MdiParent = this.MdiParent;
+            prdu.btnEditar.Enabled = false;
+            prdu.btnEliminar.Enabled = false;
+            prdu.txtID.ReadOnly = true;
+            this.Hide();
+
+            prdu.Show();
+        }
+
+        private void gvTiposMovimiento_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string idtipomovimiento, descripcion, operacion;
+            idtipomovimiento = gvTiposMovimiento.Rows[e.RowIndex].Cells[0].Value.ToString();
+            descripcion = gvTiposMovimiento.Rows[e.RowIndex].Cells[1].Value.ToString();
+            operacion = gvTiposMovimiento.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+        //    MessageBox.Show(operacion);
+
+            TipoMovimiento frm = new TipoMovimiento();
+            frm.txtID.Text = idtipomovimiento;
+            frm.txtDescripcion.Text = descripcion;
+           if (operacion == "False")
+            {
+                frm.rbResta.Checked = true;
+            }
+            else {
+                if (operacion == "True")
+                {
+                    frm.rbSuma.Checked = true;
+                }
+            }
+            frm.btnEditar.Enabled = false;
+            frm.btnEliminar.Enabled = true;
+            frm.btnGuardar.Enabled = false;
+            frm.txtID.ReadOnly = true;
+            frm.ShowInTaskbar = false;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog(mostrarMenu.ActiveForm);
         }
     }
 }

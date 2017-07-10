@@ -64,6 +64,7 @@ namespace SCM
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
                 MessageBox.Show("Error en el Actualizacion de Datos");
             }
         }
@@ -88,6 +89,7 @@ namespace SCM
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
                 MessageBox.Show("Error en el Eliminacion de Datos");
             }
         }
@@ -112,6 +114,7 @@ namespace SCM
             }
             catch (Exception ex)
             {
+                String error = ex.ToString();
                 MessageBox.Show("Error en el Registro de Datos");
             }
         }

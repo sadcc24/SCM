@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace DAL
 {
    public class proveedores_DAL
     {
-        MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        MRP_BD cnn = Globales.cnn;
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
 
         public void insertproveedor(proveedores_Entity prov)
@@ -21,7 +22,7 @@ namespace DAL
                 
             } catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -48,7 +49,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
@@ -60,7 +61,7 @@ namespace DAL
             }
             catch (Exception ex)
             {
-
+                String error = ex.ToString();
             }
         }
 
