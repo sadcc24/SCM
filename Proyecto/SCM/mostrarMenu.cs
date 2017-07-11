@@ -168,7 +168,7 @@ namespace SCM
 
         private void ingresoDeOrdenDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ingresoOrdenCompra temp = new ingresoOrdenCompra();
+            verOrdenes temp = new verOrdenes();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();
@@ -478,6 +478,46 @@ namespace SCM
         private void asignaciónDeEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             mantenimientoEmpleados temp = new mantenimientoEmpleados();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadoContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoContrasena temp = new mantenimientoEstadoContrasena();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadoOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoOrdenCompra temp = new mantenimientoEstadoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadosFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoFacturas temp = new mantenimientoEstadoFacturas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoTipoOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoOrdenCompra temp = new mantenimientoTipoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void cuentasPorPagarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            verCuentaxPagar temp = new verCuentaxPagar();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

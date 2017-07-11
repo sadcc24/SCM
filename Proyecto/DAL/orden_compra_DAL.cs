@@ -102,5 +102,13 @@ namespace DAL
                 String error = ex.ToString();
             }
         }
+
+        public DataTable verCuentasxPagar(int prov)
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("select sum(b.monto) as DEBE, (select sum(b.monto) from CONTRASENA a inner join DETALLECONTRASENA b on a.idcontrasena = b.idcontrasena where a.idestadocontrasena = 2 and a.idproveedor = " + prov + ") as HABER, (select sum(b.monto) from CONTRASENA a inner join DETALLECONTRASENA b on a.idcontrasena = b.idcontrasena where a.idestadocontrasena = 3 and a.idproveedor = " + prov + ") as SALDO from CONTRASENA a inner join DETALLECONTRASENA b on a.idcontrasena = b.idcontrasena where a.idestadocontrasena = 1 and a.idproveedor = " + prov + " ");
+            return dt;
+        }
+
     }
 }
