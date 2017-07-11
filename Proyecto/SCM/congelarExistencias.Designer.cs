@@ -43,7 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbLinea = new System.Windows.Forms.ComboBox();
             this.dgvExistencias = new System.Windows.Forms.DataGridView();
-            this.dgvLíneas = new System.Windows.Forms.DataGridView();
+            this.dgvLineas = new System.Windows.Forms.DataGridView();
             this.dgvBodega = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExistencias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLíneas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLineas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBodega)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
@@ -211,26 +211,26 @@
             this.dgvExistencias.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvExistencias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvExistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExistencias.Location = new System.Drawing.Point(-200, 205);
+            this.dgvExistencias.Location = new System.Drawing.Point(34, 267);
             this.dgvExistencias.Name = "dgvExistencias";
             this.dgvExistencias.ReadOnly = true;
-            this.dgvExistencias.Size = new System.Drawing.Size(428, 65);
+            this.dgvExistencias.Size = new System.Drawing.Size(428, 182);
             this.dgvExistencias.TabIndex = 117;
             this.dgvExistencias.Visible = false;
             // 
-            // dgvLíneas
+            // dgvLineas
             // 
-            this.dgvLíneas.AllowUserToDeleteRows = false;
-            this.dgvLíneas.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dgvLíneas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvLíneas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLíneas.Location = new System.Drawing.Point(287, 196);
-            this.dgvLíneas.Name = "dgvLíneas";
-            this.dgvLíneas.ReadOnly = true;
-            this.dgvLíneas.Size = new System.Drawing.Size(428, 65);
-            this.dgvLíneas.TabIndex = 115;
-            this.dgvLíneas.Visible = false;
-            this.dgvLíneas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLíneas_CellContentClick);
+            this.dgvLineas.AllowUserToDeleteRows = false;
+            this.dgvLineas.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dgvLineas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvLineas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLineas.Location = new System.Drawing.Point(287, 196);
+            this.dgvLineas.Name = "dgvLineas";
+            this.dgvLineas.ReadOnly = true;
+            this.dgvLineas.Size = new System.Drawing.Size(428, 65);
+            this.dgvLineas.TabIndex = 115;
+            this.dgvLineas.Visible = false;
+            this.dgvLineas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLíneas_CellContentClick);
             // 
             // dgvBodega
             // 
@@ -293,7 +293,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 261);
+            this.ClientSize = new System.Drawing.Size(534, 461);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvMarcas);
@@ -301,7 +301,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbxProductos);
-            this.Controls.Add(this.dgvLíneas);
+            this.Controls.Add(this.dgvLineas);
             this.Controls.Add(this.dgvBodega);
             this.Controls.Add(this.dgvExistencias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -316,7 +316,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExistencias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLíneas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLineas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBodega)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -339,7 +339,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbLinea;
-        private System.Windows.Forms.DataGridView dgvLíneas;
+        private System.Windows.Forms.DataGridView dgvLineas;
         private System.Windows.Forms.ComboBox cmbBodega;
         private System.Windows.Forms.DataGridView dgvBodega;
         private System.Windows.Forms.DataGridView dgvExistencias;
