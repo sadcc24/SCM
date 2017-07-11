@@ -61,33 +61,15 @@ namespace SCM
             Resultado = MessageBox.Show("¿Está seguro de congelar estas existencias?", "Congelar Existencias",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (Resultado == DialogResult.Yes)
-            {
-                /*
-                //Crear Inventario Físico
-                try
-                {
-                    string[] usuario = Globales.Usuario.CapturarUsuario();
-                    string rol = Globales.Usuario.CapturarRol(Globales.Conexion);
-                    string query4 = "INSERT INTO [DBO].[INVENTARIOFISICO] (fecha,codusuario,idrol) VALUES(GETDATE()," + usuario[0] + "," + rol + ")";
-                    DataSet ds4 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query4, "InventarioFisico");
-                    //dgvExistencias.DataSource = ds4.Tables[0];
-                    //dgvExistencias.Visible = true;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Error al crear inventario físico.",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                }
-                
-               
-                */
+            {                
                 /*Clases de Congelación
-                    1. Rango productos
-                    2. Línea
-                    3. Marca
-                    4. Rango productos con Línea
-                    5. Rango productos con Marca
-                    6. Línea con Marca
-                    7. Rango productos con Línea y Marca
+                    <1. Rango productos
+                    <2. Línea
+                    <3. Marca
+                    <4. Rango productos con Línea
+                    <5. Rango productos con Marca
+                    <6. Línea con Marcas
+                    <7. Rango productos con Línea y Marca
                     8. Bodega
                     9. Bodega con Rango productos
                     10. Bodega con Línea
@@ -129,17 +111,34 @@ namespace SCM
                 if ((cmbBodega.SelectedIndex != -1) && (txtDesde.Text != "") && (txtHasta.Text != "") && (cmbLinea.SelectedIndex != -1) && (cmbMarca.SelectedIndex != -1))
                     caseCongelar = 15;
                 
-                    MessageBox.Show(caseCongelar.ToString(), "Clases de Congelación");
+                   // MessageBox.Show(caseCongelar.ToString(), "Clases de Congelación");
 
                     switch (caseCongelar)
                 {
-                    case 0:
+                    case 8:
+                        //Congelar por Bodega
+                        try
+                        {
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            string query5 = "SELECT idbodega,idproducto,cantidad FROM [dbo].[Existencia] where idbodega = " + dgvBodega[0, bodega].Value.ToString();
+                            DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
+                            dgvExistencias.DataSource = ds3.Tables[0];
+                            dgvExistencias.Visible = true;
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error al congelar por bodega.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                         break;
-                    case 1:
+                    case 9:
                         //Congelar por Productos
                         try
                         {
-                            string query5 = "SELECT idbodega,idproducto,cantidad FROM [dbo].[Existencia] where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            string query5 = "SELECT idbodega,idproducto,cantidad FROM [dbo].[Existencia] where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -150,13 +149,15 @@ namespace SCM
                             MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
-                    case 2:
+                    case 10:
                         //Congelar por Línea
                         try
                         {
-                            int seleccionado;
-                            seleccionado = cmbLinea.SelectedIndex;                            
-                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea WHERE linea.idlinea = " + dgvLineas[0, seleccionado].Value.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int linea;
+                            linea = cmbLinea.SelectedIndex;                            
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea WHERE linea.idlinea = " + dgvLineas[0, linea].Value.ToString()  + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -164,16 +165,18 @@ namespace SCM
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "Error al congelar por línea.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
-                    case 3:
+                    case 11:
                         //Congelar por Marca
                         try
                         {
-                            int seleccionado;
-                            seleccionado = cmbMarca.SelectedIndex;                            
-                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Marca ON Producto.idmarca = Marca.idmarca WHERE marca.idmarca = " + dgvMarcas[0, seleccionado].Value.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int marca;
+                            marca = cmbMarca.SelectedIndex;                            
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Marca ON Producto.idmarca = Marca.idmarca WHERE marca.idmarca = " + dgvMarcas[0, marca].Value.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -181,16 +184,18 @@ namespace SCM
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "Error al congelar por marca.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
-                    case 4:
+                    case 12:
                         //Congelar por Productos con Línea
                         try
                         {
-                            int seleccionado;
-                            seleccionado = cmbLinea.SelectedIndex;
-                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea  where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and WHERE linea.idlinea = " + dgvLineas[0, seleccionado].Value.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int linea;
+                            linea = cmbLinea.SelectedIndex;
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea  where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and WHERE linea.idlinea = " + dgvLineas[0, linea].Value.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -198,16 +203,18 @@ namespace SCM
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "Error al congelar por productos con línea.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
-                    case 5:
+                    case 13:
                         //Congelar por Productos con Marca
                         try
                         {
-                            int seleccionado;
-                            seleccionado = cmbMarca.SelectedIndex;
-                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Marca ON Producto.idmarca = Marca.idmarca where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and WHERE marca.idmarca = " + dgvMarcas[0, seleccionado].Value.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int marca;
+                            marca = cmbMarca.SelectedIndex;
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Marca ON Producto.idmarca = Marca.idmarca where idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and WHERE marca.idmarca = " + dgvMarcas[0, marca].Value.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -215,17 +222,20 @@ namespace SCM
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "Error al congelar por productos con marca.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
-                    case 6:
+                    case 14:
                         //Congelar por Línea con Marca
                         try
                         {
-                            int seleccionadol, seleccionadom;
-                            seleccionadol = cmbLinea.SelectedIndex;
-                            seleccionadom = cmbMarca.SelectedIndex;
-                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea INNER JOIN Marca ON Producto.idmarca = Marca.idmarca WHERE linea.idlinea = " + dgvLineas[0, seleccionadol].Value.ToString() + " AND marca.idmarca = " + dgvMarcas[0, seleccionadom].Value.ToString();
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int linea;
+                            linea = cmbLinea.SelectedIndex;
+                            int marca;
+                            marca = cmbMarca.SelectedIndex;
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea INNER JOIN Marca ON Producto.idmarca = Marca.idmarca WHERE linea.idlinea = " + dgvLineas[0, linea].Value.ToString() + " AND marca.idmarca = " + dgvMarcas[0, marca].Value.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
                             DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
                             dgvExistencias.DataSource = ds3.Tables[0];
                             dgvExistencias.Visible = true;
@@ -233,20 +243,57 @@ namespace SCM
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message, "Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(ex.Message, "Error al congelar por línea y marca.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         break;
+                    case 15:
+                        //Congelar por Rango de productos con Línea y Marca
+                        try
+                        {
+                            int bodega;
+                            bodega = cmbBodega.SelectedIndex;
+                            int linea;
+                            linea = cmbLinea.SelectedIndex;
+                            int marca;
+                            marca = cmbMarca.SelectedIndex;
+                            string query5 = "SELECT idbodega,Producto.idproducto,cantidad FROM [dbo].[Existencia] INNER JOIN Producto ON Existencia.idproducto = Producto.idproducto INNER JOIN Linea ON Producto.idlinea = Linea.idlinea INNER JOIN Marca ON Producto.idmarca = Marca.idmarca WHERE linea.idlinea = " + dgvLineas[0, linea].Value.ToString() + " AND marca.idmarca = " + dgvMarcas[0, marca].Value.ToString() + " AND where Producto.idproducto between " + txtDesde.Text.ToString() + " and " + txtHasta.Text.ToString() + " and idbodega = " + dgvBodega[0, bodega].Value.ToString();
+                            DataSet ds3 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query5, "Existencia");
+                            dgvExistencias.DataSource = ds3.Tables[0];
+                            dgvExistencias.Visible = true;
 
-                    default:
-                        MessageBox.Show("Error desconocido","Error al congelar por productos.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Error al congelar por productos con línea y marca.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                         break;
+                    
+                    default:
+                        {
+                            //throw new NotImplementedException ("Debe seleccionar una bodega.");
+                            MessageBox.Show("Debe seleccionar una bodega", "Error al congelar existencias.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
                 }
 
-
-
+                /*
+                //Crear Inventario Físico
+                try
+                {
+                    string[] usuario = Globales.Usuario.CapturarUsuario();
+                    string rol = Globales.Usuario.CapturarRol(Globales.Conexion);
+                    string query4 = "INSERT INTO [DBO].[INVENTARIOFISICO] (fecha,codusuario,idrol) VALUES(GETDATE()," + usuario[0] + "," + rol + ")";
+                    DataSet ds4 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query4, "InventarioFisico");
+                    //dgvExistencias.DataSource = ds4.Tables[0];
+                    //dgvExistencias.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error al crear inventario físico.",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
                 
-
-
+               
+                */
                 MessageBox.Show("Las existencias han sido congeladas", "Congelar Existencias",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
