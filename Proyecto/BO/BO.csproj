@@ -44,6 +44,7 @@
     <Compile Include="clsBodegas_BO.cs" />
     <Compile Include="clsInventarios_BO.cs" />
     <Compile Include="clsMarcas_BO.cs" />
+    <Compile Include="clsMovimientosInventario_BO.cs" />
     <Compile Include="clsProductos_BO.cs" />
     <Compile Include="clsTipoMovimiento_BO.cs" />
     <Compile Include="detalle_orden_compra_BO.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="estado_factura_BO.cs" />
     <Compile Include="estado_orden_BO.cs" />
     <Compile Include="estado_solicitud_BO.cs" />
+    <Compile Include="factura_proveedores_BO.cs" />
     <Compile Include="Lineas_BO.cs" />
     <Compile Include="Monedas_BO.cs" />
     <Compile Include="orden_compra_BO.cs" />

@@ -20,6 +20,7 @@ namespace Entity
         private string _strIdFactura;
         private string _strIdContrasena;
         private string _strmonto;
+        private string _strIdMovimiento;
 
         public string strIdProveedor { get { return _strIdProveedor; } set { _strIdProveedor = value; } }
         public string strBodega { get { return _strBodega; } set { _strBodega = value; } }
@@ -27,6 +28,7 @@ namespace Entity
         public string strIdFactura { get { return _strIdFactura; } set { _strIdFactura = value; } }
         public string strIdContrasena { get { return _strIdContrasena; } set { _strIdContrasena = value; } }
         public string strmonto { get { return _strmonto; } set { _strmonto = value; } }
+        public string strIdMovimiento { get { return _strIdMovimiento; } set { _strIdMovimiento = value; } }
 
 
     }

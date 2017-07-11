@@ -13,7 +13,8 @@ using DAL;
 namespace SCM
 {
     public partial class generaContrasena : Form
-    {
+    { // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
         public generaContrasena()
         {
             InitializeComponent();

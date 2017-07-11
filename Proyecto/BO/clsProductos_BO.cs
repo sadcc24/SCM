@@ -11,8 +11,9 @@ namespace BO
  public class clsProductos_BO
     {
         // Programador : Pamela Jacqueline Selman David
-     // Analista : Pamela Jacqueline Selman David
-     // Comentarios :
+        // Analista : Pamela Jacqueline Selman David
+        // Comentarios :
+        #region "LLENADO COMBOS"
         public DataTable vdtComboBodega()
         {
             DataTable dtbodegas;
@@ -79,26 +80,27 @@ namespace BO
             return dtbodegas;
         }
 
-
+        #endregion
+        // Comentarios : Insertar producto
         public void vInsertarProducto(clsProductos_Entity producto)
         {
             clsProductos_DAL productinsert = new clsProductos_DAL();
             productinsert.vInsertProducto(producto);
         }
-
+        // Comentarios : Modificar Producto
         public void vModificarProducto(clsProductos_Entity producto)
         {
             clsProductos_DAL productupdate = new clsProductos_DAL();
             productupdate.vModifProducto(producto);
         }
-
+        // Comentarios : Eliminar Producto
         public void vEliminarProducto(clsProductos_Entity producto)
         {
             clsProductos_DAL productdelete = new clsProductos_DAL();
             productdelete.vEliminarProducto(producto);
         }
 
-
+        // Comentarios : Consultar Catalogo de Productos
         public DataTable vConsultaProducto()
         {
             DataTable dtproductos;
@@ -107,7 +109,7 @@ namespace BO
             return dtproductos;
 
         }
-
+        // Comentarios : Filtrar Catalogo de productos
         public DataTable vConsultaFiltro(clsProductos_Entity producto)
         {
             DataTable dtProducto;
@@ -115,7 +117,7 @@ namespace BO
             dtProducto = productoconfilt.vConsultarFiltro(producto);
             return dtProducto;
         }
-
+        // Comentarios : mov productos
         public DataTable vMovimientoProductos(clsProductos_Entity producto)
         {
             DataTable dtProducto;
@@ -123,7 +125,7 @@ namespace BO
             dtProducto = productoconfilt.vMovimientoProductos(producto);
             return dtProducto;
         }
-
+        // Comentarios : existencia productos
         public DataTable vExistenciaProductos(clsProductos_Entity producto)
         {
             DataTable dtProducto;
