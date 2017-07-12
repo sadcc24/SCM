@@ -26,7 +26,7 @@ namespace SCM
             {
                 orden_compra_BO oc = new orden_compra_BO();
                 string[] empresa = Globales.Empresa.CapturarEmpresa();
-                DataTable dtProveedor = oc.verProveedor(int.Parse(empresa[1]));
+                DataTable dtProveedor = oc.verProveedor(1);
                 //DataTable dtProveedor = oc.verProveedor(1);
                 cboProveedor.DataSource = dtProveedor;
                 cboProveedor.DisplayMember = "nombre_proveedor";

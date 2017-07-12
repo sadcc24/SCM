@@ -29,11 +29,11 @@ namespace SCM
                 string[] empresa = Globales.Empresa.CapturarEmpresa();
                 string[] usuario = Globales.Usuario.CapturarUsuario();
                 orden_compra_BO oc = new orden_compra_BO();
-                DataTable dtBodega = oc.verBodega(int.Parse(empresa[1]));
+                DataTable dtBodega = oc.verBodega(int.Parse(empresa[0]));
                 //DataTable dtBodega = oc.verBodega(1);
                 DataTable dtCentro = oc.verCentroCosto();
                 DataTable dtCuenta = oc.verCuentaContable();
-                DataTable dtProveedor = oc.verProveedor(int.Parse(empresa[1]));
+                DataTable dtProveedor = oc.verProveedor(1);
                 //DataTable dtProveedor = oc.verProveedor(1);
                 DataTable dtMoneda = oc.verMoneda();
                 cboBodega.DataSource = dtBodega;
@@ -71,7 +71,7 @@ namespace SCM
             try
             {
                 oc.id_sede = 1;
-                oc.id_empresa = int.Parse(empresa[1]);
+                oc.id_empresa = int.Parse(empresa[0]);
                 //oc.id_empresa = 1;
                 oc.observaacion = txtObservacion.Text;
                 oc.total = decimal.Parse(txtTotal.Text);
