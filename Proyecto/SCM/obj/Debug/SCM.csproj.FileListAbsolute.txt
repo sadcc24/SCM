@@ -79,12 +79,24 @@ C:\Users\JACC\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
 C:\Users\JACC\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.verCuentaxPagar.resources
 C:\Users\JACC\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.verOrdenes.resources
 C:\Users\JACC\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.AutorizacionOC.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Bitacora.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Bodegas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarEgresos.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarOC.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarOCInventario.resources
@@ -106,6 +118,7 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoF
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoInventario.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoPoliza.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoVehiculo.resources
@@ -148,18 +161,5 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Usuarios
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.verCuentaxPagar.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.verOrdenes.resources
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarEgresos.resources
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoPoliza.resources
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.pdb
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.dll
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.dll
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.dll
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.dll
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.pdb
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.pdb
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.pdb
-C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.pdb
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb

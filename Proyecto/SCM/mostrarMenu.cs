@@ -281,6 +281,7 @@ namespace SCM
 
         private void congelarExitenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Congelar Existencias");
             congelarExistencias temp = new congelarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -289,6 +290,7 @@ namespace SCM
 
         private void capturarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Capturar Existencias");
             capturarExistencias temp = new capturarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -297,6 +299,7 @@ namespace SCM
 
         private void ajustarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Ajustar Existencias");
             ajustarExistencias temp = new ajustarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -305,6 +308,7 @@ namespace SCM
 
         private void descongelarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Descongelar Existencias");
             descongelarExistencias temp = new descongelarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;

@@ -1,9 +1,10 @@
 ﻿/*  Programador: Josué Enrique Zeceña González
     Analista: Josué Enrique Zeceña González
-    Comentarios: Congelar Existencias
-    Fecha de asignación: 20/Junio
-    Fecha de entrega: 09/Julio
+    Comentarios: Auditoria
+    Fecha de asignación: 27/Junio
+    Fecha de entrega: 12/Julio
 */
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -273,6 +274,7 @@ namespace SCM
 
             MessageBox.Show("Existencias seleccionadas: "+dgvExistencias.RowCount.ToString(), "Congelar Existencias",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "InventarioFisico", dgvExistencias.RowCount.ToString() + " Existencias seleccionadas");
             if (dgvExistencias.RowCount == 0)
             {                    
                 MessageBox.Show("No hay existencias!\nSeleccione otros parámetros ", "Congelar Existencias",
@@ -314,12 +316,14 @@ namespace SCM
                     //dgvExistencias.Visible = true;
                     MessageBox.Show("Las existencias han sido congeladas", "Congelar Existencias",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "InventarioFisico", "Existencias congeladas");
                     txtDesde.Enabled = false;
                     txtHasta.Enabled = false;
                     cmbBodega.Enabled = false;
                     cmbLinea.Enabled = false;
                     cmbMarca.Enabled = false;
-                    btnCongelar.Enabled = false;                    
+                    btnCongelar.Enabled = false;
+                    btnCapturar.Enabled = true;                  
                 }
                 catch (Exception ex)
                 {
@@ -347,7 +351,7 @@ namespace SCM
                 }
 
 
-        }            
+            }            
 
         }
 
@@ -446,11 +450,13 @@ namespace SCM
                 //dgvExistencias.Visible = true;
                 MessageBox.Show("Las existencias han sido capturardas", "Congelar Existencias",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Globales.Usuario.RegistrarBitácora(Globales.Conexion, "InventarioFisico", "Existencias capturadas");
+                this.Close();
                 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error al actualizar detalle inventario físico.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error al actualizar detalle inventario físico.", MessageBoxButtons.OK, MessageBoxIcon.Error);                
             }
 
         }
