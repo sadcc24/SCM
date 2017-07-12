@@ -82,5 +82,22 @@ namespace BO
             dtProducto = exist.dtConsultarUltimoMovimiento();
             return dtProducto;
         }
+        // Comentario: Consultar Movimientos de Inventario de tipo egreso
+        public DataTable dtConsultarEgresos(clsMovimientosInventario_Entity mov)
+        {
+            DataTable dtProducto;
+            clsMovimientosInventario_DAL exist = new clsMovimientosInventario_DAL();
+            dtProducto = exist.vConsultarEgresos(mov);
+            return dtProducto;
+        }
+
+        // Comentario: Consultar Movimientos de Inventario de tipo egreso  -- detalle
+        public DataTable detalleEgreso(clsMovimientosInventario_Entity mov)
+        {
+            DataTable dtProducto;
+            clsMovimientosInventario_DAL exist = new clsMovimientosInventario_DAL();
+            dtProducto = exist.detalleEgreso(mov);
+            return dtProducto;
+        }
     }
 }

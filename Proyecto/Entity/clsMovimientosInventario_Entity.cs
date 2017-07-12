@@ -8,6 +8,10 @@ namespace Entity
 {
  public class clsMovimientosInventario_Entity
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+
         private string _strIdTipoMovimiento;
         private string _iIdBodega;
         private string _strFecha;

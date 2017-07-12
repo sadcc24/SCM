@@ -24,8 +24,8 @@ namespace Entity
             get { return _corrfactura; }
             set { _corrfactura = value; }
         }
-        private int _id_serie;
-        public int id_serie
+        private string _id_serie;
+        public string id_serie
         {
             get { return _id_serie; }
             set { _id_serie = value; }
@@ -42,8 +42,8 @@ namespace Entity
             get { return _saldo; }
             set { _saldo = value; }
         }
-        private DateTime _fecha;
-        public DateTime fecha
+        private string _fecha;
+        public string fecha
         {
             get { return _fecha; }
             set { _fecha = value; }
@@ -73,6 +73,14 @@ namespace Entity
             get { return _id_estado_factura; }
             set { _id_estado_factura = value; }
         }
-        
+
+
+        private string _strOC;
+        public string strOC
+        {
+            get { return _strOC; }
+            set { _strOC = value; }
+        }
+
     }
 }
