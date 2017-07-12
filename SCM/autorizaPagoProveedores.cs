@@ -21,10 +21,5 @@ namespace SCM
         {
 
         }
-
-        private void btnAyuda_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

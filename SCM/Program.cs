@@ -16,8 +16,13 @@ namespace SCM
         {
             //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mostarSplash());
-          // Application.Run(new buscarVehiculos());
+            // Application.Run(new mostarSplash());
+            // Application.Run(new ingresoOrdenServicio(6));
+            // Application.Run(new buscarVehiculos());
+            // Application.Run(new ingresoGastoGasolina(1008));
+           Application.Run(new buscarSolicitudTransporte());
+
+            //  Application.Run(new txtIdBodega("1", "1"));
         }
     }
 }

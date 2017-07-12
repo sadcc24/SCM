@@ -17,6 +17,11 @@ namespace Entity
         public string _chasis { get; set; }
         public string _placa { get; set; }
         public string _modelo { get; set; }
+        public int _tipovehiculo { get; set; }
+        public string _nombretipov { get; set; }
+        public double _kms { get; set; }
+        public decimal _kmsprox { get; set; }
+        public int _empresa { get; set; }
         #endregion
 
         #region Constructor
@@ -24,7 +29,8 @@ namespace Entity
         {
         }
 
-        public vehiculo_Entity(int pcodVehiculo, string pMarca, string pLinea, string pMotor, string pColor, string pChasis, string pPlaca, string pModelo) 
+        public vehiculo_Entity(int pcodVehiculo, string pMarca, string pLinea, string pMotor, string pColor, int pEmpresa,
+            string pChasis, string pPlaca, string pModelo, int ptipovhc, string pnombretipo, double pkms, decimal pkmsprox) 
         {
             this._cod_vehiculo = pcodVehiculo;
             this._marca = pMarca;
@@ -34,6 +40,11 @@ namespace Entity
             this._chasis = pChasis;
             this._placa = pPlaca;
             this._modelo = pModelo;
+            this._tipovehiculo = ptipovhc;
+            this._nombretipov = pnombretipo;
+            this._kms = pkms;
+            this._kmsprox = pkmsprox;
+            this._empresa = pEmpresa;
         }
         #endregion
 

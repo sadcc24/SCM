@@ -21,10 +21,5 @@ namespace SCM
         {
 
         }
-
-        private void grdInventario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

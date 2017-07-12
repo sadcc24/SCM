@@ -21,7 +21,21 @@ namespace Entity
         public int idEmpresa { get; set; }
         public int idEmpleado { get; set; }
         public int idUsuario { get; set; }
+        public string NombreEstado { get; set; }
+
+        //nuevos atributos
+        public int idMovimiento { get; set; }
+        public int idBodega { get; set; }
+        public int idTipoMovimiento { get; set; }
+        public string stFecha { get; set; }
+        public int stEmpresa { get; set; }
+        public int stUsuario { get; set; }
         #endregion
+        public int idVehiculo { get; set; }
+        public decimal stKms { get; set; }
+        public string stOrgien { get; set; }
+        public string stDestino { get; set;}
+        public int stidTrayecto { get; set; }
 
         public SolicitudTransporte_Entity()
         {
@@ -31,7 +45,11 @@ namespace Entity
         public SolicitudTransporte_Entity(int pidSoliciutd, string pNotas, 
             string pFechaSolicitud, string pFechaSalida, string pFechaRegreso, 
             decimal pCostoEstimado, int pidTipoSolicitud, int pidEstado, int pidTipoCarga, 
-            int pidEmpresa, int pidEmpleado, int pidUsuario)
+            int pidEmpresa, int pidEmpleado, int pidUsuario, string pNombreEstado,
+            //nuevos metodos
+            int pidMovimiento, int pidBodega, int pidTipoMovimiento, string pstFecha, int pstEmpresa,
+            int pstUsuario, int pidVehiculo, decimal pstKms, string pstOrigen, string pstDestino,
+            int pstidTrayecto)
         {
             this.idSolicitud = pidSoliciutd;
             this.Notas = pNotas;
@@ -45,6 +63,19 @@ namespace Entity
             this.idEmpresa = pidEmpresa;
             this.idEmpleado = pidEmpleado;
             this.idUsuario = pidUsuario;
+            this.NombreEstado = pNombreEstado;
+            //nuevos metodos
+            this.idMovimiento = pidMovimiento;
+            this.idBodega = pidBodega;
+            this.idTipoMovimiento = pidTipoMovimiento;
+            this.stFecha = pstFecha;
+            this.stEmpresa = pstEmpresa;
+            this.stUsuario = pstUsuario;
+            this.idVehiculo = pidVehiculo;
+            this.stKms = pstKms;
+            this.stOrgien = pstOrigen;
+            this.stDestino = pstDestino;
+            this.stidTrayecto = pstidTrayecto;
         }
     }
 }

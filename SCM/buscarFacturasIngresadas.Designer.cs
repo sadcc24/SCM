@@ -67,7 +67,6 @@
             this.grdInventario.Name = "grdInventario";
             this.grdInventario.Size = new System.Drawing.Size(926, 254);
             this.grdInventario.TabIndex = 10;
-            this.grdInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdInventario_CellContentClick);
             // 
             // chkSeleccionar
             // 

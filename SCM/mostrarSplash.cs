@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Seguridad
+    Fecha de asignación: 13/Junio
+    Fecha de entrega: 27/Junio
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +13,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dllSeguridadSAD;
+using DAL;
 
 namespace SCM
 {
@@ -18,20 +26,21 @@ namespace SCM
             pbrBarra.Style = ProgressBarStyle.Continuous;
             pbrBarra.Maximum = 100;
             pbrBarra.Value = 0;
-
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Aplicación ejecutada");
             tmrReloj.Enabled = true;
         }
         public void incrementarBarra()
         {
-            pbrBarra.Increment(1);
+            pbrBarra.Increment(3);
             pbrBarra.ForeColor = Color.Crimson;            
             lblPorcentaje.Text = pbrBarra.Value.ToString() + "%";
             if (pbrBarra.Value == pbrBarra.Maximum)
             {
                 tmrReloj.Stop();
-                this.Hide();
+                this.Hide();                
+                
                 mostrarLogin temp = new mostrarLogin();
-                temp.Show();
+                temp.Show();              
             }
         }
 

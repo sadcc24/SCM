@@ -12,21 +12,6 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
-    <PublishUrl>publicar\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -37,7 +22,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,14 +32,22 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>SCM.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="dllSeguridadSAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2015\Projects\dllSeguridadSAD\dllSeguridadSAD\dllSeguridadSAD\bin\Debug\dllSeguridadSAD.dll</HintPath>
+    </Reference>
+    <Reference Include="MRP_BD">
+      <HintPath>..\..\MRP_BD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,6 +67,18 @@
     <Compile Include="ajustarExistencias.Designer.cs">
       <DependentUpon>ajustarExistencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="asignacionFlota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asignacionFlota.Designer.cs">
+      <DependentUpon>asignacionFlota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="asignarTrayectoST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asignarTrayectoST.Designer.cs">
+      <DependentUpon>asignarTrayectoST.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutorizacionOC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +90,12 @@
     </Compile>
     <Compile Include="autorizaPagoProveedores.Designer.cs">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitacora.designer.cs">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </Compile>
     <Compile Include="Bodegas.cs">
       <SubType>Form</SubType>
@@ -141,6 +151,24 @@
     <Compile Include="descongelarExistencias.Designer.cs">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empresas.designer.cs">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoSolicitud.designer.cs">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </Compile>
     <Compile Include="generaContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +192,18 @@
     </Compile>
     <Compile Include="ingresoFacturaProveedor.Designer.cs">
       <DependentUpon>ingresoFacturaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoGastoGasolina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoGastoGasolina.Designer.cs">
+      <DependentUpon>ingresoGastoGasolina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoGastoST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoGastoST.Designer.cs">
+      <DependentUpon>ingresoGastoST.cs</DependentUpon>
     </Compile>
     <Compile Include="ingresoInventario.cs">
       <SubType>Form</SubType>
@@ -189,6 +229,12 @@
     <Compile Include="ingresoSolicitudTransporte.Designer.cs">
       <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="ingresoST_Encabezado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoST_Encabezado.Designer.cs">
+      <DependentUpon>ingresoST_Encabezado.cs</DependentUpon>
+    </Compile>
     <Compile Include="ingresoTrasladoEntreBodegas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,17 +247,119 @@
     <Compile Include="ingresoVehiculo.Designer.cs">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="kardexProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kardexProductos.Designer.cs">
+      <DependentUpon>kardexProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lineas.designer.cs">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientoBodegas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mantenimientoBodegas.Designer.cs">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
     </Compile>
+    <Compile Include="mantenimientoEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEmpleados.designer.cs">
+      <DependentUpon>mantenimientoEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEmpresas.designer.cs">
+      <DependentUpon>mantenimientoEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoEstadoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoEstadoSolicitud.designer.cs">
+      <DependentUpon>mantenimientoEstadoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoLineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoLineas.designer.cs">
+      <DependentUpon>mantenimientoLineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoMarca.Designer.cs">
+      <DependentUpon>mantenimientoMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoMonedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoMonedas.designer.cs">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
+    </Compile>
     <Compile Include="mantenimientoProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mantenimientoProductos.Designer.cs">
       <DependentUpon>mantenimientoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoProveedores.Designer.cs">
+      <DependentUpon>mantenimientoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTipoMovimientoInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTipoMovimientoInventario.Designer.cs">
+      <DependentUpon>mantenimientoTipoMovimientoInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTipoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTipoSolicitud.designer.cs">
+      <DependentUpon>mantenimientoTipoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTipoVehiculo.designer.cs">
+      <DependentUpon>mantenimientoTipoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoTrayecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoTrayecto.designer.cs">
+      <DependentUpon>mantenimientoTrayecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimientoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimientoUsuarios.Designer.cs">
+      <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marca.Designer.cs">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monedas.designer.cs">
+      <DependentUpon>Monedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mostrarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostrarEmpresa.Designer.cs">
+      <DependentUpon>mostrarEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="mostrarLogin.cs">
       <SubType>Form</SubType>
@@ -239,14 +387,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seguimientoST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seguimientoST.Designer.cs">
+      <DependentUpon>seguimientoST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoMovimiento.Designer.cs">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoSolicitud.designer.cs">
+      <DependentUpon>TipoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoVehiculo.designer.cs">
+      <DependentUpon>TipoVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trayecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trayecto.designer.cs">
+      <DependentUpon>Trayecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ajustarExistencias.resx">
       <DependentUpon>ajustarExistencias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asignacionFlota.resx">
+      <DependentUpon>asignacionFlota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asignarTrayectoST.resx">
+      <DependentUpon>asignarTrayectoST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AutorizacionOC.resx">
       <DependentUpon>AutorizacionOC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="autorizaPagoProveedores.resx">
       <DependentUpon>autorizaPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitacora.resx">
+      <DependentUpon>Bitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bodegas.resx">
       <DependentUpon>Bodegas.cs</DependentUpon>
@@ -275,6 +475,15 @@
     <EmbeddedResource Include="descongelarExistencias.resx">
       <DependentUpon>descongelarExistencias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empresas.resx">
+      <DependentUpon>Empresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstadoSolicitud.resx">
+      <DependentUpon>EstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="generaContrasena.resx">
       <DependentUpon>generaContrasena.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +495,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoFacturaProveedor.resx">
       <DependentUpon>ingresoFacturaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoGastoGasolina.resx">
+      <DependentUpon>ingresoGastoGasolina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoGastoST.resx">
+      <DependentUpon>ingresoGastoST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoInventario.resx">
       <DependentUpon>ingresoInventario.cs</DependentUpon>
@@ -299,17 +514,71 @@
     <EmbeddedResource Include="ingresoSolicitudTransporte.resx">
       <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ingresoST_Encabezado.resx">
+      <DependentUpon>ingresoST_Encabezado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ingresoTrasladoEntreBodegas.resx">
       <DependentUpon>ingresoTrasladoEntreBodegas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoVehiculo.resx">
       <DependentUpon>ingresoVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kardexProductos.resx">
+      <DependentUpon>kardexProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lineas.resx">
+      <DependentUpon>Lineas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoBodegas.resx">
       <DependentUpon>mantenimientoBodegas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEmpleados.resx">
+      <DependentUpon>mantenimientoEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEmpresas.resx">
+      <DependentUpon>mantenimientoEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoEstadoSolicitud.resx">
+      <DependentUpon>mantenimientoEstadoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoLineas.resx">
+      <DependentUpon>mantenimientoLineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoMarca.resx">
+      <DependentUpon>mantenimientoMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoMonedas.resx">
+      <DependentUpon>mantenimientoMonedas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mantenimientoProductos.resx">
       <DependentUpon>mantenimientoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoProveedores.resx">
+      <DependentUpon>mantenimientoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTipoMovimientoInventario.resx">
+      <DependentUpon>mantenimientoTipoMovimientoInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTipoSolicitud.resx">
+      <DependentUpon>mantenimientoTipoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTipoVehiculo.resx">
+      <DependentUpon>mantenimientoTipoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoTrayecto.resx">
+      <DependentUpon>mantenimientoTrayecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimientoUsuarios.resx">
+      <DependentUpon>mantenimientoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marca.resx">
+      <DependentUpon>Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monedas.resx">
+      <DependentUpon>Monedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostrarEmpresa.resx">
+      <DependentUpon>mostrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mostrarLogin.resx">
       <DependentUpon>mostrarLogin.cs</DependentUpon>
@@ -333,6 +602,27 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seguimientoST.resx">
+      <DependentUpon>seguimientoST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoMovimiento.resx">
+      <DependentUpon>TipoMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoSolicitud.resx">
+      <DependentUpon>TipoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoVehiculo.resx">
+      <DependentUpon>TipoVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trayecto.resx">
+      <DependentUpon>Trayecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -390,16 +680,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
+    <None Include="iconos\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="iconos\iconos\" />
+    <Folder Include="Resources\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

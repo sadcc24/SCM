@@ -39,8 +39,6 @@
             this.btnAutorizaPago = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbSede = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
@@ -49,6 +47,8 @@
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.cmbSede = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdInventario)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -142,24 +142,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Autoriza Pago Proveedores";
             // 
-            // cmbSede
-            // 
-            this.cmbSede.FormattingEnabled = true;
-            this.cmbSede.Location = new System.Drawing.Point(561, 47);
-            this.cmbSede.Name = "cmbSede";
-            this.cmbSede.Size = new System.Drawing.Size(121, 21);
-            this.cmbSede.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(499, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 19);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "SEDE:";
-            // 
             // button1
             // 
             this.button1.Image = global::SCM.Properties.Resources.buscar;
@@ -179,7 +161,6 @@
             this.btnAyuda.Size = new System.Drawing.Size(50, 50);
             this.btnAyuda.TabIndex = 27;
             this.btnAyuda.UseVisualStyleBackColor = true;
-            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnUltimo
             // 
@@ -234,6 +215,24 @@
             this.btnNuevo.Size = new System.Drawing.Size(50, 50);
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // cmbSede
+            // 
+            this.cmbSede.FormattingEnabled = true;
+            this.cmbSede.Location = new System.Drawing.Point(561, 47);
+            this.cmbSede.Name = "cmbSede";
+            this.cmbSede.Size = new System.Drawing.Size(121, 21);
+            this.cmbSede.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(499, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 19);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "SEDE:";
             // 
             // autorizaPagoProveedores
             // 

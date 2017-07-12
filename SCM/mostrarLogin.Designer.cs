@@ -113,7 +113,7 @@
             // 
             this.lblBienvenido.AutoSize = true;
             this.lblBienvenido.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenido.Location = new System.Drawing.Point(205, 20);
+            this.lblBienvenido.Location = new System.Drawing.Point(220, 20);
             this.lblBienvenido.Name = "lblBienvenido";
             this.lblBienvenido.Size = new System.Drawing.Size(95, 23);
             this.lblBienvenido.TabIndex = 8;
@@ -137,6 +137,7 @@
             this.Name = "mostrarLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCM | Iniciar Sesión";
+            this.Load += new System.EventHandler(this.mostrarLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

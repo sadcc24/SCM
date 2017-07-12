@@ -1,125 +1,298 @@
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\bin\Debug\SCM.exe.config
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\bin\Debug\SCM.exe
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\bin\Debug\SCM.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.Bodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.buscarOC.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.mantenimientoProductos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.Productos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.exe
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.buscarVehiculos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.ajustarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.capturarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.congelarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\SCM\obj\Debug\SCM.descongelarExistencias.resources
-C:\Users\JACC\Desktop\SCM\SCM\bin\Debug\SCM.exe.config
-C:\Users\JACC\Desktop\SCM\SCM\obj\Debug\SCM.exe
-C:\Users\JACC\Desktop\SCM\SCM\obj\Debug\SCM.pdb
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\SCM.exe.config
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.exe
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.pdb
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\SCM.exe
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\SCM.pdb
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\BO.dll
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\Entity.dll
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\DAL.dll
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\MRP_BD.dll
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\BO.pdb
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\Entity.pdb
-C:\Users\navi9\Desktop\SCM\SCM\bin\Debug\DAL.pdb
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ajustarExistencias.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.Bodegas.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.buscarOC.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.buscarVehiculos.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.capturarExistencias.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.congelarExistencias.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.descongelarExistencias.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.mantenimientoProductos.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.Productos.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
-C:\Users\navi9\Desktop\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\SCM.exe.config
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.exe
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\SCM.exe
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\SCM.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\BO.dll
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\Entity.dll
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\DAL.dll
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\MRP_BD.dll
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\BO.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\Entity.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\bin\Debug\DAL.pdb
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ajustarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.AutorizacionOC.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.Bodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.buscarOC.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.buscarOCInventario.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.buscarVehiculos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.capturarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.congelarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.descongelarExistencias.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.generaContrasena.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoDetalleST.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoInventario.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.ingresoVehiculo.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.mantenimientoProductos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.mostrarLogin.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.mostrarMenu.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.mostarSplash.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.Productos.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.Properties.Resources.resources
-C:\Users\navi9\Documents\GitHub\Proyecto Seminario\SCM\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\dllSeguridadSAD.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.AutorizacionOC.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Bitacora.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Bodegas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarOC.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarOCInventario.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.buscarVehiculos.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.capturarExistencias.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.congelarExistencias.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.descongelarExistencias.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Empleados.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Empresas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.EstadoSolicitud.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.generaContrasena.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoInventario.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Lineas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpleados.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpresas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoEstadoSolicitud.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoLineas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoMarca.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoMonedas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoProductos.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoProveedores.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoMovimientoInventario.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoSolicitud.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoVehiculo.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoTrayecto.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mantenimientoUsuarios.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Marca.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Monedas.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mostrarEmpresa.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mostrarLogin.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mostrarMenu.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.mostarSplash.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Productos.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Properties.Resources.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Proveedores.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.seguimientoST.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.TipoMovimiento.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.TipoSolicitud.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.TipoVehiculo.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe.config
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.exe
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignacionFlota.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignarTrayectoST.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.AutorizacionOC.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bitacora.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bodegas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOC.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOCInventario.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarVehiculos.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.capturarExistencias.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.congelarExistencias.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.descongelarExistencias.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empleados.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empresas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.EstadoSolicitud.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaContrasena.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoGasolina.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoST.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoInventario.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoST.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Lineas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpleados.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpresas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEstadoSolicitud.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoLineas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMarca.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMonedas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProductos.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProveedores.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoMovimientoInventario.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoSolicitud.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoVehiculo.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTrayecto.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoUsuarios.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Marca.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Monedas.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarEmpresa.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarLogin.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarMenu.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostarSplash.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Productos.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Properties.Resources.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Proveedores.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.seguimientoST.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoMovimiento.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoSolicitud.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoVehiculo.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\SCM.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\BO.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\DAL.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\Entity.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\BO.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\Entity.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\DAL.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\SCM\bin\Debug\dllSeguridadSAD.pdb
+E:\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe.config
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.exe
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.pdb
+E:\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe
+E:\SCM-master\Proyecto\SCM\bin\Debug\SCM.pdb
+E:\SCM-master\Proyecto\SCM\bin\Debug\BO.dll
+E:\SCM-master\Proyecto\SCM\bin\Debug\DAL.dll
+E:\SCM-master\Proyecto\SCM\bin\Debug\Entity.dll
+E:\SCM-master\Proyecto\SCM\bin\Debug\BO.pdb
+E:\SCM-master\Proyecto\SCM\bin\Debug\Entity.pdb
+E:\SCM-master\Proyecto\SCM\bin\Debug\DAL.pdb
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignacionFlota.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignarTrayectoST.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.AutorizacionOC.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bitacora.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bodegas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOC.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOCInventario.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarVehiculos.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.capturarExistencias.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.congelarExistencias.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.descongelarExistencias.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empleados.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empresas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.EstadoSolicitud.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaContrasena.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoGasolina.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoST.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoInventario.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Lineas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpleados.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpresas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEstadoSolicitud.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoLineas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMarca.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMonedas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProductos.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProveedores.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoMovimientoInventario.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoSolicitud.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoVehiculo.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTrayecto.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoUsuarios.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Marca.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Monedas.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarEmpresa.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarLogin.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarMenu.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostarSplash.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Productos.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Properties.Resources.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Proveedores.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.seguimientoST.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoMovimiento.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoSolicitud.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoVehiculo.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+E:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoST_Encabezado.resources
+D:\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe.config
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.exe
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.pdb
+D:\SCM-master\Proyecto\SCM\bin\Debug\SCM.exe
+D:\SCM-master\Proyecto\SCM\bin\Debug\SCM.pdb
+D:\SCM-master\Proyecto\SCM\bin\Debug\BO.dll
+D:\SCM-master\Proyecto\SCM\bin\Debug\DAL.dll
+D:\SCM-master\Proyecto\SCM\bin\Debug\Entity.dll
+D:\SCM-master\Proyecto\SCM\bin\Debug\BO.pdb
+D:\SCM-master\Proyecto\SCM\bin\Debug\Entity.pdb
+D:\SCM-master\Proyecto\SCM\bin\Debug\DAL.pdb
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.csprojResolveAssemblyReference.cache
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ajustarExistencias.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignacionFlota.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.asignarTrayectoST.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.AutorizacionOC.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.autorizaPagoProveedores.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bitacora.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Bodegas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarFacturasIngresadas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOC.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarOCInventario.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarSolicitudTransporte.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.buscarVehiculos.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.capturarExistencias.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.congelarExistencias.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.descongelarExistencias.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empleados.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Empresas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.EstadoSolicitud.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaContrasena.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.generaDevolucionProveedor.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoDetalleST.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoFacturaProveedor.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoGasolina.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoGastoST.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoInventario.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenCompra.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoOrdenServicio.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoSolicitudTransporte.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoST_Encabezado.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoTrasladoEntreBodegas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.ingresoVehiculo.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Lineas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoBodegas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpleados.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEmpresas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoEstadoSolicitud.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoLineas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMarca.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoMonedas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProductos.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoProveedores.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoMovimientoInventario.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoSolicitud.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTipoVehiculo.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoTrayecto.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mantenimientoUsuarios.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Marca.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Monedas.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarEmpresa.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarLogin.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostrarMenu.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.mostarSplash.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Productos.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Properties.Resources.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Proveedores.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.seguimientoST.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoMovimiento.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoSolicitud.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.TipoVehiculo.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Trayecto.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.Usuarios.resources
+D:\SCM-master\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
