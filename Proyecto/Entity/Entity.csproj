@@ -44,10 +44,12 @@
     <Compile Include="clsBodegas_Entity.cs" />
     <Compile Include="clsInventarios_Entity.cs" />
     <Compile Include="clsMarcas_Entity.cs" />
+    <Compile Include="clsMovimientosInventario_Entity.cs" />
     <Compile Include="clsProductos_Entity.cs" />
     <Compile Include="clsTipoMovimiento_Entity.cs" />
     <Compile Include="Detalle_ST_Entity.cs" />
     <Compile Include="estado_solicitud_Entity.cs" />
+    <Compile Include="factura_proveedores_Entity.cs" />
     <Compile Include="Lineas_Entity.cs" />
     <Compile Include="Monedas_Entity.cs" />
     <Compile Include="orden_compra_Entity.cs" />

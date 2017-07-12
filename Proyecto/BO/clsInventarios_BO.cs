@@ -12,7 +12,8 @@ namespace BO
     {
         // Programador : Pamela Jacqueline Selman David
         // Analista : Pamela Jacqueline Selman David
-        // Comentarios :
+       
+            // Comentarios : Consulta Facturas
         public DataTable vConsultarFacturas(clsInventarios_Entity producto)
         {
             DataTable dtProducto;
@@ -20,7 +21,7 @@ namespace BO
             dtProducto = consfacturas.dtFacturasPendientes(producto);
             return dtProducto;
         }
-
+        // Comentarios : Consulta Ultima contraseña ingresada
         public DataTable vConsultaUltimoID()
         {
             DataTable dtIdContrasena;
@@ -28,13 +29,13 @@ namespace BO
             dtIdContrasena = conscontrasena.dtConsultaUltimaContrasena();
             return dtIdContrasena;
         }
-
+        // Comentarios : Función para insertar Encabezado de Contraseña
         public void vInsertarEncabezadoContrasena(clsInventarios_Entity contrasena)
         {
             clsInventarios_DAL encabezadocontrainsert = new clsInventarios_DAL();
             encabezadocontrainsert.vInsertEncabezadoContrasena(contrasena);
         }
-
+        // Comentarios : Función para insertar detalle de contraseña
         public void vInsertarDetalleContrasena(clsInventarios_Entity contrasena)
         {
             clsInventarios_DAL detallecontrainsert = new clsInventarios_DAL();

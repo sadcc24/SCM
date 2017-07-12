@@ -31,25 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(kardexProductos));
             this.z = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.gvMovimientos = new System.Windows.Forms.DataGridView();
+            this.cmbProductos = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gvMovimientos = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gvExistencias = new System.Windows.Forms.DataGridView();
+            this.gvProductos = new System.Windows.Forms.DataGridView();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
-            this.cmbProductos = new System.Windows.Forms.ComboBox();
-            this.gvProductos = new System.Windows.Forms.DataGridView();
-            this.gvExistencias = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvMovimientos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).BeginInit();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvExistencias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // z
@@ -76,37 +76,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
             // 
-            // groupBox2
+            // cmbProductos
             // 
-            this.groupBox2.Controls.Add(this.gvMovimientos);
-            this.groupBox2.Location = new System.Drawing.Point(113, 232);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1079, 443);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Movimientos Inventario";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.gvExistencias);
-            this.groupBox3.Controls.Add(this.gvProductos);
-            this.groupBox3.Location = new System.Drawing.Point(592, 54);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(752, 181);
-            this.groupBox3.TabIndex = 31;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Detalle Producto";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
-            // 
-            // gvMovimientos
-            // 
-            this.gvMovimientos.AllowUserToDeleteRows = false;
-            this.gvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvMovimientos.Location = new System.Drawing.Point(6, 19);
-            this.gvMovimientos.Name = "gvMovimientos";
-            this.gvMovimientos.ReadOnly = true;
-            this.gvMovimientos.Size = new System.Drawing.Size(1066, 405);
-            this.gvMovimientos.TabIndex = 0;
+            this.cmbProductos.FormattingEnabled = true;
+            this.cmbProductos.Location = new System.Drawing.Point(112, 33);
+            this.cmbProductos.Name = "cmbProductos";
+            this.cmbProductos.Size = new System.Drawing.Size(355, 21);
+            this.cmbProductos.TabIndex = 35;
+            this.cmbProductos.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -130,6 +107,59 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "PRODUCTO:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.gvMovimientos);
+            this.groupBox2.Location = new System.Drawing.Point(113, 232);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1079, 443);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Movimientos Inventario";
+            // 
+            // gvMovimientos
+            // 
+            this.gvMovimientos.AllowUserToDeleteRows = false;
+            this.gvMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvMovimientos.Location = new System.Drawing.Point(6, 19);
+            this.gvMovimientos.Name = "gvMovimientos";
+            this.gvMovimientos.ReadOnly = true;
+            this.gvMovimientos.Size = new System.Drawing.Size(1066, 405);
+            this.gvMovimientos.TabIndex = 0;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.gvExistencias);
+            this.groupBox3.Controls.Add(this.gvProductos);
+            this.groupBox3.Location = new System.Drawing.Point(592, 54);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(752, 181);
+            this.groupBox3.TabIndex = 31;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Detalle Producto";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // gvExistencias
+            // 
+            this.gvExistencias.AllowUserToDeleteRows = false;
+            this.gvExistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvExistencias.Location = new System.Drawing.Point(6, 99);
+            this.gvExistencias.Name = "gvExistencias";
+            this.gvExistencias.ReadOnly = true;
+            this.gvExistencias.Size = new System.Drawing.Size(357, 72);
+            this.gvExistencias.TabIndex = 2;
+            this.gvExistencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // gvProductos
+            // 
+            this.gvProductos.AllowUserToDeleteRows = false;
+            this.gvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvProductos.Location = new System.Drawing.Point(6, 22);
+            this.gvProductos.Name = "gvProductos";
+            this.gvProductos.ReadOnly = true;
+            this.gvProductos.Size = new System.Drawing.Size(728, 72);
+            this.gvProductos.TabIndex = 1;
             // 
             // btnAyuda
             // 
@@ -180,36 +210,6 @@
             this.btnPrimero.UseVisualStyleBackColor = true;
             this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
-            // cmbProductos
-            // 
-            this.cmbProductos.FormattingEnabled = true;
-            this.cmbProductos.Location = new System.Drawing.Point(112, 33);
-            this.cmbProductos.Name = "cmbProductos";
-            this.cmbProductos.Size = new System.Drawing.Size(355, 21);
-            this.cmbProductos.TabIndex = 35;
-            this.cmbProductos.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // gvProductos
-            // 
-            this.gvProductos.AllowUserToDeleteRows = false;
-            this.gvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvProductos.Location = new System.Drawing.Point(6, 22);
-            this.gvProductos.Name = "gvProductos";
-            this.gvProductos.ReadOnly = true;
-            this.gvProductos.Size = new System.Drawing.Size(728, 72);
-            this.gvProductos.TabIndex = 1;
-            // 
-            // gvExistencias
-            // 
-            this.gvExistencias.AllowUserToDeleteRows = false;
-            this.gvExistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvExistencias.Location = new System.Drawing.Point(6, 99);
-            this.gvExistencias.Name = "gvExistencias";
-            this.gvExistencias.ReadOnly = true;
-            this.gvExistencias.Size = new System.Drawing.Size(357, 72);
-            this.gvExistencias.TabIndex = 2;
-            this.gvExistencias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // kardexProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,10 +234,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvMovimientos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvExistencias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,6 +13,11 @@ namespace SCM
 {
     public partial class mantenimientoBodegas : Form
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
+
+
         public mantenimientoBodegas()
         {
             InitializeComponent();

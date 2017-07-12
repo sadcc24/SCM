@@ -14,6 +14,9 @@ namespace SCM
 {
     public partial class Bodegas : Form
     {
+
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
         public Bodegas()
         {
             InitializeComponent();

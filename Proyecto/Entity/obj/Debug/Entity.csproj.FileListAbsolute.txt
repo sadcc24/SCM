@@ -7,3 +7,4 @@ C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\D
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\bin\Debug\Entity.pdb
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.dll
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

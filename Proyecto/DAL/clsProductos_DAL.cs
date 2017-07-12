@@ -17,6 +17,7 @@ namespace DAL
         //MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
         //MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
         // MRP_BD cnn = new MRP_BD("sa", "ja", "SAD2017", @"LAPTOP-BN23V9UD\SQLEXPRESS");
+        #region "LLENAR COMBOS"
         public DataTable dtComboBodega()
         {
             DataTable dtProductos;
@@ -72,10 +73,12 @@ namespace DAL
             return dtUnidades;
         }
 
+        #endregion
 
+        // Comentarios : Insertar producto
         public void vInsertProducto(clsProductos_Entity producto)
         {
-            cnn.insertSQL("INSERT INTO [dbo].[Producto] (descripcion,stockminimo,stockmaximo,activo,idproveedor,idtipoproducto,idmarca,fechacreacion,idmetodo,idlinea,tamano,peso,idempresa,unidadpeso,unidadtamano) VALUES ('"
+            cnn.insertSQL("INSERT INTO [dbo].[Producto] (descripcion,stockminimo,stockmaximo,activo,idproveedor,idtipoproducto,idmarca,fechacreacion,idmetodo,idlinea,tamano,peso,idempresa,unidadpeso,unidadtamano,costo) VALUES ('"
                 + producto.strProducto + "'," 
                 + producto.strsmin + ","
                 +  producto.strsmax 
@@ -90,10 +93,10 @@ namespace DAL
                 + producto.strPeso  + "," 
                 + producto.strIdEmpresa + ","
                 + producto.struPeso + ","
-                + producto.struTamano + ")");
+                + producto.struTamano + ",0)");
         }
 
-
+        // Comentarios : Modificar PRODUCTO
         public void vModifProducto(clsProductos_Entity producto)
         {
             cnn.updateSQL("UPDATE [dbo].[Producto] SET descripcion='" + producto.strProducto 
@@ -110,33 +113,33 @@ namespace DAL
                 + " , unidadtamano=" + producto.struTamano
                 + "  WHERE idproducto =" + producto.strIdProd );
         }
-
+        // Comentarios : ELIMINAR PRODUCTO
         public void vEliminarProducto(clsProductos_Entity producto)
         {
-            cnn.updateSQL("UPDATE [dbo].[Producto] SET ACTIVO = 0 , codestado = 2 WHERE idproducto =" + producto.strIdProd);
+            cnn.updateSQL("UPDATE [dbo].[Producto] SET ACTIVO = 0  WHERE idproducto =" + producto.strIdProd);
         }
-
+        // Comentarios : CATALOGO DE PRODUCTOS
         public DataTable vConsultarProducto()
         {
             DataTable dtProducto;
             dtProducto = cnn.getSQL("SELECT [idproducto] as ID ,[descripcion] AS Descripcion ,[stockminimo] as [Stock Mínimo] ,[stockmaximo] as [Stock Máximo],[activo] as Activo,[idproveedor] as Proveedor,[idtipoproducto] as  [Tipo Producto] ,[idmarca] as Marca,[fechacreacion] as  [Fecha Creación],[idmetodo] as [Metodo],[idlinea] as Linea,[tamano] as Tamano,[peso] as Peso ,[precio] as Precio,[costo] as Costo,[idempresa] as Empresa,[unidadpeso] as [Ünidad Peso],[unidadtamano] as [Unidad Tamano] FROM [dbo].[PRODUCTO] where Activo = 1");
             return dtProducto;
         }
-
+        // Comentarios : FILTRAR PRODUCTOS
         public DataTable vConsultarFiltro(clsProductos_Entity producto)
         {
             DataTable dtProductos;
             dtProductos = cnn.getSQL("SELECT [idproducto] as ID ,[descripcion] AS Descripcion ,[stockminimo] as [Stock Mínimo] ,[stockmaximo] as [Stock Máximo],[activo] as Activo,[idproveedor] as Proveedor,[idtipoproducto] as  [Tipo Producto] ,[idmarca] as Marca,[fechacreacion] as  [Fecha Creación],[idmetodo] as [Metodo],[idlinea] as Linea,[tamano] as Tamano,[peso] as Peso ,[precio] as Precio,[costo] as Costo,[idempresa] as Empresa,[unidadpeso] as [Ünidad Peso],[unidadtamano] as [Unidad Tamano] FROM [dbo].[PRODUCTO] where Activo = 1 and descripcion like '%" + producto.strProducto+"%'");
             return dtProductos;
         }
-
+        // Comentarios : MOVIMIENTO PRODUCTOS
         public DataTable vMovimientoProductos(clsProductos_Entity producto)
         {
             DataTable dtProductos;
             dtProductos = cnn.getSQL("SELECT Convert(varchar(10),CONVERT(date,MI.fecha,106),103)  AS [Fecha] ,TM.descripcion  as [Movimiento] ,(CASE OPERACION WHEN 1 THEN 'DEBE' ELSE 'HABER' END ) AS [ ] ,b.nombre_bodega as [Bodega] ,P.descripcion as [Producto] ,DMI.CANTIDAD as [Cantidad] ,DMI.costo as [Costo U] ,DMI.precio as [Precio U],(DMI.COSTO * DMI.CANTIDAD) as [Costo Total] ,(DMI.PRECIO * DMI.CANTIDAD) as [Precio Total] FROM DETALLEMOVIMIENTOINVENTARIO DMI INNER JOIN MOVIMIENTOSINVENTARIO MI ON DMI.idmovimiento = MI.idmovimiento INNER JOIN PRODUCTO P ON dmi.idproducto = p.idproducto INNER JOIN BODEGA B ON DMI.idbodega = B.idbodega INNER JOIN TIPOMOVIMIENTO TM ON MI.idtipomovimiento = TM.idtipomovimiento  where dmi.idproducto = "+ producto.strIdProd);
             return dtProductos;
         }
-
+        // Comentarios : EXISTENCIA PRODUTOS
         public DataTable vExistenciaProductos(clsProductos_Entity producto)
         {
             DataTable dtProductos;

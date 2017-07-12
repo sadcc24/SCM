@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mantenimientoTipoMovimientoInventario));
             this.z = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTipoMov = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gvTiposMovimiento = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnUltimo = new System.Windows.Forms.Button();
+            this.txtTipoMov = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnPrimero = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gvTiposMovimiento = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvTiposMovimiento)).BeginInit();
@@ -78,46 +78,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipos de Movimiento";
             // 
-            // txtTipoMov
-            // 
-            this.txtTipoMov.Location = new System.Drawing.Point(623, 50);
-            this.txtTipoMov.Name = "txtTipoMov";
-            this.txtTipoMov.Size = new System.Drawing.Size(163, 20);
-            this.txtTipoMov.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(475, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Tipo de Movimiento:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.gvTiposMovimiento);
-            this.groupBox2.Location = new System.Drawing.Point(266, 171);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(400, 331);
-            this.groupBox2.TabIndex = 120;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tipos de Movimiento";
-            // 
-            // gvTiposMovimiento
-            // 
-            this.gvTiposMovimiento.AllowUserToDeleteRows = false;
-            this.gvTiposMovimiento.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.gvTiposMovimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvTiposMovimiento.Location = new System.Drawing.Point(6, 19);
-            this.gvTiposMovimiento.Name = "gvTiposMovimiento";
-            this.gvTiposMovimiento.ReadOnly = true;
-            this.gvTiposMovimiento.Size = new System.Drawing.Size(377, 294);
-            this.gvTiposMovimiento.TabIndex = 0;
-            this.gvTiposMovimiento.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvTiposMovimiento_CellDoubleClick);
-            // 
             // button1
             // 
             this.button1.Image = global::SCM.Properties.Resources.buscar;
@@ -148,6 +108,24 @@
             this.btnUltimo.TabIndex = 26;
             this.btnUltimo.UseVisualStyleBackColor = true;
             this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
+            // 
+            // txtTipoMov
+            // 
+            this.txtTipoMov.Location = new System.Drawing.Point(623, 50);
+            this.txtTipoMov.Name = "txtTipoMov";
+            this.txtTipoMov.Size = new System.Drawing.Size(163, 20);
+            this.txtTipoMov.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(475, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Tipo de Movimiento:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSiguiente
             // 
@@ -198,6 +176,28 @@
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.gvTiposMovimiento);
+            this.groupBox2.Location = new System.Drawing.Point(266, 171);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(400, 331);
+            this.groupBox2.TabIndex = 120;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tipos de Movimiento";
+            // 
+            // gvTiposMovimiento
+            // 
+            this.gvTiposMovimiento.AllowUserToDeleteRows = false;
+            this.gvTiposMovimiento.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gvTiposMovimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvTiposMovimiento.Location = new System.Drawing.Point(6, 19);
+            this.gvTiposMovimiento.Name = "gvTiposMovimiento";
+            this.gvTiposMovimiento.ReadOnly = true;
+            this.gvTiposMovimiento.Size = new System.Drawing.Size(377, 294);
+            this.gvTiposMovimiento.TabIndex = 0;
+            this.gvTiposMovimiento.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvTiposMovimiento_CellDoubleClick);
             // 
             // mantenimientoTipoMovimientoInventario
             // 

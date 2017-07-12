@@ -50,9 +50,11 @@
     <Compile Include="clsBodegas_DAL.cs" />
     <Compile Include="clsInventarios_DAL.cs" />
     <Compile Include="clsMarcas_DAL.cs" />
+    <Compile Include="clsMovimientosInventario_DAL.cs" />
     <Compile Include="clsProductos_DAL.cs" />
     <Compile Include="clsTipoMovimiento_DAL.cs" />
     <Compile Include="estado_solicitud_DAL.cs" />
+    <Compile Include="factura_proveedores_DAL.cs" />
     <Compile Include="Globales.cs" />
     <Compile Include="Lineas_DAL.cs" />
     <Compile Include="Monedas_DAL.cs" />

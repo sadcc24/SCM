@@ -17,7 +17,8 @@ namespace SCM
         {
             InitializeComponent();
         }
-
+        // Programador : Pamela Jacqueline Selman David
+        // Analista : Pamela Jacqueline Selman David
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             Productos prdu = new Productos();
