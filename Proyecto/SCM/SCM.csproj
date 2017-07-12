@@ -91,6 +91,12 @@
     <Compile Include="Bodegas.Designer.cs">
       <DependentUpon>Bodegas.cs</DependentUpon>
     </Compile>
+    <Compile Include="buscarEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscarEgresos.Designer.cs">
+      <DependentUpon>buscarEgresos.cs</DependentUpon>
+    </Compile>
     <Compile Include="buscarFacturasIngresadas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,12 @@
     </Compile>
     <Compile Include="ingresoOrdenServicio.Designer.cs">
       <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoPoliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoPoliza.Designer.cs">
+      <DependentUpon>ingresoPoliza.cs</DependentUpon>
     </Compile>
     <Compile Include="ingresoSolicitudTransporte.cs">
       <SubType>Form</SubType>
@@ -475,6 +487,9 @@
     <EmbeddedResource Include="Bodegas.resx">
       <DependentUpon>Bodegas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="buscarEgresos.resx">
+      <DependentUpon>buscarEgresos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="buscarFacturasIngresadas.resx">
       <DependentUpon>buscarFacturasIngresadas.cs</DependentUpon>
     </EmbeddedResource>
@@ -537,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoOrdenServicio.resx">
       <DependentUpon>ingresoOrdenServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoPoliza.resx">
+      <DependentUpon>ingresoPoliza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ingresoSolicitudTransporte.resx">
       <DependentUpon>ingresoSolicitudTransporte.cs</DependentUpon>
