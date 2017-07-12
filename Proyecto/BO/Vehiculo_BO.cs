@@ -9,6 +9,11 @@ using DAL;
     
 namespace BO
 {
+    // Programador : Dennys Choy
+    // Analista : Dennys Choy
+    // Fecha : 08-07-22017
+    // Comentarios : Encabezados de Vehiculos
+
     public class Vehiculo_BO
     {
         public void insertarVhcBO(vehiculo_Entity vhc)
@@ -21,6 +26,12 @@ namespace BO
         {
             Vehiculo_DAL actualiza = new Vehiculo_DAL();
             actualiza.actualizaVehiculo(vhc);
+        }
+
+        public void eliminaVehiculoBO(int codigo)
+        {
+            Vehiculo_DAL actualiza = new Vehiculo_DAL();
+            actualiza.eliminarVehiculo(codigo);
         }
 
         public DataTable verTodosVehiculos(vehiculo_Entity vh)
@@ -36,11 +47,22 @@ namespace BO
             vehiculo_Entity vehiculo = new vehiculo_Entity();
             Vehiculo_DAL vhc = new Vehiculo_DAL();
             vehiculo._cod_vehiculo = codigo;
-            return vhc.verVehiculo(vehiculo);
+            return vhc.verVehiculo(codigo);
         }
 
-        #region Funciones y Metodos
-        public DataTable verTipoVH()
+       #region Seguimiento Asignacion ST
+       public DataTable verVehiculosDisponibles(vehiculo_Entity vh)
+       {
+           DataTable dt = new DataTable();
+           Vehiculo_DAL vhc = new Vehiculo_DAL();
+           dt = vhc.VehiculosDisponiblesST(vh);
+           return dt;
+       }
+
+       #endregion
+
+       #region Funciones y Metodos
+       public DataTable verTipoVH()
         {
             DataTable dt = new DataTable();
             Vehiculo_DAL vh = new Vehiculo_DAL();

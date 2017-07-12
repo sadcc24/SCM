@@ -57,6 +57,7 @@
     <Compile Include="estado_orden_Entity.cs" />
     <Compile Include="estado_solicitud_Entity.cs" />
     <Compile Include="factura_proveedores_Entity.cs" />
+    <Compile Include="GatosTransportes_Entity.cs" />
     <Compile Include="Lineas_Entity.cs" />
     <Compile Include="Monedas_Entity.cs" />
     <Compile Include="orden_compra_Entity.cs" />
@@ -64,12 +65,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proveedores_Entity.cs" />
     <Compile Include="SeguimientoST_Entity.cs" />
+    <Compile Include="Servicio_Vehiculo_Entity.cs" />
     <Compile Include="SolicitudTransporte_Entity.cs" />
     <Compile Include="tipo_cargamento_Entity.cs" />
     <Compile Include="tipo_orden_Entity.cs" />
     <Compile Include="tipo_solicitud_Entity.cs" />
     <Compile Include="tipo_trayecto_Entity.cs" />
     <Compile Include="tipo_vehiculo_Entity.cs" />
+    <Compile Include="Transportistas_ST_Entity.cs" />
+    <Compile Include="TrayectoST_Entity.cs" />
     <Compile Include="Usuarios_Entity.cs" />
     <Compile Include="vehiculo_Entity.cs" />
   </ItemGroup>
