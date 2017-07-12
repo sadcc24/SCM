@@ -75,6 +75,7 @@
             this.btnAyuda.Size = new System.Drawing.Size(50, 50);
             this.btnAyuda.TabIndex = 20;
             this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnUltimo
             // 
@@ -84,6 +85,7 @@
             this.btnUltimo.Size = new System.Drawing.Size(50, 50);
             this.btnUltimo.TabIndex = 19;
             this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnSiguiente
             // 
@@ -93,6 +95,7 @@
             this.btnSiguiente.Size = new System.Drawing.Size(50, 50);
             this.btnSiguiente.TabIndex = 18;
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
@@ -102,6 +105,7 @@
             this.btnAnterior.Size = new System.Drawing.Size(50, 50);
             this.btnAnterior.TabIndex = 17;
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
             // 
             // btnPrimero
             // 
@@ -111,6 +115,7 @@
             this.btnPrimero.Size = new System.Drawing.Size(50, 50);
             this.btnPrimero.TabIndex = 16;
             this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
             // btnActualizar
             // 
