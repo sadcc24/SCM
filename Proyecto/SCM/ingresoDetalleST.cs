@@ -14,57 +14,97 @@ namespace SCM
 {
     public partial class ingresoDetalleST : Form
     {
-        public ingresoDetalleST(string codigo)
+        public ingresoDetalleST(string codigo, string idbodega)
         {
             InitializeComponent();
             txtIdSolicitud.Text = codigo;
+            txtEncabezado.Text = codigo;
+            txtBodega.Text = idbodega;
             CargaGridProductos(0);
             CargaGridDetalle();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if(txtCantidad.Text == "" || txtCodProducto.Text == "")
+            if (txtCantidad.Text == "" || txtCodProducto.Text == "")
             {
                 MessageBox.Show("Los valores de codigo de producto y cantidad no pueden estar vacios");
-            }else
-            {
+            }
+            else
+            {//inicia guardado de la info  
                 Detalle_ST_Entity pDetalle = new Detalle_ST_Entity();
                 pDetalle.idProducto = Convert.ToInt32(txtCodProducto.Text);
-                pDetalle.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                pDetalle.idSolicitud = Convert.ToInt32(txtIdSolicitud.Text);
-
-                if (txtValida.Text == "1")
+                pDetalle.idMovimiento = Convert.ToInt32(txtEncabezado.Text);
+                pDetalle.idBodega = Convert.ToInt32(txtBodega.Text.Trim());
+                if (txtPrecio.Text == "" || txtCosto.Text == "")
                 {
-                    try
-                    {
-                        new BO.SolicitudTransporte_BOL().insertaDetalleST(pDetalle);
-                        MessageBox.Show("Prodoucto ingresado a la solicitud exitosamente");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
+                    pDetalle.precio = 0;
+                    pDetalle.costo = 0;
+                }else
+                {
+                    pDetalle.precio = Convert.ToDecimal(txtPrecio.Text);
+                    pDetalle.costo = Convert.ToDecimal(txtCosto.Text.Trim());
+                }
 
+                int cantidad1, cantidad2;
+                cantidad1 = Convert.ToInt32(txtCantidad.Text);
+                cantidad2 = Convert.ToInt32(txtCantidadBD.Text);
+                int pivote = 0;
+                if (txtCantidadReal.Text != "") { pivote = Convert.ToInt32(txtCantidadReal.Text); }
+                int dif = cantidad2 - cantidad1;
+                int bd = cantidad1 + cantidad2;
+                int cantidad = cantidad1 + cantidad2;
+                int suma = pivote + cantidad2;
+
+                if (cantidad1 > suma)
+                {
+                    MessageBox.Show("La cantidad ingresada es mayor a la existencia en bodega");
                 }
                 else
                 {
-                    try
+                    //Valida:
+                    //si se escogio el producto desde la busqueda entonces insertara
+                    if (txtValida.Text == "1")
                     {
-                        new BO.SolicitudTransporte_BOL().actualizarDetalleST(pDetalle);
-                        MessageBox.Show("Producto actualizado exitosamente");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
 
-                }
+                        try
+                        {
+                            pDetalle.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                            new BO.SolicitudTransporte_BOL().insertaDetalleST(pDetalle);
+                            MessageBox.Show("Producto ingresado a la solicitud exitosamente");
+                            limpiartxt();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
 
-                CargaGridDetalle();
-            }
-           
-         }
+
+                    }//Fin Inserta
+                    else
+                    {//Inicia Actualizacion
+
+                        try
+                        {
+                            pDetalle.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                            pDetalle.CantidadReal = Convert.ToInt32(txtCantidadReal.Text);
+
+
+                            new BO.SolicitudTransporte_BOL().actualizarDetalleST(pDetalle);
+                            MessageBox.Show("Producto actualizado exitosamente");
+                            limpiartxt();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+
+                    }//Fin Actualizacion
+                    CargaGridDetalle();
+                    CargaGridProductos(0);
+                }//Fin validacion de cantidad ingresada es mayor a la existencia
+            }//Fin validacion cantidades vacias
+         }//Fin Void
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
@@ -72,13 +112,34 @@ namespace SCM
             CargaGridProductos(0);
         }
 
+        public void limpiartxt()
+        { 
+            txtCantidadReal.Clear();
+            //txtBodega.Clear();
+            txtCantidad.Clear();
+            //txtCantidadBD.Clear();
+            //txtCantidadReal.Clear();
+            txtCodProducto.Clear();
+            txtPrecio.Clear();
+            txtCosto.Clear();
+
+        }
         #region Funciones y metodos
         private void CargaGridProductos(int tipobsq)
         {
+            string codigoProducto = "";
+            string nomProducto = "";
+            int idempresa = 1;
+            int bodega = Convert.ToInt32(txtBodega.Text.Trim());
+            if (tipobsq==1) 
+            {
+                codigoProducto = txtCodProductoB.Text;
+                nomProducto = txtProductoB.Text;
+            }
             try
             {
-                dgvProductos.DataSource = new SolicitudTransporte_BOL().verProductos(tipobsq);
-                dgvProductos.Refresh();
+                ingresoDetalleProductos.DataSource = new SolicitudTransporte_BOL().verProductos(tipobsq, idempresa, bodega, codigoProducto, nomProducto);
+                ingresoDetalleProductos.Refresh();
             }
             catch (Exception Ex)
             {
@@ -91,7 +152,8 @@ namespace SCM
             try
             {
                 SolicitudTransporte_Entity st = new SolicitudTransporte_Entity();
-                st.idSolicitud = Convert.ToInt32(txtIdSolicitud.Text);
+                st.idMovimiento = Convert.ToInt32(txtIdSolicitud.Text);
+                st.idBodega = Convert.ToInt32(txtBodega.Text);
                 dgvDetalle.DataSource = new SolicitudTransporte_BOL().verDetalleST(st);
                 dgvDetalle.Refresh();
             }
@@ -111,12 +173,20 @@ namespace SCM
 
             }
 
-            DataGridViewRow row = dgvProductos.Rows[e.RowIndex];
+            DataGridViewRow row = ingresoDetalleProductos.Rows[e.RowIndex];
             int valor = (int)row.Cells[0].Value;
             string idproducto = valor.ToString();
             txtCodProducto.Text = idproducto;
             txtValida.Text = "1";
+            txtProducto.Text = (string)row.Cells[1].Value;
+            if (row.Cells[3].Value == DBNull.Value)
+            { txtPrecio.Text = "0";  } else  { txtPrecio.Text = ((decimal)row.Cells[3].Value).ToString(); }
+            
+            if(row.Cells[4].Value == DBNull.Value)
+            { txtCosto.Text = "0"; }
+            else { txtCosto.Text = ((decimal)row.Cells[4].Value).ToString(); }
             txtCantidad.Clear();
+            txtCantidadReal.Clear();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -124,23 +194,33 @@ namespace SCM
             txtValida.Text = "1";
             txtCantidad.Clear();
             txtCodProducto.Clear();
-            dgvDetalle.Enabled = true;
-            dgvProductos.Enabled = true;
+           // dgvDetalle.Enabled = true;
+           // dgvProductos.Enabled = true;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro de eliminar el registro", "Detalle de Solicitud",
-                     MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-                     == DialogResult.Yes)
+            if (txtCodProducto.Text == "" || txtCodProducto.Text == "0")
             {
-             
-                Detalle_ST_Entity pDetalle = new Detalle_ST_Entity();
-                pDetalle.idProducto = Convert.ToInt32(txtCodProducto.Text);
-                pDetalle.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                pDetalle.idSolicitud = Convert.ToInt32(txtIdSolicitud.Text);
-                new BO.SolicitudTransporte_BOL().eliminarDetalleST(pDetalle);
-                CargaGridDetalle();
+                MessageBox.Show("No ha seleccionado ningun producto");
+            }
+            else
+            {
+                if (MessageBox.Show("Esta seguro de eliminar el registro", "Detalle de Solicitud",
+                         MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                         == DialogResult.Yes)
+                {
+
+                    Detalle_ST_Entity pDetalle = new Detalle_ST_Entity();
+                    pDetalle.idProducto = Convert.ToInt32(txtCodProducto.Text);
+                    pDetalle.idBodega = Convert.ToInt32(txtBodega.Text);
+                    pDetalle.idMovimiento = Convert.ToInt32(txtIdSolicitud.Text);
+                    pDetalle.Cantidad = Convert.ToInt32(txtCantidad.Text.Trim());
+                    new BO.SolicitudTransporte_BOL().eliminarDetalleST(pDetalle);
+                    CargaGridDetalle();
+                    limpiartxt();
+                    CargaGridProductos(0);
+                }
             }
         }
 
@@ -153,28 +233,29 @@ namespace SCM
             }
 
             DataGridViewRow row = dgvDetalle.Rows[e.RowIndex];
-            int idsolicitud = (int)row.Cells[0].Value;
-            int idproducto = (int)row.Cells[1].Value;
-            int cantidad = (int)row.Cells[3].Value;
-            string sidsolicitud = idsolicitud.ToString();
+            
+            int idproducto = (int)row.Cells[0].Value;
+            //int idproducto = (int)row.Cells[1].Value;
+            int cantidad = (int)row.Cells[2].Value;
+            //string sidsolicitud = idsolicitud.ToString();
             string sidproductto = idproducto.ToString();
             string scantidad = cantidad.ToString();
             
             txtCantidad.Text = scantidad;
+            txtCantidadReal.Text = scantidad;
             txtCodProducto.Text = sidproductto;
             txtValida.Text = "2";
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            txtCantidad.Enabled = false;
-            dgvDetalle.Enabled = false;
-            dgvProductos.Enabled = false;
+            //txtCantidad.Enabled = false;
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            CargaGridProductos(1);
         }
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
@@ -191,6 +272,53 @@ namespace SCM
             {
                 e.Handled = true;
             }
+        }
+
+        private void ingresoDetalleST_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdSolicitud_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtCodProducto_TextChanged(object sender, EventArgs e)
+        {
+            int producto, bodega;
+            if(txtCodProducto.Text == "" || txtCodProducto.Text == "0" )
+            {
+                producto = 0;
+            }else
+            {
+                producto = Convert.ToInt32(txtCodProducto.Text.Trim());
+            }
+            if (txtBodega.Text == "" || txtBodega.Text == "0")
+            {
+                bodega = 0;
+            }
+            else
+            {
+                bodega = Convert.ToInt32(txtBodega.Text.Trim());
+            }
+
+            Detalle_ST_Entity st = new BO.Detalle_ST_BO().validaExistenciaBD(producto, bodega);
+            txtCantidadBD.Text = st.Cantidad.ToString();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            limpiartxt();
+        }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            string fullpath = System.IO.Path.Combine(Application.StartupPath, "ManualUsuarioSCM.pdf");
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = fullpath;
+            proc.Start();
+            proc.Close();
         }
     }
 }

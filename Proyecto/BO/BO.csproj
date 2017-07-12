@@ -49,6 +49,7 @@
     <Compile Include="clsTipoMovimiento_BO.cs" />
     <Compile Include="detalle_orden_compra_BO.cs" />
     <Compile Include="detalle_poliza_BO.cs" />
+    <Compile Include="Detalle_ST_BO.cs" />
     <Compile Include="Empleados_BO.cs" />
     <Compile Include="Empresas_BO.cs" />
     <Compile Include="estado_contrasena_BO.cs" />
@@ -62,7 +63,9 @@
     <Compile Include="poliza_BO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proveedores_BO.cs" />
+    <Compile Include="Servicio_Vehiculo_BO.cs" />
     <Compile Include="SolicitudTransporte_BOL.cs" />
+    <Compile Include="ST_Asignaciones_BOL.cs" />
     <Compile Include="tipo_cargamento_BO.cs" />
     <Compile Include="tipo_orden_BO.cs" />
     <Compile Include="tipo_solicitud_BO.cs" />

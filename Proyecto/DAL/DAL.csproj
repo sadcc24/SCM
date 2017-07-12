@@ -55,6 +55,7 @@
     <Compile Include="clsTipoMovimiento_DAL.cs" />
     <Compile Include="detalle_orden_compra_DAL.cs" />
     <Compile Include="detalle_poliza_DAL.cs" />
+    <Compile Include="Detalle_ST_DAL.cs" />
     <Compile Include="Empleados_DAL.cs" />
     <Compile Include="Empresas_DAL.cs" />
     <Compile Include="estado_contrasena_DAL.cs" />
@@ -70,7 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proveedores_DAL.cs" />
     <Compile Include="SeguimientoST_DAL.cs" />
+    <Compile Include="Servicio_Vehiculo_DAL.cs" />
     <Compile Include="SolicitudTransporte_DAL.cs" />
+    <Compile Include="ST_Asignaciones_DAL.cs" />
     <Compile Include="tipo_cargamento_DAL.cs" />
     <Compile Include="tipo_orden_DAL.cs" />
     <Compile Include="tipo_solicitud_DAL.cs" />
