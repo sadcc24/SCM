@@ -283,44 +283,7 @@ namespace SCM
                     string[] usuario = Globales.Usuario.CapturarUsuario();
                     string rol = Globales.Usuario.CapturarRol(Globales.Conexion);
 
-                    string query4 = "begin try" +
-                        "--inicio la transaccion"+
-                        "begin tran"+
-
-                        "declare @idinventario int" +
-                        "declare @total int"+
-
-                        "INSERT INTO[DBO].[INVENTARIOFISICO](fecha, codusuario, idrol) VALUES(GETDATE(), 2012, 1)" +
-
-
-                        "SELECT @idinventario = SCOPE_IDENTITY()--identity de sesión y alcance actual" +
-
-                        "--SELECT SCOPE_IDENTITY() AS[SCOPE_IDENTITY]; identity de sesión acutla y alcance global" +
-
-                       "--SELECT @@IDENTITY AS[@@IDENTITY];" +
-                                        "--DECLARE @i INT = 0;" +
-                                        "--SELECT @total = 2;" +
-
-                                        "--WHILE @i < @total" +
-                                        "--BEGIN" +
-
-                                        "INSERT INTO[dbo].[DETALLEINVENTARIOFISICO]([idbodega],[idproducto],[idinventariofisico],[existencia_congelada],[existencia_fisica]) VALUES(2,6, @idinventario,(SELECT cantidad FROM[dbo].[Existencia] where idbodega = 2 and idproducto = 6),0)" +
-
-	                    "--SET @i = @i + 1;" +
-
-	                    "--END" +
-
-
-                        "commit" +
-                    "end try" +
-                    "begin catch" +
-
-	                    "-- si hay error vuelvo a atras" +
-
-                        "rollback" +
-
-                    "end catch" +
-                    "go";
+                    string query4 = "";
 
 
                     DataSet ds4 = Globales.Usuario.EjecutarQuery(Globales.Conexion, query4, "InventarioFisico");

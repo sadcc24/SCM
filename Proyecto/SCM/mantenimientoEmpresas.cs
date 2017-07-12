@@ -192,6 +192,22 @@ namespace SCM
         }
         #endregion
         public string id, Empresa, idSede, idMoneda, razon, direccion, telefono, identificacion, activo;
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            /*  Programador: Josué Enrique Zeceña González
+            Analista: Josué Enrique Zeceña González
+            Comentarios: Abrir documento de ayuda/manual de usuario
+            Fecha de asignación: 10/Julio
+            Fecha de entrega: 12/Julio
+            */
+            string fullpath = System.IO.Path.Combine(Application.StartupPath, "ManualUsuarioSCM.pdf");
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = fullpath;
+            proc.Start();
+            proc.Close();
+        }
+
         private void gvEmpresas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
