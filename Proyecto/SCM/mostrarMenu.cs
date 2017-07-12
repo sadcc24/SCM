@@ -446,5 +446,18 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
+
+        private void inventariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresoPólizasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ingresoPoliza temp = new ingresoPoliza();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
     }
 }

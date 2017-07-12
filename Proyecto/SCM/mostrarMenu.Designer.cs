@@ -57,6 +57,7 @@
             this.ajustarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descongelarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kardexProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +80,7 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.kardexProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoPólizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -143,11 +144,13 @@
             this.mantenimientoBodegasToolStripMenuItem,
             this.mantenimientoTipoToolStripMenuItem,
             this.mantenimientosLíneasToolStripMenuItem,
-            this.mantenimientoMarcaToolStripMenuItem});
+            this.mantenimientoMarcaToolStripMenuItem,
+            this.ingresoPólizasToolStripMenuItem});
             this.inventariosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("inventariosToolStripMenuItem1.Image")));
             this.inventariosToolStripMenuItem1.Name = "inventariosToolStripMenuItem1";
             this.inventariosToolStripMenuItem1.Size = new System.Drawing.Size(93, 20);
             this.inventariosToolStripMenuItem1.Text = "Inventarios";
+            this.inventariosToolStripMenuItem1.Click += new System.EventHandler(this.inventariosToolStripMenuItem1_Click);
             // 
             // movimientosAlInventarioToolStripMenuItem1
             // 
@@ -311,6 +314,13 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.reportesToolStripMenuItem.Text = "&Reportes";
             // 
+            // kardexProductosToolStripMenuItem
+            // 
+            this.kardexProductosToolStripMenuItem.Name = "kardexProductosToolStripMenuItem";
+            this.kardexProductosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.kardexProductosToolStripMenuItem.Text = "Kardex Productos";
+            this.kardexProductosToolStripMenuItem.Click += new System.EventHandler(this.kardexProductosToolStripMenuItem_Click);
+            // 
             // configuracionesToolStripMenuItem
             // 
             this.configuracionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -470,12 +480,12 @@
             this.tsStatusFecha.Size = new System.Drawing.Size(38, 17);
             this.tsStatusFecha.Text = "Fecha";
             // 
-            // kardexProductosToolStripMenuItem
+            // ingresoPólizasToolStripMenuItem
             // 
-            this.kardexProductosToolStripMenuItem.Name = "kardexProductosToolStripMenuItem";
-            this.kardexProductosToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.kardexProductosToolStripMenuItem.Text = "Kardex Productos";
-            this.kardexProductosToolStripMenuItem.Click += new System.EventHandler(this.kardexProductosToolStripMenuItem_Click);
+            this.ingresoPólizasToolStripMenuItem.Name = "ingresoPólizasToolStripMenuItem";
+            this.ingresoPólizasToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
+            this.ingresoPólizasToolStripMenuItem.Text = "Ingreso Pólizas";
+            this.ingresoPólizasToolStripMenuItem.Click += new System.EventHandler(this.ingresoPólizasToolStripMenuItem_Click);
             // 
             // mostrarMenu
             // 
@@ -556,6 +566,7 @@
         private System.Windows.Forms.ToolStripMenuItem tipoSolicitudToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitácoraDelSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kardexProductosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresoPólizasToolStripMenuItem;
     }
 }
 

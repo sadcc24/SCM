@@ -176,6 +176,16 @@ namespace SCM
         }
         #endregion
         public string id, descripcion, encargado, stock_minimo, stock_maximo;
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            string fullpath = System.IO.Path.Combine(Application.StartupPath, "ManualUsuarioSCM.pdf");
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = fullpath;
+            proc.Start();
+            proc.Close();
+        }
+
         private void gvBodegas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var dataIndexNo = gvBodegas.Rows[e.RowIndex].Index.ToString();

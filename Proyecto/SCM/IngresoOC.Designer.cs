@@ -360,6 +360,7 @@
             this.grupoFiltrar.TabIndex = 116;
             this.grupoFiltrar.TabStop = false;
             this.grupoFiltrar.Text = "MENU";
+            this.grupoFiltrar.Enter += new System.EventHandler(this.grupoFiltrar_Enter);
             // 
             // label4
             // 

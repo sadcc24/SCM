@@ -40,6 +40,19 @@ namespace SCM
                 frm.ShowDialog(mostrarMenu.ActiveForm);
                
             }
+            if (cmbTipoMovimiento.SelectedValue.ToString() == "2")
+            {
+                buscarEgresos frm = new buscarEgresos();
+                frm.lblProveedor.Text = cmbProveedor.SelectedValue.ToString();
+                frm.lblBodega.Text = cmbBodega.SelectedValue.ToString();
+                string[] empresa = Globales.Empresa.CapturarEmpresa();
+                frm.lblEmpresa.Text = empresa[0];
+                this.Close();
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterParent;
+                frm.ShowDialog(mostrarMenu.ActiveForm);
+
+            }
 
             if (cmbTipoMovimiento.SelectedValue.ToString() == "4")
             {
@@ -221,6 +234,8 @@ namespace SCM
 
                     MessageBox.Show("Movimiento de Inventario Guardado.");
                     Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Movimiento de Inventario.");
+                    this.Close();
+
                 }
 
             }

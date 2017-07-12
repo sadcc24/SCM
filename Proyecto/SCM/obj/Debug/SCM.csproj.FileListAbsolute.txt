@@ -126,3 +126,5 @@ C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debu
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.pdb
 C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.kardexProductos.resources
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.buscarEgresos.resources
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\SCM\obj\Debug\SCM.ingresoPoliza.resources

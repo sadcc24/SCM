@@ -80,6 +80,22 @@ namespace DAL
             dtContrasena = cnn.getSQL("select IsNull(max(idmovimiento), 0)   as id from MOVIMIENTOSINVENTARIO");
             return dtContrasena;
         }
+        // Comentario: Consultar Movimientos de Inventario que su idtipomovimiento sea 2
+        public DataTable vConsultarEgresos(clsMovimientosInventario_Entity mov)
+        {
+            DataTable dtProductos;
+            dtProductos = cnn.getSQL(" SELECT IDBODEGA AS ID, FECHA, IDMONEDA, IDMOVIMIENTO AS DOCREF FROM MOVIMIENTOSINVENTARIO WHERE idbodega = "+mov.strIdBodega+" and idtipomovimiento =" + mov.strIdTipoMovimiento);
+            return dtProductos;
+        }
+
+        // Comentarios : VER DETALLE FACTURA ( DETALLE MOV INV)
+        public DataTable detalleEgreso(clsMovimientosInventario_Entity fac)
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("select idproducto, (cantidad*-1) as cantidad, costo, precio from DETALLEMOVIMIENTOINVENTARIO where idmovimiento = " + fac.strIdMovimiento + " and idbodega = " + fac.strIdBodega);
+            return dt;
+        }
+
 
     }
 }

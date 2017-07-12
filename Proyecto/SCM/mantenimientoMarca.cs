@@ -194,6 +194,15 @@ namespace SCM
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog(mostrarMenu.ActiveForm);
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            string fullpath = System.IO.Path.Combine(Application.StartupPath, "ManualUsuarioSCM.pdf");
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = fullpath;
+            proc.Start();
+            proc.Close();
+        }
     }
 }
     

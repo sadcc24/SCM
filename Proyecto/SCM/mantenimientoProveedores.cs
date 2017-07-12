@@ -74,5 +74,10 @@ namespace SCM
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog(mostrarMenu.ActiveForm);
         }
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

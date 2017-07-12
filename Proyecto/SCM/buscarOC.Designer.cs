@@ -52,6 +52,7 @@
             this.grdInventario.ReadOnly = true;
             this.grdInventario.Size = new System.Drawing.Size(955, 204);
             this.grdInventario.TabIndex = 6;
+            this.grdInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdInventario_CellContentClick);
             this.grdInventario.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdInventario_CellDoubleClick);
             // 
             // lblTitulo
@@ -135,6 +136,7 @@
             this.lblEmpresa.TabIndex = 34;
             this.lblEmpresa.Text = "label1";
             this.lblEmpresa.Visible = false;
+            this.lblEmpresa.Click += new System.EventHandler(this.lblEmpresa_Click);
             // 
             // lblProveedor
             // 
@@ -156,6 +158,7 @@
             this.lblBodega.TabIndex = 36;
             this.lblBodega.Text = "label1";
             this.lblBodega.Visible = false;
+            this.lblBodega.Click += new System.EventHandler(this.lblBodega_Click);
             // 
             // buscarOC
             // 
