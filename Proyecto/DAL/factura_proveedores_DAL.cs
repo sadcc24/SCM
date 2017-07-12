@@ -36,6 +36,15 @@ namespace DAL
             dt = cnn.getSQL("SELECT  idfactura as ID, corrfactura as Correlativo, total as Total, fecha as Fecha, idProveedor as Proveedor, idbodega as Bodega, idmovimiento as IDMOV,idserie as IDSerie from [FACTURAPROVEEDORES] where idproveedor = "+ fac.id_proveedor+" and idbodega = "+ fac.id_bodega +" and idestadofactura = " + fac.id_estado_factura);
             return dt;
         }
+
+        // Comentarios: CONSULTAR OC AUTORIZADAS
+        public DataTable verOC(factura_proveedores_Entity fac)
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("SELECT IDORDENCOMPRA,OBSERVACION,TOTAL,IDPROVEEDOR,IDMONEDA,IDEMPRESA,IDBODEGA FROM ORDENCOMPRA where idproveedor = " + fac.id_proveedor + " and idbodega = " + fac.id_bodega + " and idestado = " + fac.id_estado_factura);
+            return dt;
+        }
+
         // Comentarios : VER DETALLE FACTURA ( DETALLE MOV INV)
         public DataTable detalleFactura(factura_proveedores_Entity fac)
         {
@@ -43,6 +52,16 @@ namespace DAL
             dt = cnn.getSQL("select idproducto, cantidad, costo, precio from DETALLEMOVIMIENTOINVENTARIO where idmovimiento = "+ fac.id_movimiento +" and idbodega = " + fac.id_bodega);
             return dt;
         }
+
+        public DataTable detalleOC(factura_proveedores_Entity fac)
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("select idproducto, cantidad, precio_unitario as costo, 0 as precio from DETALLEORDENCOMPRA where idordencompra = " +  fac.strOC);
+            return dt;
+        }
+
+
+        	
         // Comentarios : ELIMINAR FACTURA
         public void deletefactura(factura_proveedores_Entity fac)
         {

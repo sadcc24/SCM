@@ -41,5 +41,15 @@ namespace BO
             clsInventarios_DAL detallecontrainsert = new clsInventarios_DAL();
             detallecontrainsert.vInsertaDetalleContrasena(contrasena);
         }
+
+
+        // Comentario: Consultar Cuentas Contables
+        public DataTable verCuentaContable()
+        {
+            DataTable dt = new DataTable();
+            clsInventarios_DAL prov = new clsInventarios_DAL();
+            dt = prov.verCuentaContable();
+            return dt;
+        }
     }
 }

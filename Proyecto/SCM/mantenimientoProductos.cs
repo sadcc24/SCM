@@ -163,6 +163,16 @@ namespace SCM
             }
         }
         public string idProducto, descripcion,stockmaximo,stockminimo, idproveedor, id_tipo_producto, idmarca, codmetodo, codlinea, tamano, peso, unidadpeso,unidadtamano;
+
+        private void btnAyuda_Click(object sender, EventArgs e)
+        {
+            string fullpath = System.IO.Path.Combine(Application.StartupPath, "ManualUsuarioSCM.pdf");
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = fullpath;
+            proc.Start();
+            proc.Close();
+        }
+
         private void gvProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             //var dataIndexNo = gvProductos.Rows[e.RowIndex].Index.ToString();

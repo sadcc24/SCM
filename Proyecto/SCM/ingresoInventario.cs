@@ -40,6 +40,19 @@ namespace SCM
                 frm.ShowDialog(mostrarMenu.ActiveForm);
                
             }
+            if (cmbTipoMovimiento.SelectedValue.ToString() == "2")
+            {
+                buscarEgresos frm = new buscarEgresos();
+                frm.lblProveedor.Text = cmbProveedor.SelectedValue.ToString();
+                frm.lblBodega.Text = cmbBodega.SelectedValue.ToString();
+                string[] empresa = Globales.Empresa.CapturarEmpresa();
+                frm.lblEmpresa.Text = empresa[0];
+                this.Close();
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterParent;
+                frm.ShowDialog(mostrarMenu.ActiveForm);
+
+            }
 
             if (cmbTipoMovimiento.SelectedValue.ToString() == "4")
             {
@@ -127,6 +140,7 @@ namespace SCM
                     //    MessageBox.Show(id.ToString());
                     int cant;
                     Decimal costop;
+                    decimal total = 0 ;
                     foreach (DataGridViewRow fila in grdInventario.Rows)
                     {
                         if (Convert.ToBoolean(fila.Cells[0].Value))
@@ -139,7 +153,7 @@ namespace SCM
                             precio = fila.Cells[4].Value.ToString();
                             cant = Convert.ToInt32(cantidad) * Convert.ToInt32(lblOperacion.Text);
                             //MessageBox.Show(idproducto + "__" + cant.ToString() + "__" + costo + "__" + precio);
-
+                            total = total + (Convert.ToDecimal(costo) * Convert.ToDecimal(cantidad));
                             if (lblOperacion.Text.ToString() == "-1")
                             {
                                 if (exis >= Convert.ToDecimal(cantidad))
@@ -147,7 +161,7 @@ namespace SCM
                                     clsMovimientosInventario_Entity bo = new clsMovimientosInventario_Entity();
                                     clsMovimientosInventario_BO bodeg = new clsMovimientosInventario_BO();
                                     bo.strIdMovimiento = id.ToString();
-                                    bo.strIdBodega = bod.strIdBodega = cmbBodega.SelectedValue.ToString();
+                                    bo.strIdBodega = cmbBodega.SelectedValue.ToString();
                                     bo.strIdProducto = idproducto;
                                     bo.strCosto = costo;
                                     bo.strCantidad = cant.ToString();
@@ -162,15 +176,15 @@ namespace SCM
                                 clsMovimientosInventario_Entity bo = new clsMovimientosInventario_Entity();
                                 clsMovimientosInventario_BO bodeg = new clsMovimientosInventario_BO();
                                 bo.strIdMovimiento = id.ToString();
-                                bo.strIdBodega = bod.strIdBodega = cmbBodega.SelectedValue.ToString();
+                                bo.strIdBodega = cmbBodega.SelectedValue.ToString();
                                 bo.strIdProducto = idproducto;
                                 bo.strCosto = costo;
                                 bo.strCantidad = cant.ToString();
                                 bodeg.vInsertarDetalleMovimientoInventario(bo);
                                 bodeg.vModificarExistencia(bo);
-                                MessageBox.Show("Movimiento de Inventario Guardado.");
-                               Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Movimiento de Inventario.");
+                              
                                 decimal costopromedio;
+                                // PARA INGRESO POR COMPRAS (TIPO 1)
                                 if(cmbTipoMovimiento.SelectedValue.ToString()=="1")
                                 { // PROMEDIO DE COSTO DE ACUERDO AL COSTO ANTERIOR PROMEDIADO CON EL COSTO NUEVO
                                     clsMovimientosInventario_Entity exist = new clsMovimientosInventario_Entity();
@@ -180,6 +194,8 @@ namespace SCM
                                     costopromedio = (costop + Convert.ToDecimal(costo)) / 2;
                                     exist.strCosto = costopromedio.ToString();
                                     existencia.vModificarCostoProducto(exist);
+
+
                                  
 
 
@@ -196,8 +212,30 @@ namespace SCM
                             ////MessageBox.Show(idfactura + "__" + id.ToString() + "__" + saldo);
                         }
                     }
+                   if (cmbTipoMovimiento.SelectedValue.ToString() == "1")
+                    {
+                        factura_proveedores_Entity fac = new factura_proveedores_Entity();
+                        factura_proveedores_BO factura = new factura_proveedores_BO();
+                        fac.id_bodega = Convert.ToInt32(cmbBodega.SelectedValue.ToString());
+                        fac.total = total;
+                        fac.saldo = total;
+                        fac.corrfactura = txtcorr.Text;
+                        fac.id_serie = txtserie.Text;
+                        fac.fecha = dtfecha.Value.ToString("yyyy-MM-dd");
+                        fac.id_proveedor = Convert.ToInt32(cmbProveedor.SelectedValue.ToString());
+                        fac.id_estado_factura = 1;
+                        fac.id_movimiento = id;
+                        factura.insertfactura(fac);
+                    }
+
+
                     //MessageBox.Show("Movimiento de Inventario Guardado.");
                     //Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Devolución por Compra.");
+
+                    MessageBox.Show("Movimiento de Inventario Guardado.");
+                    Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Movimiento de Inventario.");
+                    this.Close();
+
                 }
 
             }

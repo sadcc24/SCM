@@ -38,12 +38,30 @@ namespace BO
             dt = prov.verFacturas(fac);
             return dt;
         }
+
+        // Comentario: Consultar OC AUTORIZADAS POR CONTA
+        public DataTable verOC(factura_proveedores_Entity fac)
+        {
+            DataTable dt = new DataTable();
+            factura_proveedores_DAL prov = new factura_proveedores_DAL();
+            dt = prov.verOC(fac);
+            return dt;
+        }
         // Comentarios : detalle factura
         public DataTable detalleFactura(factura_proveedores_Entity fac)
         {
             DataTable dt = new DataTable();
             factura_proveedores_DAL prov = new factura_proveedores_DAL();
             dt = prov.detalleFactura(fac);
+            return dt;
+        }
+
+        //Comentario: Detalle OC
+        public DataTable detalleOC(factura_proveedores_Entity fac)
+        {
+            DataTable dt = new DataTable();
+            factura_proveedores_DAL prov = new factura_proveedores_DAL();
+            dt = prov.detalleOC(fac);
             return dt;
         }
 

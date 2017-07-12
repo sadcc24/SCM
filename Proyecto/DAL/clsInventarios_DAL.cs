@@ -46,5 +46,13 @@ namespace DAL
 
         }
 
+        // Comentario: Consultar Cuentas Contables
+        public DataTable verCuentaContable()
+        {
+            DataTable dt = new DataTable();
+            dt = cnn.getSQL("SELECT * FROM CUENTACONTABLE");
+            return dt;
+        }
+
     }
 }
