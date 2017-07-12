@@ -1,0 +1,85 @@
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\BO.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\BO.pdb
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\DAL.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\Entity.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\MRP_BD.dll
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\DAL.pdb
+C:\Users\JACC\Desktop\SCM\BO\bin\Debug\Entity.pdb
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.dll
+C:\Users\JACC\Desktop\SCM\BO\obj\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\MRP_BD.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\Visual Studio 2015\Projects\SCM-Unificado-2\SCM\BO\obj\Debug\BO.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\BO.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\BO.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\DAL.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\MRP_BD.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\DAL.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\obj\Debug\BO.dll
+C:\Users\pamel\Documents\Visual Studio 2015\Projects\Final\Proyecto\BO\obj\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\BO.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\DAL.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\Entity.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\MRP_BD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\DAL.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\Entity.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\bin\Debug\dllSeguridadSAD.pdb
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.dll
+C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\BO\obj\Debug\BO.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\BO.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\BO.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\DAL.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\Entity.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\MRP_BD.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\DAL.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\Entity.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\bin\Debug\dllSeguridadSAD.pdb
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\obj\Debug\BO.dll
+C:\Users\navi9\Desktop\SCM-master\Proyecto\BO\obj\Debug\BO.pdb
+E:\SCM-master\Proyecto\BO\bin\Debug\BO.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\BO.pdb
+E:\SCM-master\Proyecto\BO\bin\Debug\DAL.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\Entity.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\mscorlib.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\MRP_BD.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\DAL.pdb
+E:\SCM-master\Proyecto\BO\bin\Debug\Entity.pdb
+E:\SCM-master\Proyecto\BO\bin\Debug\es\mscorlib.resources.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\pt-BR\mscorlib.resources.dll
+E:\SCM-master\Proyecto\BO\bin\Debug\normidna.nlp
+E:\SCM-master\Proyecto\BO\bin\Debug\normnfc.nlp
+E:\SCM-master\Proyecto\BO\bin\Debug\normnfd.nlp
+E:\SCM-master\Proyecto\BO\bin\Debug\normnfkc.nlp
+E:\SCM-master\Proyecto\BO\bin\Debug\normnfkd.nlp
+E:\SCM-master\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+E:\SCM-master\Proyecto\BO\obj\Debug\BO.dll
+E:\SCM-master\Proyecto\BO\obj\Debug\BO.pdb
+D:\SCM-master\Proyecto\BO\bin\Debug\BO.dll
+D:\SCM-master\Proyecto\BO\bin\Debug\BO.pdb
+D:\SCM-master\Proyecto\BO\bin\Debug\DAL.dll
+D:\SCM-master\Proyecto\BO\bin\Debug\Entity.dll
+D:\SCM-master\Proyecto\BO\bin\Debug\MRP_BD.dll
+D:\SCM-master\Proyecto\BO\bin\Debug\dllSeguridadSAD.dll
+D:\SCM-master\Proyecto\BO\bin\Debug\DAL.pdb
+D:\SCM-master\Proyecto\BO\bin\Debug\Entity.pdb
+D:\SCM-master\Proyecto\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\SCM-master\Proyecto\BO\obj\Debug\BO.dll
+D:\SCM-master\Proyecto\BO\obj\Debug\BO.pdb
