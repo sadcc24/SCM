@@ -37,7 +37,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblBodega = new System.Windows.Forms.Label();
             this.cmbBodega = new System.Windows.Forms.ComboBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCongelar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
             this.dgvMarcas = new System.Windows.Forms.DataGridView();
+            this.dgvDetalleInventarioFisico = new System.Windows.Forms.DataGridView();
+            this.btnCapturar = new System.Windows.Forms.Button();
             this.gbxProductos.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -57,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvBodega)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleInventarioFisico)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxProductos
@@ -150,25 +152,14 @@
             this.cmbBodega.TabIndex = 9;
             this.cmbBodega.SelectedIndexChanged += new System.EventHandler(this.cmbBodega_SelectedIndexChanged);
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(287, 224);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 25);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
             // btnCongelar
             // 
             this.btnCongelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCongelar.Location = new System.Drawing.Point(169, 224);
+            this.btnCongelar.Location = new System.Drawing.Point(186, 230);
             this.btnCongelar.Name = "btnCongelar";
-            this.btnCongelar.Size = new System.Drawing.Size(75, 25);
+            this.btnCongelar.Size = new System.Drawing.Size(150, 25);
             this.btnCongelar.TabIndex = 4;
-            this.btnCongelar.Text = "Congelar";
+            this.btnCongelar.Text = "Congelar existencias";
             this.btnCongelar.UseVisualStyleBackColor = true;
             this.btnCongelar.Click += new System.EventHandler(this.btnCongelar_Click);
             // 
@@ -207,14 +198,15 @@
             // 
             // dgvExistencias
             // 
+            this.dgvExistencias.AllowUserToAddRows = false;
             this.dgvExistencias.AllowUserToDeleteRows = false;
             this.dgvExistencias.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgvExistencias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvExistencias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExistencias.Location = new System.Drawing.Point(34, 267);
+            this.dgvExistencias.Location = new System.Drawing.Point(0, 270);
             this.dgvExistencias.Name = "dgvExistencias";
             this.dgvExistencias.ReadOnly = true;
-            this.dgvExistencias.Size = new System.Drawing.Size(428, 182);
+            this.dgvExistencias.Size = new System.Drawing.Size(534, 134);
             this.dgvExistencias.TabIndex = 117;
             this.dgvExistencias.Visible = false;
             // 
@@ -289,20 +281,45 @@
             this.dgvMarcas.TabIndex = 118;
             this.dgvMarcas.Visible = false;
             // 
+            // dgvDetalleInventarioFisico
+            // 
+            this.dgvDetalleInventarioFisico.AllowUserToAddRows = false;
+            this.dgvDetalleInventarioFisico.AllowUserToDeleteRows = false;
+            this.dgvDetalleInventarioFisico.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dgvDetalleInventarioFisico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvDetalleInventarioFisico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleInventarioFisico.Location = new System.Drawing.Point(0, 268);
+            this.dgvDetalleInventarioFisico.Name = "dgvDetalleInventarioFisico";
+            this.dgvDetalleInventarioFisico.Size = new System.Drawing.Size(534, 134);
+            this.dgvDetalleInventarioFisico.TabIndex = 119;
+            this.dgvDetalleInventarioFisico.Visible = false;
+            // 
+            // btnCapturar
+            // 
+            this.btnCapturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapturar.Location = new System.Drawing.Point(181, 424);
+            this.btnCapturar.Name = "btnCapturar";
+            this.btnCapturar.Size = new System.Drawing.Size(150, 25);
+            this.btnCapturar.TabIndex = 121;
+            this.btnCapturar.Text = "Capturar existencias";
+            this.btnCapturar.UseVisualStyleBackColor = true;
+            this.btnCapturar.Click += new System.EventHandler(this.btnCapturar_Click);
+            // 
             // congelarExistencias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 461);
+            this.Controls.Add(this.btnCapturar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvMarcas);
             this.Controls.Add(this.btnCongelar);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbxProductos);
             this.Controls.Add(this.dgvLineas);
             this.Controls.Add(this.dgvBodega);
+            this.Controls.Add(this.dgvDetalleInventarioFisico);
             this.Controls.Add(this.dgvExistencias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "congelarExistencias";
@@ -321,6 +338,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleInventarioFisico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,7 +352,6 @@
         private System.Windows.Forms.Label lblDesde;
         private System.Windows.Forms.TextBox txtDesde;
         private System.Windows.Forms.Label lblBodega;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCongelar;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
@@ -347,5 +364,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbMarca;
         private System.Windows.Forms.DataGridView dgvMarcas;
+        private System.Windows.Forms.DataGridView dgvDetalleInventarioFisico;
+        private System.Windows.Forms.Button btnCapturar;
     }
 }

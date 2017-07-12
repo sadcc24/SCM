@@ -57,11 +57,10 @@
             this.tipoSolicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auditoríaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.congelarExitenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capturarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajustarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.descongelarExistenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kardexProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cuentasPorPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambioDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +88,6 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsStatusMoneda = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.cuentasPorPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsMenuPrincipal.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -308,9 +306,7 @@
             // 
             this.auditoríaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.congelarExitenciasToolStripMenuItem,
-            this.capturarExistenciasToolStripMenuItem,
-            this.ajustarExistenciasToolStripMenuItem,
-            this.descongelarExistenciasToolStripMenuItem});
+            this.ajustarExistenciasToolStripMenuItem});
             this.auditoríaToolStripMenuItem1.Image = global::SCM.Properties.Resources.manual_usuario;
             this.auditoríaToolStripMenuItem1.Name = "auditoríaToolStripMenuItem1";
             this.auditoríaToolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
@@ -319,30 +315,16 @@
             // congelarExitenciasToolStripMenuItem
             // 
             this.congelarExitenciasToolStripMenuItem.Name = "congelarExitenciasToolStripMenuItem";
-            this.congelarExitenciasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.congelarExitenciasToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.congelarExitenciasToolStripMenuItem.Text = "Congelar exitencias";
             this.congelarExitenciasToolStripMenuItem.Click += new System.EventHandler(this.congelarExitenciasToolStripMenuItem_Click);
-            // 
-            // capturarExistenciasToolStripMenuItem
-            // 
-            this.capturarExistenciasToolStripMenuItem.Name = "capturarExistenciasToolStripMenuItem";
-            this.capturarExistenciasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.capturarExistenciasToolStripMenuItem.Text = "Capturar Existencias";
-            this.capturarExistenciasToolStripMenuItem.Click += new System.EventHandler(this.capturarExistenciasToolStripMenuItem_Click);
             // 
             // ajustarExistenciasToolStripMenuItem
             // 
             this.ajustarExistenciasToolStripMenuItem.Name = "ajustarExistenciasToolStripMenuItem";
-            this.ajustarExistenciasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.ajustarExistenciasToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.ajustarExistenciasToolStripMenuItem.Text = "Ajustar Existencias";
             this.ajustarExistenciasToolStripMenuItem.Click += new System.EventHandler(this.ajustarExistenciasToolStripMenuItem_Click);
-            // 
-            // descongelarExistenciasToolStripMenuItem
-            // 
-            this.descongelarExistenciasToolStripMenuItem.Name = "descongelarExistenciasToolStripMenuItem";
-            this.descongelarExistenciasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.descongelarExistenciasToolStripMenuItem.Text = "Descongelar Existencias";
-            this.descongelarExistenciasToolStripMenuItem.Click += new System.EventHandler(this.descongelarExistenciasToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -360,6 +342,13 @@
             this.kardexProductosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.kardexProductosToolStripMenuItem.Text = "Kardex Productos";
             this.kardexProductosToolStripMenuItem.Click += new System.EventHandler(this.kardexProductosToolStripMenuItem_Click_1);
+            // 
+            // cuentasPorPagarToolStripMenuItem
+            // 
+            this.cuentasPorPagarToolStripMenuItem.Name = "cuentasPorPagarToolStripMenuItem";
+            this.cuentasPorPagarToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.cuentasPorPagarToolStripMenuItem.Text = "Cuentas por Pagar";
+            this.cuentasPorPagarToolStripMenuItem.Click += new System.EventHandler(this.cuentasPorPagarToolStripMenuItem_Click);
             // 
             // configuracionesToolStripMenuItem
             // 
@@ -567,13 +556,6 @@
             this.tsStatusMoneda.Size = new System.Drawing.Size(59, 18);
             this.tsStatusMoneda.Text = "Moneda";
             // 
-            // cuentasPorPagarToolStripMenuItem
-            // 
-            this.cuentasPorPagarToolStripMenuItem.Name = "cuentasPorPagarToolStripMenuItem";
-            this.cuentasPorPagarToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.cuentasPorPagarToolStripMenuItem.Text = "Cuentas por Pagar";
-            this.cuentasPorPagarToolStripMenuItem.Click += new System.EventHandler(this.cuentasPorPagarToolStripMenuItem_Click);
-            // 
             // mostrarMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,9 +617,7 @@
         private System.Windows.Forms.ToolStripMenuItem cambioDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem congelarExitenciasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem capturarExistenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajustarExistenciasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem descongelarExistenciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proveedoresYToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manteniminetoProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoBodegasToolStripMenuItem;
