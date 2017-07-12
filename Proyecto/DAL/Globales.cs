@@ -19,10 +19,13 @@ namespace DAL
         public static Login Usuario = new Login();
         public static string Rol;
         //Parámetros de Conexion -> {"SERVIDOR","BASEDEDATOS","USUARIO","PASSWORD"}
-        public static string[] Conexion = { "PJSELMAN\\SAD2017", "SAD17", "sa", "SAD2017" };
+        //public static string[] Conexion = { "ZGHP", "SAD2017", "admin", "@umg2017" };
         //Parámetros de Conexion -> {"USUARIO","PASSWORD","BASEDEDATOS","SERVIDOR"}
-        public static MRP_BD cnn = new MRP_BD("sa", "SAD2017", "SAD17", "PJSELMAN\\SAD2017");
-
+        //public static MRP_BD cnn = new MRP_BD("admin", "@umg2017", "SAD2017", "ZGHP");
+        //Parámetros de Conexion -> {"SERVIDOR","BASEDEDATOS","USUARIO","PASSWORD"}
+        public static string[] Conexion = { "erpseminario.database.windows.net", "ERPSeminario", "adminseminario", "S@dseminario" };
+        //Parámetros de Conexion -> {"USUARIO","PASSWORD","BASEDEDATOS","SERVIDOR"}
+        public static MRP_BD cnn = new MRP_BD("adminseminario", "S@dseminario", "ERPSeminario", "erpseminario.database.windows.net");
         public static void Inicializar()
         {
 

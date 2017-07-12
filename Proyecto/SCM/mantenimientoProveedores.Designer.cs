@@ -86,7 +86,6 @@
             this.btnAyuda.Size = new System.Drawing.Size(50, 50);
             this.btnAyuda.TabIndex = 27;
             this.btnAyuda.UseVisualStyleBackColor = true;
-            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnUltimo
             // 

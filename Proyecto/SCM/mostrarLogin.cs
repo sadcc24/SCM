@@ -45,7 +45,7 @@ namespace SCM
                 {
                     Globales.Usuario.RegistrarBitácora(Globales.Conexion,"Bitacora","Sesión Iniciada");
                     mostrarEmpresa temp = new mostrarEmpresa();
-                    this.Hide();
+                    this.Close();
                     temp.Show();
                 }
                 else
@@ -63,6 +63,42 @@ namespace SCM
                 this.Show();
                 Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Error al Iniciar Sesión");
             }            
+        }
+
+        private void mostrarLogin_Load(object sender, EventArgs e)
+        {
+            string[] user = Globales.Usuario.CapturarUsuario();
+            if (user[0] == "No Autenticado")
+            {
+                MessageBox.Show("Debe crear un usuario administrador", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Usuarios frm = new Usuarios();
+                frm.txtCod.ReadOnly = true;
+                string query = "SELECT idrol, Rol FROM [dbo].[Rol]";
+                DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Rol");
+                int i;
+                frm.gvUsuariosA.DataSource = ds.Tables[0];
+                for (i = 0; i < frm.gvUsuariosA.RowCount - 1; i++)
+                {
+                    frm.cmbRol.Items.Add(frm.gvUsuariosA[0, i].Value.ToString() + " " + frm.gvUsuariosA[1, i].Value.ToString());
+                }
+                frm.cmbRol.SelectedIndex = 0;
+                frm.cmbRol.Enabled = false;
+                frm.btnEditar.Enabled = false;
+                frm.btnEliminar.Enabled = false;
+                frm.txtCod.ReadOnly = true;
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterScreen;
+                frm.ShowDialog(mostrarLogin.ActiveForm);                              
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Empleados frm = new Empleados();
+            frm.ShowInTaskbar = false;
+            frm.StartPosition = FormStartPosition.CenterScreen;
+            frm.ShowDialog(mostrarLogin.ActiveForm);
         }
     }
 }

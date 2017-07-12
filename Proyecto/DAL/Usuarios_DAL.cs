@@ -3,7 +3,8 @@
     Comentarios: Usuarios
     Fecha de asignación: 20/Junio
     Fecha de entrega: 03/Julio
-*/using System;
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,8 @@ namespace DAL
     {      
         public void vInsertUsuario(Usuarios_Entity usuario)
         {
-            Globales.cnn.insertSQL("INSERT INTO [dbo].[Usuario_1] (idrol,usuario,password,rol,status,preguntasecreta) VALUES ('"
-                + usuario.iRol + "','" + usuario.strUsuario + "','" + usuario .strPassword + "','NULL','" + usuario.iStatus + "','" + usuario.strPregunta + "')");
+            Globales.cnn.insertSQL("INSERT INTO [dbo].[Usuario_1] (idrol,usuario,password,status,preguntasecreta) VALUES ('"
+                + usuario.iRol + "','" + usuario.strUsuario + "','" + usuario .strPassword + "','" + usuario.iStatus + "','" + usuario.strPregunta + "')");
         }
 
         public void vModificarUsuario(Usuarios_Entity usuario)

@@ -30,16 +30,65 @@ namespace SCM
         public void ActualizarGridView()
         {
             string[] usuario = Globales.Usuario.CapturarUsuario();
-            string regusuario = usuario[0];
-            dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + regusuario);
-            int i;
-            for (i= 0; i < dgvEmpresa.RowCount-1; i++)
+            if (usuario[0] != "No Autenticado")
+            {                
+                dgvEmpresa.DataSource = cnn.getSQL("Select  empresa.idempresa, nombre_empresa From empresa Inner join Empleado ON empresa.idempresa = empleado.idempresa Inner join Usuario_1 ON empleado.codusuario = usuario_1.codusuario where usuario_1.codusuario =" + usuario[0]);
+                int i;
+                for (i = 0; i < dgvEmpresa.RowCount - 1; i++)
+                {
+                    cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                }
+            }
+            if (cmbEmpresa.Items.Count == 0)
             {
-                cmbEmpresa.Items.Add(dgvEmpresa[1, i].Value.ToString());
+                
+                MessageBox.Show("El usuario " +usuario[1] + " no tiene asignado ninguna empresa", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //Verificación de Rol de Administrador            
+                if (Globales.Usuario.CapturarRol(Globales.Conexion) == "1")
+                {
+                    //MessageBox.Show("Sí tiene permisos de Administrador");
+
+                    Empleados frm = new Empleados();
+                    frm.ShowInTaskbar = false;
+                    frm.StartPosition = FormStartPosition.CenterScreen;
+                    frm.ShowDialog(mostrarEmpresa.ActiveForm);
+                    ActualizarGridView();
+                    this.Show();
+                }
+                else
+                {
+                    MessageBox.Show("No tiene permisos de Administrador", "Seguridad SAD", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.BeginInvoke(new MethodInvoker(this.Close));
+                }
+                //Verificación de Rol de Administrador
+
             }
         }
         private void frmEmpresa_Load(object sender, EventArgs e)
         {
+            string[] emp = Globales.Empresa.CapturarEmpresa();
+            this.Hide();
+            if (emp[0] == "No Autenticado")
+            {
+                MessageBox.Show("Debe crear una empresa", "Seguridad SAD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Empresas frm = new Empresas();
+                frm.txtCod.ReadOnly = true;
+                frm.txtCod.Visible = false;
+                frm.btnEditar.Enabled = false;
+                frm.btnEliminar.Enabled = false;
+                frm.txtCod.ReadOnly = true;
+                frm.ShowInTaskbar = false;
+                frm.StartPosition = FormStartPosition.CenterScreen;
+                frm.ShowDialog(mostrarEmpresa.ActiveForm);
+
+                Empleados frm2 = new Empleados();
+                frm2.ShowInTaskbar = false;
+                frm2.StartPosition = FormStartPosition.CenterScreen;
+                frm2.ShowDialog(mostrarEmpresa.ActiveForm);
+                this.Show();
+            }
             ActualizarGridView();            
         }
 

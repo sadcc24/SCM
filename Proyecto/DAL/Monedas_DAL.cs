@@ -18,8 +18,7 @@ namespace DAL
     {
         public void vInsertMoneda(Monedas_Entity moneda)
         {
-            Globales.cnn.insertSQL("INSERT INTO [dbo].[Moneda] (idmoneda,nombre_moneda,simbolo_moneda,activo) VALUES ('"
-                + moneda.idmoneda + "','" + moneda.strmoneda+ "','" + moneda.strsimbolo+ "','" + moneda.iactivo + "')");
+            Globales.cnn.insertSQL("INSERT INTO [dbo].[Moneda] (nombre_moneda,simbolo_moneda,activo) VALUES ('" + moneda.strmoneda+ "','" + moneda.strsimbolo + "','" + moneda.iactivo + "')");
         }
 
         public void vModificarMoneda(Monedas_Entity moneda)

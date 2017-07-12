@@ -47,8 +47,14 @@
     <Compile Include="clsMovimientosInventario_Entity.cs" />
     <Compile Include="clsProductos_Entity.cs" />
     <Compile Include="clsTipoMovimiento_Entity.cs" />
+    <Compile Include="detalle_orden_compra_Entity.cs" />
     <Compile Include="detalle_poliza_Entity.cs" />
     <Compile Include="Detalle_ST_Entity.cs" />
+    <Compile Include="Empleados_Entity.cs" />
+    <Compile Include="Empresas_Entity.cs" />
+    <Compile Include="estado_contrasena_Entity.cs" />
+    <Compile Include="estado_factura_Entity.cs" />
+    <Compile Include="estado_orden_Entity.cs" />
     <Compile Include="estado_solicitud_Entity.cs" />
     <Compile Include="factura_proveedores_Entity.cs" />
     <Compile Include="Lineas_Entity.cs" />
@@ -60,6 +66,7 @@
     <Compile Include="SeguimientoST_Entity.cs" />
     <Compile Include="SolicitudTransporte_Entity.cs" />
     <Compile Include="tipo_cargamento_Entity.cs" />
+    <Compile Include="tipo_orden_Entity.cs" />
     <Compile Include="tipo_solicitud_Entity.cs" />
     <Compile Include="tipo_trayecto_Entity.cs" />
     <Compile Include="tipo_vehiculo_Entity.cs" />

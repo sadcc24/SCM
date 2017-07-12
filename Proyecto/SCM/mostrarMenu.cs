@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*  Programador: Josué Enrique Zeceña González
+    Analista: Josué Enrique Zeceña González
+    Comentarios: Menú
+    Fecha de asignación: 23/Junio
+    Fecha de entrega: 20/Junio
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -161,7 +168,7 @@ namespace SCM
 
         private void ingresoDeOrdenDeCompraToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ingresoOrdenCompra temp = new ingresoOrdenCompra();
+            verOrdenes temp = new verOrdenes();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();
@@ -274,6 +281,7 @@ namespace SCM
 
         private void congelarExitenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Congelar Existencias");
             congelarExistencias temp = new congelarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -282,6 +290,7 @@ namespace SCM
 
         private void capturarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Capturar Existencias");
             capturarExistencias temp = new capturarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -290,6 +299,7 @@ namespace SCM
 
         private void ajustarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Ajustar Existencias");
             ajustarExistencias temp = new ajustarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -298,6 +308,7 @@ namespace SCM
 
         private void descongelarExistenciasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Globales.Usuario.RegistrarBitácora(Globales.Conexion, "Bitacora", "Descongelar Existencias");
             descongelarExistencias temp = new descongelarExistencias();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
@@ -317,11 +328,18 @@ namespace SCM
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
             //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             //this.Size = Screen.PrimaryScreen.WorkingArea.Size;
-            string[] empresa = Globales.Empresa.CapturarEmpresa();
-            this.tsStatusEmpresa.Text = empresa[1];
+            
+            //Captura de Rol, Usuario, Moneda y Empresa Actuales de Seguridad SAD
+            string rolactual = Globales.Usuario.CapturarRol(Globales.Conexion);
             string[] usuario = Globales.Usuario.CapturarUsuario();
             this.tsStatusUsuario.Text = usuario[1];
+            string[] moneda = Globales.Usuario.CapturarMoneda(Globales.Conexion);
+            this.tsStatusMoneda.Text = moneda[1];
+            string[] empresa = Globales.Empresa.CapturarEmpresa();
+            this.tsStatusEmpresa.Text = empresa[1];
+            //Captura de Fecha Actual
             this.tsStatusFecha.Text = DateTime.Now.ToString("D");
+            
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -438,8 +456,14 @@ namespace SCM
             temp.MdiParent = this;
             temp.Show();
         }
-
-        private void kardexProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            mantenimientoMonedas temp = new mantenimientoMonedas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+        private void kardexProductosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             kardexProductos temp = new kardexProductos();
             //temp.WindowState = FormWindowState.Maximized;
@@ -447,14 +471,57 @@ namespace SCM
             temp.Show();
         }
 
-        private void inventariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void empresasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            mantenimientoEmpresas temp = new mantenimientoEmpresas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
         }
 
-        private void ingresoPólizasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void asignaciónDeEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ingresoPoliza temp = new ingresoPoliza();
+            mantenimientoEmpleados temp = new mantenimientoEmpleados();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadoContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoContrasena temp = new mantenimientoEstadoContrasena();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadoOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoOrdenCompra temp = new mantenimientoEstadoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoEstadosFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoEstadoFacturas temp = new mantenimientoEstadoFacturas();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void mantenimientoTipoOrdenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mantenimientoTipoOrdenCompra temp = new mantenimientoTipoOrdenCompra();
+            //temp.WindowState = FormWindowState.Maximized;
+            temp.MdiParent = this;
+            temp.Show();
+        }
+
+        private void cuentasPorPagarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            verCuentaxPagar temp = new verCuentaxPagar();
             //temp.WindowState = FormWindowState.Maximized;
             temp.MdiParent = this;
             temp.Show();

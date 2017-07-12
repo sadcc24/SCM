@@ -188,6 +188,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(380, 52);
+            this.txtUsuario.MaxLength = 10;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(163, 20);
             this.txtUsuario.TabIndex = 1;
@@ -350,6 +351,6 @@
         public System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.ComboBox cmbRol;
-        private System.Windows.Forms.DataGridView gvUsuariosA;
+        public System.Windows.Forms.DataGridView gvUsuariosA;
     }
 }

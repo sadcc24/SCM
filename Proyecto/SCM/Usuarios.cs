@@ -31,7 +31,7 @@ namespace SCM
             // cmbEstado.Items.Insert(1,"ACTIVO");
             //  cmbEstado.Items.Insert(0, "INACTIVO");
             btnCancelar.Enabled = false;            
-            string[] usuario = Globales.Usuario.CapturarUsuario();
+            
             string query = "SELECT idrol, Rol FROM [dbo].[Rol]";
             DataSet ds = Globales.Usuario.EjecutarQuery(Globales.Conexion, query, "Rol");
             int i;
@@ -41,6 +41,7 @@ namespace SCM
                 cmbRol.Items.Add(gvUsuariosA[0, i].Value.ToString() + " " + gvUsuariosA[1, i].Value.ToString());
             }
 
+            
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -88,10 +89,16 @@ namespace SCM
                                 User.strPregunta = txtPregunta.Text;
                                 Usuario.vInsertarUsuario(User);
                                 MessageBox.Show("Usuario ha sido creado.");
-                                mantenimientoUsuarios prdu = new mantenimientoUsuarios();
-                                prdu.MdiParent = this.MdiParent;
-                                this.Hide();
-                                prdu.Show();
+                                string[] user = Globales.Usuario.CapturarUsuario();
+                                if (user[0] != "No Autenticado")
+                                {
+                                    mantenimientoUsuarios prdu = new mantenimientoUsuarios();
+                                    prdu.MdiParent = this.MdiParent;
+                                    this.Hide();
+                                    prdu.Show();
+                                }
+                                else
+                                    this.Hide();
                             }
                             catch (Exception ex)
                             {

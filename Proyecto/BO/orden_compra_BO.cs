@@ -88,6 +88,14 @@ namespace BO
             return dt;
         }
 
+        public DataTable verOC()
+        {
+            DataTable dt = new DataTable();
+            orden_compra_DAL prov = new orden_compra_DAL();
+            dt = prov.verOC();
+            return dt;
+        }
+
         public void deleteOC(orden_compra_Entity prov)
         {
             try
@@ -99,6 +107,14 @@ namespace BO
             {
                 String error = ex.ToString();
             }
+        }
+
+        public DataTable verCuentaxPagar(int prove)
+        {
+            DataTable dt = new DataTable();
+            orden_compra_DAL prov = new orden_compra_DAL();
+            dt = prov.verCuentasxPagar(prove);
+            return dt;
         }
     }
 }

@@ -235,6 +235,7 @@
             this.btnAgregarProducto.TabIndex = 29;
             this.btnAgregarProducto.Text = "Agregar";
             this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click);
             // 
             // txtTotalProducto
             // 
@@ -249,6 +250,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(120, 20);
             this.textBox2.TabIndex = 25;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -270,6 +272,7 @@
             this.txtCodProducto.Name = "txtCodProducto";
             this.txtCodProducto.Size = new System.Drawing.Size(120, 20);
             this.txtCodProducto.TabIndex = 18;
+            this.txtCodProducto.TextChanged += new System.EventHandler(this.txtCodProducto_TextChanged);
             // 
             // label3
             // 
@@ -390,6 +393,7 @@
             this.button1.Size = new System.Drawing.Size(48, 42);
             this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnRefrescar
             // 
@@ -399,6 +403,7 @@
             this.btnRefrescar.Size = new System.Drawing.Size(48, 42);
             this.btnRefrescar.TabIndex = 10;
             this.btnRefrescar.UseVisualStyleBackColor = true;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnCancelar
             // 
@@ -408,6 +413,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(48, 42);
             this.btnCancelar.TabIndex = 9;
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -427,6 +433,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(48, 42);
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -436,6 +443,7 @@
             this.btnEditar.Size = new System.Drawing.Size(48, 42);
             this.btnEditar.TabIndex = 6;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -445,6 +453,7 @@
             this.btnNuevo.Size = new System.Drawing.Size(48, 42);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // ingresoOrdenCompra
             // 
