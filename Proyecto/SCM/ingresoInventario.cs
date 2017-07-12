@@ -111,7 +111,8 @@ namespace SCM
                     bod.strIdBodega = cmbBodega.SelectedValue.ToString();
                     //bod.strIdProducto = cmbProveedor.SelectedValue.ToString();
                     bod.strIdTipoMovimiento = cmbTipoMovimiento.SelectedValue.ToString();
-                    bod.strIdMoneda = "1";
+                    string[] moneda = Globales.Usuario.CapturarMoneda(Globales.Conexion);                    
+                    bod.strIdMoneda = moneda[0]; ;
                     bod.strFecha = dtfecha.Value.ToString("yyyy-MM-dd");
                     bod.strDocRef = txtDocRef.Text;
                     bodega.vInsertarMovimientoInventario(bod);

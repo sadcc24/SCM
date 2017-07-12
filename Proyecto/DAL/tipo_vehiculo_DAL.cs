@@ -19,7 +19,7 @@ namespace DAL
         {
             try
             {
-                cnn.insertSQL("INSERT INTO TIPOVEHICULO (nombretipotrans, idtipocarga)values('" + tip.nombre_tipo + "', " + tip.id_tipo_carga + ")");
+                cnn.insertSQL("INSERT INTO TIPOVEHICULO (nombretipotrans)values('" + tip.nombre_tipo + "')");
 
             }
             catch (Exception ex)

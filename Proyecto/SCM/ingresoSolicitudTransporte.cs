@@ -14,67 +14,22 @@ namespace SCM
 {
     public partial class ingresoSolicitudTransporte : Form
     {
-        public ingresoSolicitudTransporte(int codigost)
+        public ingresoSolicitudTransporte(int idmov)
         {
+            //Recibo como parámetro el id del movimiento, con base este id se crea una solicitud de transporte
             InitializeComponent();
-            cargaCBEstado();
-            if (codigost != 0)
-            {
-                buscarUno(codigost);
-                actualizaGridDetalle(codigost);
-                Disabled();
-            }
-           
+            actualizaGridDetalle(idmov);
+            txtMovimiento.Text = idmov.ToString();
         }
         #region Funciones y Metodos
-        private void cargaCBEstado()
-        {
-            try
-            {
-                cmbTipoST.DisplayMember = "nombretipost";
-                cmbTipoST.ValueMember = "idtiposolict";
-                cmbTipoST.DataSource = new SolicitudTransporte_BOL().verTipoST();
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
-        }
-        private void buscarUno(int codigo)
-        {
-            SolicitudTransporte_Entity eST = new SolicitudTransporte_BOL().verUnoST(codigo);
-            txtNotas.Text = eST.Notas;
-            txtIdSolicitud.Text = eST.idSolicitud.ToString();
-            cmbTipoST.SelectedValue = eST.idTipoSolicitud;
-            lblFecEntrega.Text = eST.FechaSolicitud;
-            lblFecSalida.Text = eST.FechaSalida;
-            lblFecSolicitud.Text = eST.FechaRegreso;
-            lblEstado.Text = eST.NombreEstado;
-           
-        }
-
-        private void Disabled()
-        {
-            txtNotas.Enabled = false;
-            cmbTipoST.Enabled = false;
-            btnDetalle.Enabled = false;
-            dgvDetalleST.Enabled = false;
-        }
-
-        //private void Enabled()
-        //{
-        //    txtNotas.Enabled = true;
-        //    cmbTipoST.Enabled = true;
-        //    btnDetalle.Enabled = true;
-        //    dgvDetalleST.Enabled = true;
-        //}
-
         private void actualizaGridDetalle(int codigo)
         {
+
             try
             {
                 SolicitudTransporte_Entity st = new SolicitudTransporte_Entity();
-                st.idSolicitud = codigo;
+                //st.idSolicitud = codigo;
+                st.idMovimiento = codigo;
                 dgvDetalleST.DataSource = new SolicitudTransporte_BOL().verDetalleST(st);
                 dgvDetalleST.Refresh();
             }
@@ -86,41 +41,36 @@ namespace SCM
 
         #endregion
 
-        private void btnDetalle_Click(object sender, EventArgs e)
-        {
-            if(txtIdSolicitud.Text == "")
-            {
-                MessageBox.Show("Debe de crear la solicitud primero");
-            }
-            else
-            {
-                
-                string codigo = txtIdSolicitud.Text;
-                ingresoDetalleST idst = new ingresoDetalleST(codigo);
-                idst.MdiParent = this.MdiParent;
-                idst.Show();
-            }
-        }
-
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             SolicitudTransporte_Entity st = new SolicitudTransporte_Entity();
             st.Notas = txtNotas.Text.Trim();
-            st.idTipoSolicitud = Convert.ToInt32(cmbTipoST.SelectedValue);
-            if (txtIdSolicitud.Text == "")
+            st.idMovimiento = Convert.ToInt32(txtMovimiento.Text.Trim());
+            //st.idEmpresa = 1;
+            //st.idUsuario = 1;
+            //string[] empresa = Globales.Empresa.CapturarEmpresa();
+            //string[] usuario = Globales.Usuario.CapturarUsuario();
+            st.idEmpresa = 1;//Convert.ToInt32(empresa[0]);
+            st.idUsuario = 1;//Convert.ToInt32(usuario[0]);
+             
+            
+            try
             {
-                try
-                {
-                    new BO.SolicitudTransporte_BOL().binsertaEncabezadoST(st);
-                    MessageBox.Show("Solicitud Guardada Exitosamente");
-                }catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                
+                new BO.SolicitudTransporte_BOL().binsertaEncabezadoST(st);
+                MessageBox.Show("Solicitud Guardada Exitosamente");
+                //int idsolicitud = st.idMovimiento;
+                //envia como parámetros el movimiento y la solicitud creada.
+                seguimientoST ST = new seguimientoST(txtMovimiento.Text.Trim(), "0");
+                ST.MdiParent = this.MdiParent;
+                ST.Show();
+                this.Close();
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-            else
-            {
+                
+           /*
                 try
                 {
                     st.idSolicitud = Convert.ToInt32(txtIdSolicitud.Text.Trim());
@@ -130,44 +80,29 @@ namespace SCM
                 {
                     MessageBox.Show(ex.Message);
                 }
-                
-                
-            }
-            //buscarUno(Convert.ToInt32(txtIdSolicitud.Text.Trim()));
-            Disabled();
-
+                */
+            
             
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            txtIdSolicitud.Clear();
+            txtMovimiento.Clear();
             txtNotas.Clear();
-            cmbTipoST.Enabled = true;
-            btnDetalle.Enabled = true;
             dgvDetalleST.Enabled = true;
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            int id;
-            id = Convert.ToInt32(txtIdSolicitud.Text);
-            buscarUno(id);
-        }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            txtNotas.Enabled = true;
-            cmbTipoST.Enabled = true;
-            btnDetalle.Enabled = true;
-            dgvDetalleST.Enabled = true;
+            //Enabled();
         }
 
      
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro de eliminar la solicitud", "Solicitud de Transporte",
+            if (MessageBox.Show("Esta seguro de rechazar la solicitud", "Solicitud de Transporte",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                     == DialogResult.Yes)
             {
@@ -175,8 +110,7 @@ namespace SCM
                 {
                     SolicitudTransporte_Entity st = new SolicitudTransporte_Entity();
                     st.Notas = txtNotas.Text.Trim();
-                    st.idTipoSolicitud = Convert.ToInt32(cmbTipoST.SelectedValue);
-                    st.idSolicitud = Convert.ToInt32(txtIdSolicitud.Text.Trim());
+                    st.idSolicitud = Convert.ToInt32(txtMovimiento.Text.Trim());
                     new BO.SolicitudTransporte_BOL().eliminarST(st);
                     MessageBox.Show("Solicitud Eliminada Exitosamente");
                     this.Close();
@@ -189,15 +123,12 @@ namespace SCM
 
         }
 
-        private void btnSeguimiento_Click(object sender, EventArgs e)
+        private void btnAyuda_Click(object sender, EventArgs e)
         {
-            string codigo = txtIdSolicitud.Text;
-            seguimientoST sst = new seguimientoST(codigo);
-            sst.MdiParent = this.MdiParent;
-            sst.Show();
+
         }
 
-        private void btnAyuda_Click(object sender, EventArgs e)
+        private void ingresoSolicitudTransporte_Load(object sender, EventArgs e)
         {
 
         }

@@ -296,6 +296,7 @@
             // 
             // btnCapturar
             // 
+            this.btnCapturar.Enabled = false;
             this.btnCapturar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapturar.Location = new System.Drawing.Point(181, 424);
             this.btnCapturar.Name = "btnCapturar";
@@ -322,6 +323,7 @@
             this.Controls.Add(this.dgvDetalleInventarioFisico);
             this.Controls.Add(this.dgvExistencias);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "congelarExistencias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCM | Congelar Existencias";

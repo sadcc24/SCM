@@ -98,6 +98,7 @@
             this.btnPrimero.Size = new System.Drawing.Size(50, 50);
             this.btnPrimero.TabIndex = 3;
             this.btnPrimero.UseVisualStyleBackColor = true;
+            this.btnPrimero.Click += new System.EventHandler(this.btnPrimero_Click);
             // 
             // btnAnterior
             // 
@@ -117,6 +118,7 @@
             this.btnSiguiente.Size = new System.Drawing.Size(50, 50);
             this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnUltimo
             // 
@@ -126,6 +128,7 @@
             this.btnUltimo.Size = new System.Drawing.Size(50, 50);
             this.btnUltimo.TabIndex = 6;
             this.btnUltimo.UseVisualStyleBackColor = true;
+            this.btnUltimo.Click += new System.EventHandler(this.btnUltimo_Click);
             // 
             // btnAyuda
             // 
@@ -135,6 +138,7 @@
             this.btnAyuda.Size = new System.Drawing.Size(50, 50);
             this.btnAyuda.TabIndex = 7;
             this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnBuscar
             // 
