@@ -77,6 +77,9 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.G
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 04b274008b3f4f2dfec082bfe6fb3eb1f1799d4a
 C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\bin\Debug\SCM.exe.config
 C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.exe
 C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.pdb
@@ -162,5 +165,8 @@ C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.verOrdenes.resour
 C:\Users\pamel\Documents\GitHub\SCM\Proyecto\SCM\obj\Debug\SCM.csproj.GenerateResource.Cache
 =======
 >>>>>>> caf667c7189ba2f89cedce5b00c097cba0633d76
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 6363078... comm
+=======
+>>>>>>> 04b274008b3f4f2dfec082bfe6fb3eb1f1799d4a

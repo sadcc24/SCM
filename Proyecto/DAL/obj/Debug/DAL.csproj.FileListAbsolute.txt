@@ -7,3 +7,11 @@ C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\dllSeguridad
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.dll
 C:\Users\Josué Enrique\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.pdb
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.dll
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\DAL.pdb
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.dll
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\Entity.pdb
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\bin\Debug\dllSeguridadSAD.pdb
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.dll
+C:\Users\pamel\Documents\GitHub\SCM\Proyecto\DAL\obj\Debug\DAL.pdb
